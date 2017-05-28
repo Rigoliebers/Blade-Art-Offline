@@ -36,7 +36,7 @@ namespace BAO
         {
             ScreenManager.Instance.Initialize();
 
-            ScreenManager.Instance.Dimensions = new Vector2(800,600);
+            ScreenManager.Instance.Dimensions = new Vector2(1024,800);
             graphics.PreferredBackBufferWidth = (int) ScreenManager.Instance.Dimensions.X;
             graphics.PreferredBackBufferHeight = (int) ScreenManager.Instance.Dimensions.Y;
             graphics.ApplyChanges();

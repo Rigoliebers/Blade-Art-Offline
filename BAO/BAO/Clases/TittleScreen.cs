@@ -16,7 +16,7 @@ namespace BAO.Clases
 
         public override void LoadContent(ContentManager Content)
         {
-            base.LoadContent(Content);
+            base.LoadContent(Content); //Fuente
             if (font == (null))
             {
                 font = content.Load<SpriteFont>("Font1");
@@ -28,7 +28,7 @@ namespace BAO.Clases
             base.UnloadContent();
         }
 
-        public override void Update(GameTime gameTime)
+        public override void Update(GameTime gameTime) //Lo que pasa al presionar
         {
             keyState = Keyboard.GetState();
             if (keyState.IsKeyDown(Keys.Enter))
@@ -37,7 +37,7 @@ namespace BAO.Clases
             }
         }
 
-        public override void Draw(SpriteBatch spriteBatch)
+        public override void Draw(SpriteBatch spriteBatch) //Esto es lo que dice la tittle en el string
         {
             spriteBatch.DrawString(font, "Title Screen", new Vector2(100, 100), Color.AliceBlue);
         }
