@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using BAO.Clases;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
@@ -33,7 +34,12 @@ namespace BAO
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
+            ScreenManager.Instance.Initialize();
+
+            ScreenManager.Instance.Dimensions = new Vector2(800,600);
+            graphics.PreferredBackBufferWidth = (int) ScreenManager.Instance.Dimensions.X;
+            graphics.PreferredBackBufferHeight = (int) ScreenManager.Instance.Dimensions.Y;
+            graphics.ApplyChanges();
 
             base.Initialize();
         }
@@ -47,6 +53,8 @@ namespace BAO
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            ScreenManager.Instance.LoadContent(Content);
+
             // TODO: use this.Content to load your game content here
         }
 
@@ -57,6 +65,9 @@ namespace BAO
         protected override void UnloadContent()
         {
             // TODO: Unload any non ContentManager content here
+
+          
+
         }
 
         /// <summary>
@@ -69,6 +80,9 @@ namespace BAO
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
+
+            ScreenManager.Instance.Update(gameTime);
+            base.Update(gameTime);
 
             // TODO: Add your update logic here
 
@@ -84,7 +98,9 @@ namespace BAO
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
-
+            spriteBatch.Begin();
+            ScreenManager.Instance.Draw(spriteBatch);
+            spriteBatch.End();
             base.Draw(gameTime);
         }
     }
