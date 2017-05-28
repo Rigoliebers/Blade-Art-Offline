@@ -13,13 +13,14 @@ namespace BAO.Clases
     {
         private KeyboardState keyState;
         private SpriteFont font;
+        private FadeAnimation fade;
 
         public override void LoadContent(ContentManager Content)
         {
             base.LoadContent(Content); //Fuente
             if (font == (null))
             {
-                font = content.Load<SpriteFont>("Font1");
+                font = content.Load<SpriteFont>("Agency");
             }
         }
 
@@ -39,7 +40,14 @@ namespace BAO.Clases
 
         public override void Draw(SpriteBatch spriteBatch) //Esto es lo que dice la tittle en el string
         {
-            spriteBatch.DrawString(font, "Title Screen", new Vector2(100, 100), Color.AliceBlue);
+
+            DrawImage draw = new DrawImage();
+            draw.Draw(content ,spriteBatch, "TittleScreen", Vector2.Zero, Color.White);
+            
+            /*spriteBatch.Draw(image, sourceRectangle, Color.White)*/
+            ;
+            spriteBatch.DrawString(font, "Press Start", new Vector2(450, 600), Color.White);
+            
         }
     }
 }

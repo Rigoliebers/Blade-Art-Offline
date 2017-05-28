@@ -39,7 +39,9 @@ namespace BAO.Clases
 
         public override void Draw(SpriteBatch spriteBatch) //Esto es lo que dice la tittle en el string
         {
-            spriteBatch.DrawString(font, "SplashScreen", new Vector2(100,100), Color.AliceBlue);
+            DrawImage draw = new DrawImage();
+            draw.Draw(content, spriteBatch, "Splash", Vector2.Zero, Color.White);
+            //spriteBatch.DrawString(font, "SplashScreen", new Vector2(100,100), Color.AliceBlue);
         }
     }
 }

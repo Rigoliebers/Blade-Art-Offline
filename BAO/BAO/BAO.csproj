@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Animation.cs" />
+    <Compile Include="Clases\DrawImage.cs" />
     <Compile Include="Clases\FadeAnimation.cs" />
     <Compile Include="Clases\GameScreen.cs" />
     <Compile Include="Clases\ScreenManager.cs" />
