@@ -80,6 +80,7 @@ namespace BAO.Clases
                 origin = new Vector2(sourceRectangle.Width / 2, sourceRectangle.Height / 2);
                 spriteBatch.Draw(image, position + origin, sourceRectangle, Color.White * alpha, rotation, origin, scale,
                     SpriteEffects.None, 0.0f);
+
             }
 
             if (text != String.Empty)

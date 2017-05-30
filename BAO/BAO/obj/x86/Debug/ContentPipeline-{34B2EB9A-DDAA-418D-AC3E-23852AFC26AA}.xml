@@ -2,13 +2,22 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
+      <Source>Menufont.spritefont</Source>
+      <Name>Menufont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Menufont.xnb</Output>
+      <Time>2017-05-29T16:44:38.1415498-07:00</Time>
+    </Item>
+    <Item>
       <Source>Font1.spritefont</Source>
       <Name>Font1</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Font1.xnb</Output>
-      <Time>2017-05-27T11:35:47.9141004-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Font1.xnb</Output>
+      <Time>2017-05-29T16:21:05.0797075-07:00</Time>
     </Item>
     <Item>
       <Source>pixel.png</Source>
@@ -29,15 +38,6 @@
       <Time>2017-05-28T08:43:36.3294356-07:00</Time>
     </Item>
     <Item>
-      <Source>Agency.spritefont</Source>
-      <Name>Agency</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Agency.xnb</Output>
-      <Time>2017-05-28T09:44:12.0362869-07:00</Time>
-    </Item>
-    <Item>
       <Source>Splash.jpg</Source>
       <Name>Splash</Name>
       <Importer>TextureImporter</Importer>
@@ -45,6 +45,51 @@
       <Options>None</Options>
       <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Splash.xnb</Output>
       <Time>2017-05-28T10:25:31.2604981-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Agency24.spritefont</Source>
+      <Name>Agency24</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Agency24.xnb</Output>
+      <Time>2017-05-29T18:01:15.4777214-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Libera Me From Hell.wav</Source>
+      <Name>Libera Me From Hell</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Libera Me From Hell.xnb</Output>
+      <Time>2017-05-29T19:38:21.2921702-07:00</Time>
+    </Item>
+    <Item>
+      <Source>misc_menu_2.wav</Source>
+      <Name>misc_menu_2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\misc_menu_2.xnb</Output>
+      <Time>2017-05-29T19:45:52.1398016-07:00</Time>
+    </Item>
+    <Item>
+      <Source>misc_menu_4.wav</Source>
+      <Name>misc_menu_4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\misc_menu_4.xnb</Output>
+      <Time>2017-05-29T19:54:31.322257-07:00</Time>
+    </Item>
+    <Item>
+      <Source>positive.wav</Source>
+      <Name>positive</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\positive.xnb</Output>
+      <Time>2017-05-29T19:59:00.4267573-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

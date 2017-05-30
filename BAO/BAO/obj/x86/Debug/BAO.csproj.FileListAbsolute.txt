@@ -10,12 +10,17 @@ c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\M
 c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
 c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
 c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
-c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\BAO.csprojResolveAssemblyReference.cache
 c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\BAO.exe
 c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\BAO.pdb
-c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Font1.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pixel.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\TittleScreen.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Agency.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Splash.xnb
+C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Menufont.xnb
+C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Font1.xnb
+C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Agency24.xnb
+C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\BAO.csprojResolveAssemblyReference.cache
+C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Libera Me From Hell.xnb
+C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\misc_menu_2.xnb
+C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\misc_menu_4.xnb
+C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\positive.xnb
