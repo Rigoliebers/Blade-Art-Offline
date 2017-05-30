@@ -11,7 +11,7 @@ namespace BAO.Clases
     public class Entity
     {
         protected int health;
-        protected SpriteSheetAnimation moveAnimation;
+        protected SpriteAnimation moveAnimation;
         protected float moveSpeed;
         protected ContentManager content;
         protected FileManager fileManager;
@@ -19,7 +19,7 @@ namespace BAO.Clases
         protected Texture2D image;
         protected Vector2 position;
 
-        public virtual void LoadContent(ContentManager content, InputManager input) {
+        public virtual void LoadContent(ContentManager content, InputManager input, SpriteAnimation sprite, Vector2 pos) {
             this.content = new ContentManager(content.ServiceProvider, "Content");
             attributes = new List<List<string>>();
             contents = new List<List<string>>();
@@ -32,7 +32,18 @@ namespace BAO.Clases
         public virtual void Update(GameTime gameTime, InputManager inputManag) {
 
         }
-        public virtual void Draw(SpriteBatch spriteBatch) {
+
+        public virtual Vector2 Update(GameTime gameTime, InputManager inputManag, Vector2 pos)
+        {
+            Vector2 currentPos = new Vector2();
+            return currentPos;
+        }
+
+        public virtual void Update(GameTime gameTime, Vector2 pos)
+        {
+            
+        }
+        public virtual void Draw(SpriteBatch spriteBatch, SpriteAnimation sprite, Vector2 pos) {
 
         }
         

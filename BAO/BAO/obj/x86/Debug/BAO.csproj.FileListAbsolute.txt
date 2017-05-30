@@ -19,7 +19,6 @@ C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\C
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Menufont.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Font1.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Agency24.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\BAO.csprojResolveAssemblyReference.cache
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Libera Me From Hell.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\misc_menu_2.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\misc_menu_4.xnb
@@ -51,3 +50,5 @@ C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\obj\x86\Debug\Microsoft.Xn
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\obj\x86\Debug\BAO.exe
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\obj\x86\Debug\BAO.pdb
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\MC.xnb
+C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\MC.xnb
+C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\BAO.csprojResolveAssemblyReference.cache

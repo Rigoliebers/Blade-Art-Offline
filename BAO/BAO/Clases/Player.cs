@@ -11,13 +11,16 @@ namespace BAO.Clases
 {
     public class Player : Entity
     {
-        
-        public override void LoadContent(ContentManager content, InputManager input)
+
+        private Vector2 anotherpos;
+
+        public override void LoadContent(ContentManager content, InputManager input, SpriteAnimation sprite,Vector2 pos)
         {
-            base.LoadContent(content, input);
+            base.LoadContent(content, input, sprite, pos);
             fileManager = new FileManager();
-            moveAnimation = new SpriteSheetAnimation();
             Vector2 tempFrames = Vector2.Zero;
+            moveAnimation = sprite;
+            this.anotherpos = pos;
 
             fileManager.LoadContent("Load/Player.cme", attributes, contents);
             for (int i = 0; i < attributes.Count; i++)
@@ -45,38 +48,40 @@ namespace BAO.Clases
                     }
                 } 
             }
-            moveAnimation.LoadContent(content, image, "", position);
         }
 
         public override void UnloadContent()
         {
             base.UnloadContent();
-            moveAnimation.UnloadContent();
         }
 
-        public override void Update(GameTime gameTime, InputManager inputManag)
+        public override Vector2 Update(GameTime gameTime, InputManager inputManag, Vector2 pos)
         {
-            moveAnimation.IsActive = true;
+            moveAnimation.Active = true;
+            inputManag.Update();
             if (inputManag.KeyDown(Keys.Right, Keys.D))
             {
-                moveAnimation.CurrentFrame = new Vector2(moveAnimation.CurrentFrame.X, 2);
+                anotherpos.X += 2;
+                moveAnimation.Position = new Vector2(anotherpos.X, anotherpos.Y);
             }
             else
             {
                 if (inputManag.KeyDown(Keys.Left, Keys.A))
                 {
-                    moveAnimation.CurrentFrame = new Vector2(moveAnimation.CurrentFrame.X, 1);
+                    anotherpos.X -= 2;
+                    moveAnimation.Position = new Vector2(anotherpos.X, anotherpos.Y);
                 }
                 else
                 {
-                    moveAnimation.IsActive = false;
+                    moveAnimation. = false;
                 }
             }
             moveAnimation.Update(gameTime);
+            return anotherpos;
         }
-        public override void Draw(SpriteBatch spriteBatch)
+        public override void Draw(SpriteBatch spriteBatch, SpriteAnimation sprite, Vector2 pos)
         {
-            moveAnimation.Draw(spriteBatch);
+            sprite.Draw(spriteBatch);
         }
     }
 }

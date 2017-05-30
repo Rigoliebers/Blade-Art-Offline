@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace BAO.Clases
 {
-    class SpriteAnimation
+    public class SpriteAnimation
     {
         Texture2D spriteStrip;
         float scale;
@@ -24,6 +24,7 @@ namespace BAO.Clases
         public bool Active;
         public bool Looping;
         public Vector2 Position;
+        public Vector2 currentPosition;
 
         public void Initialize(Texture2D texture, Vector2 position, int frameWidth, int frameHeight, int frameCount, int frametime, Color color, float scale, bool looping)
         {
@@ -33,6 +34,7 @@ namespace BAO.Clases
             this.frameCount = frameCount;
             this.frameTime = frametime;
             this.scale = scale;
+            this.currentPosition = position;
 
             Looping = looping;
             Position = position;
