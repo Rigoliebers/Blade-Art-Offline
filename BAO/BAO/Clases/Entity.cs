@@ -11,7 +11,7 @@ namespace BAO.Clases
     public class Entity
     {
         protected int health;
-        protected Animation moveAnimation;
+        protected SpriteSheetAnimation moveAnimation;
         protected float moveSpeed;
         protected ContentManager content;
         protected FileManager fileManager;
@@ -29,7 +29,7 @@ namespace BAO.Clases
             content.Unload();
         }
 
-        public virtual void Update(GameTime gameTime) {
+        public virtual void Update(GameTime gameTime, InputManager inputManag) {
 
         }
         public virtual void Draw(SpriteBatch spriteBatch) {

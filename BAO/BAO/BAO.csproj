@@ -86,8 +86,10 @@
     <Compile Include="Clases\PulsatingButton.cs" />
     <Compile Include="Clases\ScreenManager.cs" />
     <Compile Include="Clases\SplashScreen.cs" />
+    <Compile Include="Clases\SpriteAnimation.cs" />
     <Compile Include="Clases\SpriteSheetAnimation.cs" />
     <Compile Include="Clases\TittleScreen.cs" />
+    <Compile Include="Clases\XnaFunctionscs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
@@ -97,7 +99,6 @@
     <Content Include="GameThumbnail.png">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </Content>
-    <Content Include="MC.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BAOContent\BAOContent.contentproj">

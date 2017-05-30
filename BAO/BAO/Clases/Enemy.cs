@@ -20,9 +20,9 @@ namespace BAO.Clases
             base.UnloadContent();
         }
 
-        public override void Update(GameTime gameTime)
+        public override void Update(GameTime gameTime, InputManager inputManag)
         {
-            base.Update(gameTime);
+          
         }
         public override void Draw(SpriteBatch spriteBatch)
         {

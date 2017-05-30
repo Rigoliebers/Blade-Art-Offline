@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 namespace BAO.Clases
 {
-    class SpriteSheetAnimation : Animation
+    public class SpriteSheetAnimation : Animation
     {
         int frameCounter;
         int switchFrame;
@@ -20,6 +20,7 @@ namespace BAO.Clases
 
         public Vector2 CurrentFrame {
             set { currentFrame = value; }
+            get { return currentFrame; }
         }
 
         public int FrameWidth {
@@ -37,6 +38,7 @@ namespace BAO.Clases
             switchFrame = 100; //lolwhat y tho
             frames = new Vector2(3, 4);
             currentFrame = new Vector2(0, 0);  //y controla las filas 
+            sourceRectangle = new Rectangle((int)currentFrame.X * FrameWidth, (int)currentFrame.Y * FrameHeight, FrameWidth, FrameHeight);
         }
 
         public override void UnloadContent()
@@ -62,6 +64,7 @@ namespace BAO.Clases
             else
             {
                 frameCounter = 0;
+                currentFrame.X = 1;
             }
             sourceRectangle = new Rectangle((int)currentFrame.X * FrameWidth, (int)currentFrame.Y * FrameHeight, FrameWidth, FrameHeight);
         }

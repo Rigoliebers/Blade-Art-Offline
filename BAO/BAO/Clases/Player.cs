@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -10,6 +11,7 @@ namespace BAO.Clases
 {
     public class Player : Entity
     {
+        
         public override void LoadContent(ContentManager content, InputManager input)
         {
             base.LoadContent(content, input);
@@ -52,8 +54,24 @@ namespace BAO.Clases
             moveAnimation.UnloadContent();
         }
 
-        public override void Update(GameTime gameTime)
+        public override void Update(GameTime gameTime, InputManager inputManag)
         {
+            moveAnimation.IsActive = true;
+            if (inputManag.KeyDown(Keys.Right, Keys.D))
+            {
+                moveAnimation.CurrentFrame = new Vector2(moveAnimation.CurrentFrame.X, 2);
+            }
+            else
+            {
+                if (inputManag.KeyDown(Keys.Left, Keys.A))
+                {
+                    moveAnimation.CurrentFrame = new Vector2(moveAnimation.CurrentFrame.X, 1);
+                }
+                else
+                {
+                    moveAnimation.IsActive = false;
+                }
+            }
             moveAnimation.Update(gameTime);
         }
         public override void Draw(SpriteBatch spriteBatch)
