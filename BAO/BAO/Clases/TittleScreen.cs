@@ -94,7 +94,24 @@ namespace BAO.Clases
                 }
                 else
                 {
-                    
+                    switch (states)
+                    {
+                        case 2:
+
+                            break;
+
+                        case 3:
+
+                            break;
+
+                        case 4:
+                            ScreenManager.Instance.AddScreen(new OptionsScreen(), 10.0f);
+                            break;
+
+                        case 5:
+                            Environment.Exit(1);
+                            break;
+                    }
                 }
             }
 
@@ -201,7 +218,7 @@ namespace BAO.Clases
                     DrawButtons(spriteBatch);
                     break;
 
-                case 4: //MenuSelect btn 1
+                case 4: //Options
                     btn3.FadeSpeed = 5.0f;
                     btn1.IsAnimated = false;
                     btn2.IsAnimated = false;

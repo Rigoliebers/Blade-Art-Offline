@@ -37,11 +37,12 @@ namespace BAO.Clases
         #endregion
 
 
-        public void AddScreen(GameScreen screen)
+        public void AddScreen(GameScreen screen, float fadeSP = 2.0f)
         {
             transition = true;
             fade.IsActive = true;
             fade.Alpha = 0.0f;
+            fade.FadeSpeed = fadeSP;
             fade.ActivateValue = 1.0f;
             newScreen = screen;
         }
