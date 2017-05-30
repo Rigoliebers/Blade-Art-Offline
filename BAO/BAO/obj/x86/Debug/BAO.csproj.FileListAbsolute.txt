@@ -24,3 +24,30 @@ C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\C
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\misc_menu_2.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\misc_menu_4.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\positive.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Menufont.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Font1.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Agency24.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pixel.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\TittleScreen.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Splash.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Libera Me From Hell.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\misc_menu_2.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\misc_menu_4.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\positive.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\BAO.exe
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\BAO.pdb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.dll
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.dll
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.dll
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.xml
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Game.xml
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\obj\x86\Debug\BAO.csprojResolveAssemblyReference.cache
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\obj\x86\Debug\BAO.exe
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\obj\x86\Debug\BAO.pdb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\MC.xnb

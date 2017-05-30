@@ -49,6 +49,7 @@ namespace BAO.Clases
 
 
 
+
         public static ScreenManager Instance
         {
             get

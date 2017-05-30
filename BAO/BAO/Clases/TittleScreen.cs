@@ -66,7 +66,7 @@ namespace BAO.Clases
             base.UnloadContent();
         }
 
-        public override void Update(GameTime gameTime) //Lo que pasa al presionar
+        public override void Update(GameTime gameTime) //Lo que pasa al presionar esto abarca del 14 al 21 ffs orz
         {
             keyState = Keyboard.GetState();
             //currentTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
@@ -84,8 +84,8 @@ namespace BAO.Clases
             else
                 soundEngineInstance.Resume();
 
-
-            if (keyState.IsKeyDown(Keys.Enter))
+            inputManager.Update();
+            if (inputManager.KeyPressed(Keys.Enter))
             {
                 if (states == 0)
                 {
@@ -97,7 +97,7 @@ namespace BAO.Clases
                     switch (states)
                     {
                         case 2:
-
+                            ScreenManager.Instance.AddScreen(new GameplayScreen(), 10.0f);
                             break;
 
                         case 3:

@@ -30,8 +30,10 @@ namespace BAO.Clases
 
         public override void Update(GameTime gameTime) //Lo que pasa al presionar
         {
-            keyState = Keyboard.GetState();
-            if (keyState.IsKeyDown(Keys.Z))
+
+            //keyState = Keyboard.GetState();
+            inputManager.Update();
+            if (inputManager.KeyPressed(Keys.Z))
             {
                 ScreenManager.Instance.AddScreen(new TittleScreen());
             }
