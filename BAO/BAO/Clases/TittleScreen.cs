@@ -97,7 +97,7 @@ namespace BAO.Clases
                     switch (states)
                     {
                         case 2:
-
+                            ScreenManager.Instance.AddScreen(new GameplayScreen(), 10.0f);
                             break;
 
                         case 3:

@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace BAO.Clases
 {
-    class Animation
+    public class Animation
     {
         protected Texture2D image;
         protected string text;

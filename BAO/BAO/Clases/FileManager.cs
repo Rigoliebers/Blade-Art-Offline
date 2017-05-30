@@ -27,7 +27,7 @@ namespace BAO.Clases
                     if (line.Contains("Load="))
                     {
                         tempAttribute = new List<string>();
-                        line.Remove(0, line.IndexOf("=") + 1);
+                        line = line.Remove(0, line.IndexOf("=") + 1);
                         type = LoadType.Attributes;
                     }
                     else
@@ -54,7 +54,7 @@ namespace BAO.Clases
                     if (type == LoadType.Contents && tempContents.Count > 0)
                     {
                         contents.Add(tempContents);
-                        attributes.Add(tempContents);
+                        attributes.Add(tempAttribute);
                     }
                 }
             }
@@ -113,7 +113,7 @@ namespace BAO.Clases
                         if (type == LoadType.Contents && tempContents.Count > 0)
                         {
                             contents.Add(tempContents);
-                            attributes.Add(tempContents);
+                            attributes.Add(tempAttribute);
                         }
                     }
                 }
