@@ -11,3 +11,5 @@ Content\misc_menu_4.xnb
 Content\positive.xnb
 Content\MC2.xnb
 Content\MC0.xnb
+Content\pStandR.xnb
+Content\pStandL.xnb

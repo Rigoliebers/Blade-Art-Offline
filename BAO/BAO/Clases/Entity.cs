@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
@@ -14,12 +15,19 @@ namespace BAO.Clases
         protected float moveSpeed;
         protected int damage;
         protected SpriteAnimation sprite;
+        protected Rectangle colissionBox;
 
         protected ContentManager content;
         protected FileManager fileManager;
         protected List<List<string>> attributes, contents;
         protected Texture2D image;
         protected Vector2 position;
+
+        protected Rectangle ColissionBox
+        {
+            get { return colissionBox; }
+            set { colissionBox = value; }
+        }
 
         public virtual void LoadContent(ContentManager content, InputManager input, Vector2 pos) {
             this.content = new ContentManager(content.ServiceProvider, "Content");

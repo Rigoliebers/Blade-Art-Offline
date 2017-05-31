@@ -36,7 +36,7 @@ namespace BAO.Clases
              base.LoadContent(content);
             player = new Player();
             player.LoadContent(content, inputManager, spritePos);
-            player.playerStand.Active = true;
+            player.playerR.Active = true;
         }
 
         public override void UnloadContent()
@@ -47,7 +47,7 @@ namespace BAO.Clases
 
         public override void Update(GameTime gameTime)
         {
-            player.playerStand.Update(gameTime);
+            player.playerStandR.Update(gameTime);
             inputManager.Update();
             //player.Update(gameTime, inputManager,spritePos);
             spritePos = player.Update(gameTime, inputManager, spritePos);

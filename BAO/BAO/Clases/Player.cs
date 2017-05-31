@@ -12,35 +12,45 @@ namespace BAO.Clases
     public class Player : Entity
     {
 
-        
+        private bool isLeft;
+
         public SpriteAnimation playerL;
         public SpriteAnimation playerR;
-        public SpriteAnimation playerStand;
+        public SpriteAnimation playerStandR;
+        public SpriteAnimation playerStandL;
+        public SpriteAnimation playerWalkR;
 
         private Texture2D moveRight;
         private Texture2D moveLeft;
-        private Texture2D stand;
+        private Texture2D standL;
+        private Texture2D standR;
+        private Texture2D walkR;
         private int state;
 
         public override void LoadContent(ContentManager content, InputManager input, Vector2 pos)
         {
             moveRight = content.Load<Texture2D>("MC");
             moveLeft = content.Load<Texture2D>("MC2");
-            stand = content.Load<Texture2D>("MC0");
+            standL = content.Load<Texture2D>("pStandL");
+            standR = content.Load<Texture2D>("pStandR");
+            walkR = content.Load<Texture2D>("pWalkR");
             this.playerL = new SpriteAnimation();
             this.playerR = new SpriteAnimation();
-            this.playerStand = new SpriteAnimation();
+            this.playerStandR = new SpriteAnimation();
+            this.playerStandL = new SpriteAnimation();
             base.LoadContent(content, input, pos);
             this.position = pos;
             health = 100;
             damage = 10;
             moveSpeed = 5;
+            isLeft = true;
 
-            playerStand.Initialize(stand, position, 100, 100, 1, 95, Color.White, 1.0f, true);
+            playerStandR.Initialize(standR, position, 32, 50, 2, 400, Color.White, 2.0f, true);
+            playerStandL.Initialize(standL, position, 32, 50, 2, 400, Color.White, 2.0f, true);
             playerL.Initialize(moveRight, position, 32, 50, 4, 95, Color.White, 2.0f, true);
             playerR.Initialize(moveLeft, position, 32, 50, 4, 95, Color.White, 2.0f, true);
 
-            sprite = playerStand;
+            sprite = playerStandR;
 
         }
 
@@ -55,6 +65,7 @@ namespace BAO.Clases
             inputManag.Update();
             if (inputManag.KeyDown(Keys.Right, Keys.D))
             {
+                isLeft = false;
                 sprite = playerL;
                 position.X += moveSpeed;
                 sprite.Active = true;
@@ -64,6 +75,7 @@ namespace BAO.Clases
             {
                 if (inputManag.KeyDown(Keys.Left, Keys.A))
                 {
+                    isLeft = true;
                     sprite = playerR;
                     position.X -= moveSpeed;
                     sprite.Active = true;
@@ -71,7 +83,17 @@ namespace BAO.Clases
                 }
                 else
                 {
-                    sprite = playerStand;
+                    if (isLeft)
+                    {
+                        sprite = playerStandL;
+                    }
+                    else
+                    {
+                        sprite = playerStandR;
+                    }
+
+                    
+                    sprite.Reverse = true;
                     sprite.Position = new Vector2(position.X, position.Y);
                     sprite.Active = true;
                 }
