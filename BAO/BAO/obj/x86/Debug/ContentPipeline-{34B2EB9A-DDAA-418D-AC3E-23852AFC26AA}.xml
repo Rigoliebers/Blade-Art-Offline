@@ -136,6 +136,15 @@
       <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pStandL.xnb</Output>
       <Time>2017-05-30T19:29:53.7915885-07:00</Time>
     </Item>
+    <Item>
+      <Source>pWalkR.png</Source>
+      <Name>pWalkR</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pWalkR.xnb</Output>
+      <Time>2017-05-30T19:48:23.9190668-07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{34B2EB9A-DDAA-418D-AC3E-23852AFC26AA}</ContentProjectGUID>

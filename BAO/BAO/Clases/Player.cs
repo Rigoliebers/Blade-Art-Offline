@@ -24,16 +24,14 @@ namespace BAO.Clases
         private Texture2D moveLeft;
         private Texture2D standL;
         private Texture2D standR;
-        private Texture2D walkR;
         private int state;
 
         public override void LoadContent(ContentManager content, InputManager input, Vector2 pos)
         {
-            moveRight = content.Load<Texture2D>("MC");
+            moveRight = content.Load<Texture2D>("pWalkR");
             moveLeft = content.Load<Texture2D>("MC2");
             standL = content.Load<Texture2D>("pStandL");
             standR = content.Load<Texture2D>("pStandR");
-            walkR = content.Load<Texture2D>("pWalkR");
             this.playerL = new SpriteAnimation();
             this.playerR = new SpriteAnimation();
             this.playerStandR = new SpriteAnimation();
@@ -47,8 +45,8 @@ namespace BAO.Clases
 
             playerStandR.Initialize(standR, position, 32, 50, 2, 400, Color.White, 2.0f, true);
             playerStandL.Initialize(standL, position, 32, 50, 2, 400, Color.White, 2.0f, true);
-            playerL.Initialize(moveRight, position, 32, 50, 4, 95, Color.White, 2.0f, true);
-            playerR.Initialize(moveLeft, position, 32, 50, 4, 95, Color.White, 2.0f, true);
+            playerL.Initialize(moveRight, position, 32, 50, 8, 200, Color.White, 2.0f, true);
+            playerR.Initialize(moveLeft, position, 32, 50, 8, 200, Color.White, 2.0f, true);
 
             sprite = playerStandR;
 
