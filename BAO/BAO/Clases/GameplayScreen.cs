@@ -16,37 +16,27 @@ namespace BAO.Clases
         XnaFunctionscs fun = new XnaFunctionscs();
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        SpriteAnimation playerAnimation;
         Vector2 spritePos;
         Player player;
-        List<Rectangle> listaObs;
-        Texture2D texturaObs;
-
-        public GameplayScreen (){
-            //texturaObs = new Texture2D(graphics.GraphicsDevice, 1, 1);
-            }
         public override void LoadContent(ContentManager content)
         {
             //GraphicsDevice obj = fun.GraphicsDevice;
-            playerAnimation = new SpriteAnimation();
             //spriteBatch = new SpriteBatch(obj);
 
             // TODO: use this.Content to load your game content here
-            Texture2D playerTexture = content.Load<Texture2D>("MC");
-            listaObs = new List<Rectangle>();
-            listaObs.Add(new Rectangle(300, 400, 400, 20));
-            texturaObs = content.Load<Texture2D>("pisitoo");
 
 
-            spritePos = new Vector2(500, 500
-                );
 
-            playerAnimation.Initialize(playerTexture, spritePos, 32, 50, 4, 95, Color.White, 1f, true);
+
+                   
+
+            spritePos = new Vector2(500, 500);
+
            //playerAnimation = new Animation();
              base.LoadContent(content);
-            playerAnimation.Active = true;
             player = new Player();
-            player.LoadContent(content, inputManager, playerAnimation, spritePos);
+            player.LoadContent(content, inputManager, spritePos);
+            player.playerR.Active = true;
         }
 
         public override void UnloadContent()
@@ -57,9 +47,7 @@ namespace BAO.Clases
 
         public override void Update(GameTime gameTime)
         {
-            int posx = (int)spritePos.X;
-            int posy = (int)spritePos.Y;
-            playerAnimation.Update(gameTime);
+            player.playerStandR.Update(gameTime);
             inputManager.Update();
             //player.Update(gameTime, inputManager,spritePos);
             spritePos = player.Update(gameTime, inputManager, spritePos);
@@ -67,17 +55,11 @@ namespace BAO.Clases
         }
         public override void Draw(SpriteBatch spriteBatch)
         {
-
             //fun.GraphicsDevice.Clear(Color.CornflowerBlue);
             //spriteBatch.Begin();
             //spriteBatch.End();
-            foreach (Rectangle item in listaObs)
-            {
-                spriteBatch.Draw(texturaObs, item, Color.White);
-            }
-            player.Draw(spriteBatch, playerAnimation, spritePos);
             base.Draw(spriteBatch);
-            
+            player.Draw(spriteBatch, spritePos);
         }
     }
 }

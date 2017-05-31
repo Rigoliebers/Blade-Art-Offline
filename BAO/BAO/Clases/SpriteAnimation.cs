@@ -10,6 +10,7 @@ namespace BAO.Clases
 {
     public class SpriteAnimation
     {
+        private bool activator;
         Texture2D spriteStrip;
         float scale;
         int elapsedTime;
@@ -25,6 +26,7 @@ namespace BAO.Clases
         public bool Looping;
         public Vector2 Position;
         public Vector2 currentPosition;
+        public bool Reverse;
 
         public void Initialize(Texture2D texture, Vector2 position, int frameWidth, int frameHeight, int frameCount, int frametime, Color color, float scale, bool looping)
         {
@@ -43,6 +45,7 @@ namespace BAO.Clases
             elapsedTime = 0;
             currentFrame = 0;
 
+            activator = true;
             Active = true;
         }
 
@@ -54,13 +57,36 @@ namespace BAO.Clases
 
             if (elapsedTime > frameTime)
             {
-                currentFrame++;
-                if (currentFrame == frameCount)
+                if (Reverse)
                 {
-                    currentFrame = 0;
-                    if (!Looping) Active = false;
+                    if ((currentFrame < frameCount) && (activator == true))
+                    {
+                        activator = true;
+                        currentFrame++;
+                    }
+                    else if (currentFrame > 0)
+                    {
+                        activator = false;
+                        currentFrame--;
+                        if (currentFrame == 0)
+                        {
+                            activator = true;
+                        }
+                    }
+                    elapsedTime = 0;
                 }
-                elapsedTime = 0;
+                else
+                {
+                    currentFrame++;
+                    if (currentFrame == frameCount)
+                    {
+                        if (!Looping) Active = false;
+                        currentFrame = 0;
+                    }
+                    elapsedTime = 0;
+                }
+
+
             }
 
             sourceRect = new Rectangle(currentFrame * FrameWidth, 0, FrameWidth, FrameHeight);

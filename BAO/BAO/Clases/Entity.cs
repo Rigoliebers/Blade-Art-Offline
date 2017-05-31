@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
@@ -11,8 +12,11 @@ namespace BAO.Clases
     public class Entity
     {
         protected int health;
-        protected SpriteAnimation moveAnimation;
         protected float moveSpeed;
+        protected int damage;
+        protected SpriteAnimation sprite;
+        protected Rectangle colissionBox;
+
         protected ContentManager content;
         protected FileManager fileManager;
         protected List<List<string>> attributes, contents;
@@ -21,10 +25,17 @@ namespace BAO.Clases
         protected Rectangle collictionBox;
 
 
-        public virtual void LoadContent(ContentManager content, InputManager input, SpriteAnimation sprite, Vector2 pos) {
+        protected Rectangle ColissionBox
+        {
+            get { return colissionBox; }
+            set { colissionBox = value; }
+        }
+
+        public virtual void LoadContent(ContentManager content, InputManager input, Vector2 pos) {
             this.content = new ContentManager(content.ServiceProvider, "Content");
-            attributes = new List<List<string>>();
-            contents = new List<List<string>>();
+
+
+
         }
 
         public virtual void UnloadContent() {
@@ -45,7 +56,7 @@ namespace BAO.Clases
         {
             
         }
-        public virtual void Draw(SpriteBatch spriteBatch, SpriteAnimation sprite, Vector2 pos) {
+        public virtual void Draw(SpriteBatch spriteBatch, Vector2 pos) {
 
         }
         
