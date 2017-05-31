@@ -22,10 +22,10 @@ namespace BAO.Clases
         protected List<List<string>> attributes, contents;
         protected Texture2D image;
         protected Vector2 position;
-        protected Rectangle collictionBox;
+        public  Rectangle collictionBox;
 
 
-        protected Rectangle ColissionBox
+        public Rectangle ColissionBox
         {
             get { return colissionBox; }
             set { colissionBox = value; }

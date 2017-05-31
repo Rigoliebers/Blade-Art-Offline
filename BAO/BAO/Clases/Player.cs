@@ -19,7 +19,6 @@ namespace BAO.Clases
         public SpriteAnimation playerStandR;
         public SpriteAnimation playerStandL;
         public SpriteAnimation playerWalkR;
-
         private Texture2D moveRight;
         private Texture2D moveLeft;
         private Texture2D standL;
@@ -42,7 +41,6 @@ namespace BAO.Clases
             damage = 10;
             moveSpeed = 5;
             isLeft = true;
-
             playerStandR.Initialize(standR, position, 32, 50, 2, 400, Color.White, 2.0f, true);
             playerStandL.Initialize(standL, position, 32, 50, 2, 400, Color.White, 2.0f, true);
             playerL.Initialize(moveRight, position, 32, 50, 8, 200, Color.White, 2.0f, true);
@@ -57,45 +55,47 @@ namespace BAO.Clases
             base.UnloadContent();
         }
 
-        public override Vector2 Update(GameTime gameTime, InputManager inputManag, Vector2 pos)
+        public override Vector2 Update(GameTime gameTime, InputManager inputManag, Vector2 position)
         {
+            this.colissionBox = new Rectangle((int)sprite.Position.X, (int)sprite.Position.Y, 32, 50);
             sprite.Active = true;
             inputManag.Update();
-            if (inputManag.KeyDown(Keys.Right, Keys.D))
-            {
-                isLeft = false;
-                sprite = playerL;
-                position.X += moveSpeed;
-                sprite.Active = true;
-                sprite.Position = new Vector2(position.X, position.Y);
-            }
-            else
-            {
-                if (inputManag.KeyDown(Keys.Left, Keys.A))
+                if (inputManag.KeyDown(Keys.Right, Keys.D))
                 {
-                    isLeft = true;
-                    sprite = playerR;
-                    position.X -= moveSpeed;
+                    isLeft = false;
+                    sprite = playerL;
+                    position.X += moveSpeed;
                     sprite.Active = true;
                     sprite.Position = new Vector2(position.X, position.Y);
                 }
                 else
                 {
-                    if (isLeft)
+                    if (inputManag.KeyDown(Keys.Left, Keys.A))
                     {
-                        sprite = playerStandL;
+                        isLeft = true;
+                        sprite = playerR;
+                        position.X -= moveSpeed;
+                        sprite.Active = true;
+                        sprite.Position = new Vector2(position.X, position.Y);
                     }
                     else
                     {
-                        sprite = playerStandR;
-                    }
+                        if (isLeft)
+                        {
+                            sprite = playerStandL;
+                        }
+                        else
+                        {
+                            sprite = playerStandR;
+                        }
 
-                    
-                    sprite.Reverse = true;
-                    sprite.Position = new Vector2(position.X, position.Y);
-                    sprite.Active = true;
+
+                        sprite.Reverse = true;
+                        sprite.Position = new Vector2(position.X, position.Y);
+                        sprite.Active = true;
+                    }
                 }
-            }
+            
             sprite.Update(gameTime);
             return position;
         }

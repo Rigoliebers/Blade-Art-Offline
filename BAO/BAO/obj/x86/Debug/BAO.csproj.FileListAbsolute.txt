@@ -57,3 +57,9 @@ C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\C
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pStandR.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pStandL.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pWalkR.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\MC2.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\MC0.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pStandR.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pStandL.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pWalkR.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pisitoo.xnb
