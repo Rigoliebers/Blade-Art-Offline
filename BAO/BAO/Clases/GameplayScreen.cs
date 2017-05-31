@@ -16,32 +16,27 @@ namespace BAO.Clases
         XnaFunctionscs fun = new XnaFunctionscs();
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        SpriteAnimation playerAnimation;
         Vector2 spritePos;
         Player player;
         public override void LoadContent(ContentManager content)
         {
             //GraphicsDevice obj = fun.GraphicsDevice;
-            playerAnimation = new SpriteAnimation();
             //spriteBatch = new SpriteBatch(obj);
 
             // TODO: use this.Content to load your game content here
 
-            Texture2D playerTexture = content.Load<Texture2D>("MC");
 
 
 
                    
 
-            spritePos = new Vector2(500, 500
-                );
+            spritePos = new Vector2(500, 500);
 
-            playerAnimation.Initialize(playerTexture, spritePos, 32, 50, 4, 95, Color.White, 1f, true);
            //playerAnimation = new Animation();
              base.LoadContent(content);
-            playerAnimation.Active = true;
             player = new Player();
-            player.LoadContent(content, inputManager, playerAnimation, spritePos);
+            player.LoadContent(content, inputManager, spritePos);
+            player.playerStand.Active = true;
         }
 
         public override void UnloadContent()
@@ -52,7 +47,7 @@ namespace BAO.Clases
 
         public override void Update(GameTime gameTime)
         {
-            playerAnimation.Update(gameTime);
+            player.playerStand.Update(gameTime);
             inputManager.Update();
             //player.Update(gameTime, inputManager,spritePos);
             spritePos = player.Update(gameTime, inputManager, spritePos);
@@ -64,7 +59,7 @@ namespace BAO.Clases
             //spriteBatch.Begin();
             //spriteBatch.End();
             base.Draw(spriteBatch);
-            player.Draw(spriteBatch, playerAnimation, spritePos);
+            player.Draw(spriteBatch, spritePos);
         }
     }
 }

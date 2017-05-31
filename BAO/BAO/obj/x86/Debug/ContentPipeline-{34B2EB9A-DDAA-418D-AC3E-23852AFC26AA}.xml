@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\MC.xnb</Output>
-      <Time>2017-05-30T08:00:51.175027-07:00</Time>
+      <Time>2017-05-30T17:33:35.8165127-07:00</Time>
     </Item>
     <Item>
       <Source>Libera Me From Hell.wav</Source>
@@ -99,6 +99,24 @@
       <Options>None</Options>
       <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\positive.xnb</Output>
       <Time>2017-05-29T19:59:00.4267573-07:00</Time>
+    </Item>
+    <Item>
+      <Source>MC2.png</Source>
+      <Name>MC2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\MC2.xnb</Output>
+      <Time>2017-05-30T17:33:58.0669587-07:00</Time>
+    </Item>
+    <Item>
+      <Source>MC0.jpg</Source>
+      <Name>MC0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\MC0.xnb</Output>
+      <Time>2017-05-30T17:46:31.9365562-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

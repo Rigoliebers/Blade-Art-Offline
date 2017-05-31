@@ -10,9 +10,9 @@ namespace BAO.Clases
 {
     public class Enemy : Entity
     {
-        public override void LoadContent(ContentManager content, InputManager input, SpriteAnimation sprite, Vector2 pos)
+        public override void LoadContent(ContentManager content, InputManager input, Vector2 pos)
         {
-            base.LoadContent(content, input, sprite, pos);
+            base.LoadContent(content, input, pos);
         }
 
         public override void UnloadContent()
@@ -24,9 +24,9 @@ namespace BAO.Clases
         {
           
         }
-        public override void Draw(SpriteBatch spriteBatch, SpriteAnimation sprite, Vector2 pos)
+        public override void Draw(SpriteBatch spriteBatch, Vector2 pos)
         {
-            sprite.Draw(spriteBatch);
+            
         }
     }
 }

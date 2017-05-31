@@ -12,42 +12,36 @@ namespace BAO.Clases
     public class Player : Entity
     {
 
-        private Vector2 anotherpos;
+        
+        public SpriteAnimation playerL;
+        public SpriteAnimation playerR;
+        public SpriteAnimation playerStand;
 
-        public override void LoadContent(ContentManager content, InputManager input, SpriteAnimation sprite,Vector2 pos)
+        private Texture2D moveRight;
+        private Texture2D moveLeft;
+        private Texture2D stand;
+        private int state;
+
+        public override void LoadContent(ContentManager content, InputManager input, Vector2 pos)
         {
-            base.LoadContent(content, input, sprite, pos);
-            fileManager = new FileManager();
-            Vector2 tempFrames = Vector2.Zero;
-            moveAnimation = sprite;
-            this.anotherpos = pos;
+            moveRight = content.Load<Texture2D>("MC");
+            moveLeft = content.Load<Texture2D>("MC2");
+            stand = content.Load<Texture2D>("MC0");
+            this.playerL = new SpriteAnimation();
+            this.playerR = new SpriteAnimation();
+            this.playerStand = new SpriteAnimation();
+            base.LoadContent(content, input, pos);
+            this.position = pos;
+            health = 100;
+            damage = 10;
+            moveSpeed = 5;
 
-            fileManager.LoadContent("Load/Player.cme", attributes, contents);
-            for (int i = 0; i < attributes.Count; i++)
-            {
-                for (int j = 0; j < attributes[i].Count; j++)
-                {
-                    switch (attributes[i][j])
-                    {
-                        case "Health":
-                            health = int.Parse(contents[i][j]);
-                            break;
-                        case "Frames":
-                            string[] frames = contents[i][j].Split(' ');
-                            tempFrames = new Vector2(int.Parse(frames[0]), int.Parse(frames[1]));
-                            break;
-                        case "Image":
-                            image = content.Load<Texture2D>(contents[i][j]);
-                            break;
-                        case "Position":
-                            frames = contents[i][j].Split(' ');
-                            position = new Vector2(int.Parse(frames[0]), int.Parse(frames[1]));
-                            break;
-                        default:
-                            break;
-                    }
-                } 
-            }
+            playerStand.Initialize(stand, position, 100, 100, 1, 95, Color.White, 1.0f, true);
+            playerL.Initialize(moveRight, position, 32, 50, 4, 95, Color.White, 2.0f, true);
+            playerR.Initialize(moveLeft, position, 32, 50, 4, 95, Color.White, 2.0f, true);
+
+            sprite = playerStand;
+
         }
 
         public override void UnloadContent()
@@ -57,31 +51,54 @@ namespace BAO.Clases
 
         public override Vector2 Update(GameTime gameTime, InputManager inputManag, Vector2 pos)
         {
-            moveAnimation.Active = true;
+            sprite.Active = true;
             inputManag.Update();
             if (inputManag.KeyDown(Keys.Right, Keys.D))
             {
-                anotherpos.X += 2;
-                moveAnimation.Position = new Vector2(anotherpos.X, anotherpos.Y);
+                sprite = playerL;
+                position.X += moveSpeed;
+                sprite.Active = true;
+                sprite.Position = new Vector2(position.X, position.Y);
             }
             else
             {
                 if (inputManag.KeyDown(Keys.Left, Keys.A))
                 {
-                    anotherpos.X -= 2;
-                    moveAnimation.Position = new Vector2(anotherpos.X, anotherpos.Y);
+                    sprite = playerR;
+                    position.X -= moveSpeed;
+                    sprite.Active = true;
+                    sprite.Position = new Vector2(position.X, position.Y);
                 }
                 else
                 {
-                    moveAnimation. = false;
+                    sprite = playerStand;
+                    sprite.Position = new Vector2(position.X, position.Y);
+                    sprite.Active = true;
                 }
             }
-            moveAnimation.Update(gameTime);
-            return anotherpos;
+            sprite.Update(gameTime);
+            return position;
         }
-        public override void Draw(SpriteBatch spriteBatch, SpriteAnimation sprite, Vector2 pos)
+        public override void Draw(SpriteBatch spriteBatch, Vector2 pos)
         {
+
             sprite.Draw(spriteBatch);
+
+            //switch (state)
+            //{
+            //    case 0:
+            //        spriteBatch.Draw(spriteBatch);
+            //        break;
+
+            //    case 1:
+            //        playerL.Draw(spriteBatch);
+            //        break;
+
+            //    case 2:
+            //        playerR.Draw(spriteBatch);
+            //        break;
+
+            //}
         }
     }
 }
