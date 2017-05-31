@@ -73,7 +73,7 @@ namespace BAO.Clases
                 }
                 else
                 {
-                    moveAnimation. = false;
+                    moveAnimation.Active = false;
                 }
             }
             moveAnimation.Update(gameTime);

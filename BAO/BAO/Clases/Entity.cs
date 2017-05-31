@@ -18,6 +18,8 @@ namespace BAO.Clases
         protected List<List<string>> attributes, contents;
         protected Texture2D image;
         protected Vector2 position;
+        protected Rectangle collictionBox;
+
 
         public virtual void LoadContent(ContentManager content, InputManager input, SpriteAnimation sprite, Vector2 pos) {
             this.content = new ContentManager(content.ServiceProvider, "Content");

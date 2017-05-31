@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Menufont.xnb</Output>
-      <Time>2017-05-29T16:44:38.1415498-07:00</Time>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Menufont.xnb</Output>
+      <Time>2017-05-30T17:11:39.3000873-07:00</Time>
     </Item>
     <Item>
       <Source>Font1.spritefont</Source>
@@ -16,8 +16,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Font1.xnb</Output>
-      <Time>2017-05-29T16:21:05.0797075-07:00</Time>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Font1.xnb</Output>
+      <Time>2017-05-30T17:11:39.1335658-07:00</Time>
     </Item>
     <Item>
       <Source>Agency24.spritefont</Source>
@@ -25,8 +25,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Agency24.xnb</Output>
-      <Time>2017-05-29T18:01:15.4777214-07:00</Time>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Agency24.xnb</Output>
+      <Time>2017-05-30T17:11:39.1305655-07:00</Time>
     </Item>
     <Item>
       <Source>pixel.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pixel.xnb</Output>
-      <Time>2017-05-27T21:03:45.1139878-07:00</Time>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pixel.xnb</Output>
+      <Time>2017-05-30T17:11:39.3155898-07:00</Time>
     </Item>
     <Item>
       <Source>TittleScreen.jpg</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\TittleScreen.xnb</Output>
-      <Time>2017-05-28T08:43:36.3294356-07:00</Time>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\TittleScreen.xnb</Output>
+      <Time>2017-05-30T17:11:39.3260909-07:00</Time>
     </Item>
     <Item>
       <Source>Splash.jpg</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Splash.xnb</Output>
-      <Time>2017-05-28T10:25:31.2604981-07:00</Time>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Splash.xnb</Output>
+      <Time>2017-05-30T17:11:39.3220902-07:00</Time>
     </Item>
     <Item>
       <Source>MC.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\MC.xnb</Output>
-      <Time>2017-05-30T08:00:51.175027-07:00</Time>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\MC.xnb</Output>
+      <Time>2017-05-30T17:11:39.299087-07:00</Time>
     </Item>
     <Item>
       <Source>Libera Me From Hell.wav</Source>
@@ -70,8 +70,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Libera Me From Hell.xnb</Output>
-      <Time>2017-05-29T19:38:21.2921702-07:00</Time>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Libera Me From Hell.xnb</Output>
+      <Time>2017-05-30T17:11:39.2940869-07:00</Time>
     </Item>
     <Item>
       <Source>misc_menu_2.wav</Source>
@@ -79,8 +79,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\misc_menu_2.xnb</Output>
-      <Time>2017-05-29T19:45:52.1398016-07:00</Time>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\misc_menu_2.xnb</Output>
+      <Time>2017-05-30T17:11:39.3050884-07:00</Time>
     </Item>
     <Item>
       <Source>misc_menu_4.wav</Source>
@@ -88,8 +88,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\misc_menu_4.xnb</Output>
-      <Time>2017-05-29T19:54:31.322257-07:00</Time>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\misc_menu_4.xnb</Output>
+      <Time>2017-05-30T17:11:39.3095889-07:00</Time>
     </Item>
     <Item>
       <Source>positive.wav</Source>
@@ -97,8 +97,17 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\positive.xnb</Output>
-      <Time>2017-05-29T19:59:00.4267573-07:00</Time>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\positive.xnb</Output>
+      <Time>2017-05-30T17:11:39.3205903-07:00</Time>
+    </Item>
+    <Item>
+      <Source>pisitoo.png</Source>
+      <Name>pisitoo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pisitoo.xnb</Output>
+      <Time>2017-05-30T18:48:44.2163152-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -107,10 +116,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAOContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAOContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -138,8 +147,8 @@
         <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2017-05-02T16:36:16.0529342-07:00</Value>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2017-05-02T16:17:20.5123321-07:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
