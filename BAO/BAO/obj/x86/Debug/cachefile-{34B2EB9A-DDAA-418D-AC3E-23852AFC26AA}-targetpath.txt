@@ -14,3 +14,5 @@ Content\MC0.xnb
 Content\pStandR.xnb
 Content\pStandL.xnb
 Content\pWalkR.xnb
+Content\pWalkL.xnb
+Content\pDuckR.xnb

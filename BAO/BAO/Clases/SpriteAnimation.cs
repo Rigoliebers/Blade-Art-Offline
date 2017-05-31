@@ -12,6 +12,8 @@ namespace BAO.Clases
     {
         private bool activator;
         Texture2D spriteStrip;
+        public bool Ended;
+        public bool duck;
         float scale;
         int elapsedTime;
         int frameTime;
@@ -55,6 +57,13 @@ namespace BAO.Clases
 
             elapsedTime += (int)gameTime.ElapsedGameTime.TotalMilliseconds;
 
+            if (duck)
+            {
+                currentFrame = 0;
+                duck = false;
+            }
+
+
             if (elapsedTime > frameTime)
             {
                 if (Reverse)
@@ -77,12 +86,30 @@ namespace BAO.Clases
                 }
                 else
                 {
-                    currentFrame++;
-                    if (currentFrame == frameCount)
+                    if (Ended)
                     {
-                        if (!Looping) Active = false;
-                        currentFrame = 0;
+                        if (currentFrame == frameCount)
+                        {
+                            currentFrame = frameCount;
+                        }
+                        else
+                        {
+                            currentFrame++;
+                        }
                     }
+                    else
+                    {
+                        currentFrame++;
+                        if (currentFrame == frameCount)
+                        {
+                            currentFrame = 0;
+                            if (!Looping)
+                            {
+                                Active = false;
+                            }
+                        }
+                    }
+
                     elapsedTime = 0;
                 }
 
