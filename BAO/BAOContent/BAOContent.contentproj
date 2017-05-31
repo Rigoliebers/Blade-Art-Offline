@@ -143,6 +143,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pisitoo.png">
+      <Name>pisitoo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="pWalkL.png">
       <Name>pWalkL</Name>
       <Importer>TextureImporter</Importer>
