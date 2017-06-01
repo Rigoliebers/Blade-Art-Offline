@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -10,67 +11,102 @@ namespace BAO.Clases
 {
     public class IntroScreen : GameScreen
     {
-        XnaFunctionscs fun = new XnaFunctionscs();
-        GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
-        Vector2 spritePos;
-        Player player;
-        List<Rectangle> listaObs;
-        Texture2D texturaObs;
+
+        private DialogScreen dialog;
+        int r1x;
+        int r2x;
+        int velocidad;
+        int width = 1024;
+        int height = 800;
+        Texture2D escena;
+        Rectangle rectangle1;
+        Rectangle rectangle2;
+        private SoundEffect BGM;
+        private SoundEffectInstance BGMInstance;
+
         public override void LoadContent(ContentManager content)
         {
             //GraphicsDevice obj = fun.GraphicsDevice;
             //spriteBatch = new SpriteBatch(obj);
 
             // TODO: use this.Content to load your game content here
-            spritePos = new Vector2(500, 500);
 
+            r1x = 0;
+            rectangle1 = new Rectangle(r1x, 0, width, height);
+            r2x = r1x + rectangle1.Width;
+            rectangle2 = new Rectangle(r2x, 0, width, height);
+            velocidad = 3;
             //playerAnimation = new Animation();
             base.LoadContent(content);
 
-            listaObs = new List<Rectangle>();
-            listaObs.Add(new Rectangle(900, 400, 400, 200));
-            texturaObs = content.Load<Texture2D>("pisitoo");
-            player = new Player();
-            player.LoadContent(content, inputManager, spritePos);
-            player.playerR.Active = true;
+            BGM = content.Load<SoundEffect>("introbgm");
+            BGMInstance = BGM.CreateInstance();
+
+            BGMInstance.Volume = 0.75f;
+            BGMInstance.Play();
+
+            escena = content.Load<Texture2D>("Background/Background2");
+            dialog = new DialogScreen();
+            string[,] dialogo = new string[,]
+            {
+                    {"monito0", "El Vigilante", "¿Conoces la historia de 'Pepe y los globos'?"},
+                    {"Ishtar", "Ishtar", "No. ¿Quíen es el? Vigilante"},
+                    {"monito0", "El Vigilante", "Casi nadie lo conoce ya... Este hombre, Pepe, realizo una de las mas grandes hazañas que he presenciado en todo el espacio tiempo."},
+                    {"monito0", "El Vigilante", "¿Te gustaria oirla?"},
+                    {"Ishtar", "Ishtar", "Por supuesto. Vigilante."},
+                    {"monito0", "El Vigilante", "Bien, bien. Perfecto entonces..."},
+                    {"monito0", "El Vigilante", "Te contare la historia de un hombre que desafio al propio destino y en una batalla cruenta, y lo derroto. Un hombre que lo dio todo a cambio de nada. El mas grande heroe que ha nacido."},
+                    {"monito0", "El Vigilante", "Pepe Juan Panfiloponcio de la Santa Cruz Rodrigues Ademán de la Trinidad de la Ascencion de la divina iglesia de la santa paz del niño Jésus"},
+                    {"Ishtar", "Ishtar", "Estoy ansiosa..."},
+            };
+
+
+            dialog.LoadContent(content, dialogo);
+
         }
 
         public override void UnloadContent()
         {
             //base.UnloadContent();
-            player.UnloadContent();
         }
 
         public override void Update(GameTime gameTime)
         {
-            int posx = (int)spritePos.X;
-            int posy = (int)spritePos.Y;
-            player.playerStandR.Update(gameTime);
-            inputManager.Update();
-            //player.Update(gameTime, inputManager,spritePos);
-            foreach (Rectangle recto in listaObs)
+
+            r1x -= velocidad;
+            r2x -= velocidad;
+            rectangle1 = new Rectangle(r1x, 0, width, height);
+            rectangle2 = new Rectangle(r2x, 0, width, height);
+
+            if (rectangle1.X <= -width)
             {
-                if (recto.Intersects(player.ColissionBox))
-                {
-                    spritePos.X = posx - 5;
-                    break;
-                }
+                r1x = 0;
             }
-            spritePos = player.Update(gameTime, inputManager, spritePos);
+            if (rectangle2.X <= 0)
+            {
+                r2x = width;
+            }
+
+            if (!dialog.Active)
+            {
+                BGMInstance.Stop();
+                ScreenManager.Instance.AddScreen(new GameplayScreen(), 0.6f);
+            }
+
+            inputManager.Update();
+            dialog.Update(gameTime, inputManager);
+
+
+
+
 
         }
         public override void Draw(SpriteBatch spriteBatch)
         {
-            //fun.GraphicsDevice.Clear(Color.CornflowerBlue);
-            //spriteBatch.Begin();
-            //spriteBatch.End();
-            foreach (Rectangle item in listaObs)
-            {
-                spriteBatch.Draw(texturaObs, item, Color.White);
-            }
+            spriteBatch.Draw(escena, rectangle1, Color.White);
+            spriteBatch.Draw(escena, rectangle2, Color.White);
+            dialog.Draw(spriteBatch);
             base.Draw(spriteBatch);
-            player.Draw(spriteBatch, spritePos);
         }
     }
 }

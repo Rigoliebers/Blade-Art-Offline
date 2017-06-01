@@ -12,29 +12,34 @@ namespace BAO.Clases
     public class DialogScreen
     {
 
-        public string[] texto;
+        public string[,] texto;
         public string imagen;
         public bool Active;
 
         private ContentManager content;
         private Vector2 position;
         private Vector2 txtposition;
+        private Vector2 nameposition;
         private Texture2D image;
         private Texture2D back;
         private Rectangle sourceRect;
         private Rectangle destinationRect;
         private SpriteFont font;
+        private SpriteFont fontTittle;
         private int contador;
 
         private string name;
 
-        public void LoadContent(ContentManager Content, string[] Dialog, string Pj, string pjImg)
+        public void LoadContent(ContentManager Content, string[,] Dialog)
         {
             this.content = Content;
             this.texto = Dialog;
-            image = Content.Load<Texture2D>(pjImg);
+            //image = Content.Load<Texture2D>(pjImg);
             back = Content.Load<Texture2D>("backdialog");
-            font = Content.Load<SpriteFont>("Font1");
+            font = Content.Load<SpriteFont>("DialogFont");
+            fontTittle = Content.Load<SpriteFont>("TittleDialog");
+            image = content.Load<Texture2D>(texto[0, 0]);
+            nameposition = new Vector2(200, 625);
 
             position = new Vector2(0, 650);
             txtposition = new Vector2(200, 675);
@@ -45,9 +50,12 @@ namespace BAO.Clases
         {
             if (Active)
             {
+
+                image = content.Load<Texture2D>(texto[contador,0]);
+
                 if (inputManag.KeyPressed(Keys.Z, Keys.Enter))
                 {
-                    if (contador == texto.Length - 1)
+                    if (contador == texto.GetUpperBound(0))
                     {
                         contador = 0;
                         Active = false;
@@ -70,7 +78,8 @@ namespace BAO.Clases
             {
                 spriteBatch.Draw(back, position, Color.White);
                 spriteBatch.Draw(image, position, Color.White);
-                spriteBatch.DrawString(font, WrapText(font, texto[contador], 650), txtposition, Color.White);
+                spriteBatch.DrawString(fontTittle, WrapText(fontTittle, texto[contador,1], 650), nameposition, Color.White);
+                spriteBatch.DrawString(font, WrapText(font, texto[contador,2], 650), txtposition, Color.White);
             }
         }
 
