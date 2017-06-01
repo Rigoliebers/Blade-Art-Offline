@@ -19,7 +19,7 @@ namespace BAO
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-
+        
 
         public Game1()
         {

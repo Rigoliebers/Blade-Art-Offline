@@ -8,7 +8,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Menufont.xnb</Output>
-      <Time>2017-05-30T17:11:39.3000873-07:00</Time>
+      <Time>2017-05-30T23:18:52.6330826-07:00</Time>
     </Item>
     <Item>
       <Source>Font1.spritefont</Source>
@@ -17,7 +17,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Font1.xnb</Output>
-      <Time>2017-05-30T17:11:39.1335658-07:00</Time>
+      <Time>2017-05-30T23:18:52.4670624-07:00</Time>
     </Item>
     <Item>
       <Source>Agency24.spritefont</Source>
@@ -26,7 +26,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Agency24.xnb</Output>
-      <Time>2017-05-30T17:11:39.1305655-07:00</Time>
+      <Time>2017-05-30T23:18:52.4640619-07:00</Time>
     </Item>
     <Item>
       <Source>pixel.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pixel.xnb</Output>
-      <Time>2017-05-30T17:11:39.3155898-07:00</Time>
+      <Time>2017-05-30T23:18:52.6800888-07:00</Time>
     </Item>
     <Item>
       <Source>TittleScreen.jpg</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\TittleScreen.xnb</Output>
-      <Time>2017-05-30T17:11:39.3260909-07:00</Time>
+      <Time>2017-05-30T23:18:52.69609-07:00</Time>
     </Item>
     <Item>
       <Source>Splash.jpg</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Splash.xnb</Output>
-      <Time>2017-05-30T17:11:39.3220902-07:00</Time>
+      <Time>2017-05-30T23:18:52.6925896-07:00</Time>
     </Item>
     <Item>
       <Source>MC.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\MC.xnb</Output>
-      <Time>2017-05-30T19:55:58.7667671-07:00</Time>
+      <Time>2017-05-30T23:18:52.6280826-07:00</Time>
     </Item>
     <Item>
       <Source>MC2.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\MC2.xnb</Output>
-      <Time>2017-05-30T19:55:58.770267-07:00</Time>
+      <Time>2017-05-30T23:18:52.6315822-07:00</Time>
     </Item>
     <Item>
       <Source>MC0.jpg</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\MC0.xnb</Output>
-      <Time>2017-05-30T19:55:58.7682673-07:00</Time>
+      <Time>2017-05-30T23:18:52.630082-07:00</Time>
     </Item>
     <Item>
       <Source>pStandR.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pStandR.xnb</Output>
-      <Time>2017-05-30T19:55:58.7742679-07:00</Time>
+      <Time>2017-05-30T23:18:52.6875893-07:00</Time>
     </Item>
     <Item>
       <Source>pStandL.png</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pStandL.xnb</Output>
-      <Time>2017-05-30T19:55:58.7722674-07:00</Time>
+      <Time>2017-05-30T23:18:52.6860899-07:00</Time>
     </Item>
     <Item>
       <Source>pWalkR.png</Source>
@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pWalkR.xnb</Output>
-      <Time>2017-05-30T19:55:58.7757676-07:00</Time>
+      <Time>2017-05-30T23:18:52.6905902-07:00</Time>
     </Item>
     <Item>
       <Source>Libera Me From Hell.wav</Source>
@@ -116,7 +116,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Libera Me From Hell.xnb</Output>
-      <Time>2017-05-30T17:11:39.2940869-07:00</Time>
+      <Time>2017-05-30T23:18:52.623092-07:00</Time>
     </Item>
     <Item>
       <Source>misc_menu_2.wav</Source>
@@ -125,7 +125,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\misc_menu_2.xnb</Output>
-      <Time>2017-05-30T17:11:39.3050884-07:00</Time>
+      <Time>2017-05-30T23:18:52.6376076-07:00</Time>
     </Item>
     <Item>
       <Source>misc_menu_4.wav</Source>
@@ -134,7 +134,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\misc_menu_4.xnb</Output>
-      <Time>2017-05-30T17:11:39.3095889-07:00</Time>
+      <Time>2017-05-30T23:18:52.6421012-07:00</Time>
     </Item>
     <Item>
       <Source>positive.wav</Source>
@@ -143,7 +143,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\positive.xnb</Output>
-      <Time>2017-05-30T17:11:39.3205903-07:00</Time>
+      <Time>2017-05-30T23:18:52.6850896-07:00</Time>
     </Item>
     <Item>
       <Source>pisitoo.png</Source>
@@ -152,7 +152,34 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pisitoo.xnb</Output>
-      <Time>2017-05-30T20:13:34.6844829-07:00</Time>
+      <Time>2017-05-30T23:18:52.6790884-07:00</Time>
+    </Item>
+    <Item>
+      <Source>pWalkL.png</Source>
+      <Name>pWalkL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pWalkL.xnb</Output>
+      <Time>2017-05-30T23:18:52.68909-07:00</Time>
+    </Item>
+    <Item>
+      <Source>pDuckR.png</Source>
+      <Name>pDuckR</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pDuckR.xnb</Output>
+      <Time>2017-05-30T23:18:52.677589-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Background\background resized.jpg</Source>
+      <Name>Background\background resized</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Background\background resized.xnb</Output>
+      <Time>2017-05-31T18:06:14.6355663-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
