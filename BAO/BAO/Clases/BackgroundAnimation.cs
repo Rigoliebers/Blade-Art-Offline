@@ -30,30 +30,36 @@ namespace BAO.Clases
 
         }
 
-        public BackgroundAnimation(String directorioRecibir) {
+        public BackgroundAnimation(String directorioRecibir)
+        {
             this.directorio = directorioRecibir;
         }
 
-        public int Width {
+        public int Width
+        {
             get { return width; }
             set { width = value; }
         }
 
-        public int Height {
+        public int Height
+        {
             get { return height; }
             set { height = value; }
         }
 
-        public Texture2D Escena {
+        public Texture2D Escena
+        {
             get { return escena; }
             set { escena = value; }
         }
 
-        public virtual void Initialize() {
+        public virtual void Initialize()
+        {
 
         }
 
-        public virtual void LoadContent(ContentManager content) {
+        public virtual void LoadContent(ContentManager content)
+        {
             r1x = 0;
             rectangle1 = new Rectangle(r1x, 0, width, height);
             r2x = r1x + rectangle1.Width;
@@ -62,7 +68,8 @@ namespace BAO.Clases
             escena = content.Load<Texture2D>(directorio);
         }
 
-        public virtual void Update(GameTime gameTime) {
+        public virtual void Update(GameTime gameTime)
+        {
             r1x -= velocidad;
             r2x -= velocidad;
             rectangle1 = new Rectangle(r1x, 0, width, height);
@@ -77,7 +84,8 @@ namespace BAO.Clases
                 r2x = width;
             }
         }
-        public virtual void Draw(SpriteBatch spriteBatch) {
+        public virtual void Draw(SpriteBatch spriteBatch)
+        {
             spriteBatch.Draw(escena, rectangle1, Color.White);
             spriteBatch.Draw(escena, rectangle2, Color.White);
         }
@@ -85,3 +93,4 @@ namespace BAO.Clases
 
     }
 }
+
