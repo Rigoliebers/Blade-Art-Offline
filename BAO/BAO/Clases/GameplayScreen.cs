@@ -54,9 +54,16 @@ namespace BAO.Clases
             player.LoadContent(content, inputManager, spritePos);
             player.playerR.Active = true;
 
-            string[] dialogo = new[] {"Saludos extraño", "Mamame el pito", "Bye"};
+            string[,] dialogo = new string[,]
+            {
+                    {"monito0", "El", "Mi pito amigo"},
+                    {"monito0", "El", "2"},
+                    {"monito0", "El", "3"},
+              
+                
+            };
 
-            dialog.LoadContent(content, dialogo, "Chavito", "monito0");
+            dialog.LoadContent(content, dialogo);
         }
 
         public override void UnloadContent()
@@ -112,9 +119,10 @@ namespace BAO.Clases
             {
                 spriteBatch.Draw(texturaObs, item, Color.White);
             }
-            base.Draw(spriteBatch);
+
             player.Draw(spriteBatch, spritePos);
             dialog.Draw(spriteBatch);
+                        base.Draw(spriteBatch);
         }
     }
 }

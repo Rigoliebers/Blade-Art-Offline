@@ -11,15 +11,6 @@
       <Time>2017-05-29T16:44:38.1415498-07:00</Time>
     </Item>
     <Item>
-      <Source>Font1.spritefont</Source>
-      <Name>Font1</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Font1.xnb</Output>
-      <Time>2017-05-31T18:27:05.9521867-07:00</Time>
-    </Item>
-    <Item>
       <Source>Agency24.spritefont</Source>
       <Name>Agency24</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -189,6 +180,78 @@
       <Options>None</Options>
       <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\backdialog.xnb</Output>
       <Time>2017-05-31T17:59:37.7914772-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Background\background resized.jpg</Source>
+      <Name>Background\background resized</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Background\background resized.xnb</Output>
+      <Time>2017-05-31T18:57:29.4351937-07:00</Time>
+    </Item>
+    <Item>
+      <Source>TittleDialog.spritefont</Source>
+      <Name>TittleDialog</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\TittleDialog.xnb</Output>
+      <Time>2017-05-31T18:27:05.9521867-07:00</Time>
+    </Item>
+    <Item>
+      <Source>DialogFont.spritefont</Source>
+      <Name>DialogFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\DialogFont.xnb</Output>
+      <Time>2017-05-31T20:13:19.5575888-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Naming.spritefont</Source>
+      <Name>Naming</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Naming.xnb</Output>
+      <Time>2017-05-31T20:23:34.2137341-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Font1.spritefont</Source>
+      <Name>Font1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Font1.xnb</Output>
+      <Time>2017-05-31T20:19:49.5262408-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Background\Background2.jpg</Source>
+      <Name>Background\Background2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Background\Background2.xnb</Output>
+      <Time>2017-05-31T20:28:15.3098204-07:00</Time>
+    </Item>
+    <Item>
+      <Source>introbgm.wav</Source>
+      <Name>introbgm</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\introbgm.xnb</Output>
+      <Time>2017-05-31T20:54:20.0134769-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Ishtar.png</Source>
+      <Name>Ishtar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Ishtar.xnb</Output>
+      <Time>2017-05-31T21:06:17.198871-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
