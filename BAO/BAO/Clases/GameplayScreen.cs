@@ -21,29 +21,17 @@ namespace BAO.Clases
         Player player;
         List<Rectangle> listaObs;
         Texture2D texturaObs;
-        int width = 1024;
-        int height=800;
-        Texture2D escena;
-        Rectangle rectangle1;
-        Rectangle rectangle2;
-        int r1x;
-        int r2x;
-        int velocidad;
+        BackgroundAnimation fondo;
 
         private DialogScreen dialog;
         public override void LoadContent(ContentManager content)
         {
-            r1x = 0;
-            rectangle1 = new Rectangle(r1x, 0, width, height);
-            r2x = r1x + rectangle1.Width;
-            rectangle2 = new Rectangle(r2x, 0, width, height);
-            velocidad = 5;
+            fondo = new BackgroundAnimation("Background/background resized");
             //GraphicsDevice obj = fun.GraphicsDevice;
             //spriteBatch = new SpriteBatch(obj);
-            escena = content.Load<Texture2D>("Background/background resized");
             // TODO: use this.Content to load your game content here
             spritePos = new Vector2(500, 500);
-
+            fondo.LoadContent(content);
            //playerAnimation = new Animation();
              base.LoadContent(content);
             dialog = new DialogScreen();
@@ -74,20 +62,7 @@ namespace BAO.Clases
 
         public override void Update(GameTime gameTime)
         {
-            r1x -= velocidad;
-            r2x -= velocidad;
-            rectangle1 = new Rectangle(r1x, 0, width, height);
-            rectangle2 = new Rectangle(r2x, 0, width, height);
-
-            if (rectangle1.X <= -width)
-            {
-                r1x = 0;
-            }
-            if (rectangle2.X<=0)
-            {
-                r2x = width;
-            }
-
+            fondo.Update(gameTime);
             int posx = (int)spritePos.X;
             int posy = (int)spritePos.Y;
             player.playerStandR.Update(gameTime);
@@ -112,9 +87,8 @@ namespace BAO.Clases
         {
             //fun.GraphicsDevice.Clear(Color.CornflowerBlue);
             //spriteBatch.Begin();
-            
-            spriteBatch.Draw(escena, rectangle1, Color.White);
-            spriteBatch.Draw(escena, rectangle2, Color.White);
+
+            fondo.Draw(spriteBatch);
             foreach (Rectangle item in listaObs)
             {
                 spriteBatch.Draw(texturaObs, item, Color.White);
