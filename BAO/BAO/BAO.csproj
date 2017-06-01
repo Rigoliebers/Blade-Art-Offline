@@ -73,7 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Animation.cs" />
-    <Compile Include="Clases\BackgroundAnimation.cs" />
+    <Compile Include="Clases\DialogScreen.cs" />
     <Compile Include="Clases\DrawImage.cs" />
     <Compile Include="Clases\Enemy.cs" />
     <Compile Include="Clases\Entity.cs" />
@@ -82,6 +82,7 @@
     <Compile Include="Clases\GameplayScreen.cs" />
     <Compile Include="Clases\GameScreen.cs" />
     <Compile Include="Clases\InputManager.cs" />
+    <Compile Include="Clases\IntroScreen.cs" />
     <Compile Include="Clases\OptionsScreen.cs" />
     <Compile Include="Clases\Player.cs" />
     <Compile Include="Clases\PulsatingButton.cs" />
