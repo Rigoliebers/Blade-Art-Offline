@@ -64,7 +64,6 @@ C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pSta
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pWalkR.xnb
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pisitoo.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pisitoo.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\BAO.csprojResolveAssemblyReference.cache
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\monito0.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\backdialog.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Background\background resized.xnb
