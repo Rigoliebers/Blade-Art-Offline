@@ -22,6 +22,7 @@ namespace BAO.Clases
         List<Rectangle> listaObs;
         Texture2D texturaObs;
         BackgroundAnimation fondo;
+        int pito = 0;
 
         private DialogScreen dialog;
         public override void LoadContent(ContentManager content)
@@ -62,24 +63,30 @@ namespace BAO.Clases
 
         public override void Update(GameTime gameTime)
         {
+
             fondo.Update(gameTime);
-            int posx = (int)spritePos.X;
-            int posy = (int)spritePos.Y;
-            player.playerStandR.Update(gameTime);
-            inputManager.Update();
+
+
+            if (!dialog.Active)
+                spritePos = player.Update(gameTime, inputManager, spritePos);
+            
             //player.Update(gameTime, inputManager,spritePos);
             foreach (Rectangle recto in listaObs)
             {
                 if (recto.Intersects(player.ColissionBox))
                 {
-                    spritePos.X = posx - 5;
+                    spritePos.X = spritePos.X - player.moveSpeed;
+                    
                     break;
                 }
+                
             }
-            dialog.Update(gameTime, inputManager);
 
-            if (!dialog.Active)
-                spritePos = player.Update(gameTime, inputManager, spritePos);
+
+            inputManager.Update();
+            dialog.Update(gameTime, inputManager);
+            //player.playerStandR.Update(gameTime);
+
 
 
         }
@@ -96,7 +103,8 @@ namespace BAO.Clases
 
             player.Draw(spriteBatch, spritePos);
             dialog.Draw(spriteBatch);
-                        base.Draw(spriteBatch);
+
+            base.Draw(spriteBatch);
         }
     }
 }
