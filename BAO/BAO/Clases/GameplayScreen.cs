@@ -20,24 +20,29 @@ namespace BAO.Clases
         Vector2 spritePos;
         Player player;
         List<Rectangle> listaObs;
+        List<Suelo> suelos;
         Texture2D texturaObs;
         BackgroundAnimation fondo;
-        int pito = 0;
+        ///Suelo objSuelo = new Suelo();
 
         private DialogScreen dialog;
         public override void LoadContent(ContentManager content)
         {
+            suelos = new List<Suelo>();
             fondo = new BackgroundAnimation("Background/background resized");
-            //GraphicsDevice obj = fun.GraphicsDevice;
-            //spriteBatch = new SpriteBatch(obj);
             // TODO: use this.Content to load your game content here
             spritePos = new Vector2(500, 500);
             fondo.LoadContent(content);
-           //playerAnimation = new Animation();
              base.LoadContent(content);
             dialog = new DialogScreen();
             listaObs = new List<Rectangle>();
             listaObs.Add(new Rectangle(900, 400, 400, 200));
+            Suelo pito = new Suelo("pisitoo", content);
+            Suelo pito2 = new Suelo("pisitoo", content);
+            pito2.rectangulo = new Rectangle(20, 550, 400, 20);
+            pito.rectangulo = new Rectangle(350, 650, 400, 20);
+            suelos.Add(pito);
+            suelos.Add(pito2);
             texturaObs = content.Load<Texture2D>("pisitoo");
             player = new Player();
             player.LoadContent(content, inputManager, spritePos);
@@ -57,48 +62,52 @@ namespace BAO.Clases
 
         public override void UnloadContent()
         {
-            //base.UnloadContent();
             player.UnloadContent();
         }
 
         public override void Update(GameTime gameTime)
         {
-
             fondo.Update(gameTime);
-
-
             if (!dialog.Active)
                 spritePos = player.Update(gameTime, inputManager, spritePos);
-            
-            //player.Update(gameTime, inputManager,spritePos);
             foreach (Rectangle recto in listaObs)
             {
                 if (recto.Intersects(player.ColissionBox))
                 {
-                    spritePos.X = spritePos.X - player.moveSpeed;
-                    
+                    spritePos.X = spritePos.X - player.moveSpeed.X;                  
                     break;
                 }
                 
             }
+            foreach (Suelo recto in suelos)
+            {
+                Rectangle sueloInter = recto.rectangulo;
+                if (sueloInter.Intersects(player.ColissionBox))
+                {
+                    if (spritePos.Y >= sueloInter.Y-40)
+                    {
+                        spritePos.Y = sueloInter.Y-40;
+                        player.hasJumped = false;
+                    }
+                    break;
+                }
 
-
+            }
             inputManager.Update();
             dialog.Update(gameTime, inputManager);
-            //player.playerStandR.Update(gameTime);
-
-
-
         }
         public override void Draw(SpriteBatch spriteBatch)
         {
-            //fun.GraphicsDevice.Clear(Color.CornflowerBlue);
-            //spriteBatch.Begin();
-
             fondo.Draw(spriteBatch);
             foreach (Rectangle item in listaObs)
             {
                 spriteBatch.Draw(texturaObs, item, Color.White);
+                
+            }
+
+            foreach (Suelo item in suelos)
+            {
+                item.Draw(spriteBatch, item.rectangulo, item.texturaObs);
             }
 
             player.Draw(spriteBatch, spritePos);

@@ -75,3 +75,14 @@ C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\C
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\introbgm.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Ishtar.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\BAO.csprojResolveAssemblyReference.cache
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\TittleDialog.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\DialogFont.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Naming.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pWalkL.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pDuckR.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Background\background resized.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\monito0.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\backdialog.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Background\Background2.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Ishtar.xnb
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\introbgm.xnb

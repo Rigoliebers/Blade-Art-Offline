@@ -91,6 +91,7 @@
     <Compile Include="Clases\SplashScreen.cs" />
     <Compile Include="Clases\SpriteAnimation.cs" />
     <Compile Include="Clases\SpriteSheetAnimation.cs" />
+    <Compile Include="Clases\Suelo.cs" />
     <Compile Include="Clases\TittleScreen.cs" />
     <Compile Include="Clases\XnaFunctionscs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
