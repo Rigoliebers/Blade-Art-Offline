@@ -65,8 +65,8 @@ namespace BAO.Clases
 
         public override Vector2 Update(GameTime gameTime, InputManager inputManag, Vector2 position)
         {
-            this.colissionBox = new Rectangle((int)sprite.Position.X, (int)sprite.Position.Y, 32, 50);
             sprite.Active = true;
+
 
 
          
@@ -146,6 +146,7 @@ namespace BAO.Clases
             }
 
             sprite.Update(gameTime);
+            this.colissionBox = new Rectangle((int)sprite.Position.X, (int)sprite.Position.Y, 28, 50);
             inputManag.Update();
             return position;
         }

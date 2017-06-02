@@ -12,7 +12,7 @@ namespace BAO.Clases
     public class Entity
     {
         protected int health;
-        protected float moveSpeed;
+        public float moveSpeed;
         protected int damage;
         protected SpriteAnimation sprite;
         protected Rectangle colissionBox;
