@@ -253,6 +253,51 @@
       <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\introbgm.xnb</Output>
       <Time>2017-05-31T20:54:20.0134769-07:00</Time>
     </Item>
+    <Item>
+      <Source>knife.png</Source>
+      <Name>knife</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\knife.xnb</Output>
+      <Time>2017-06-01T18:42:46.155299-07:00</Time>
+    </Item>
+    <Item>
+      <Source>tick.wav</Source>
+      <Name>tick</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\tick.xnb</Output>
+      <Time>2017-06-01T20:52:27.7026893-07:00</Time>
+    </Item>
+    <Item>
+      <Source>TheEnd.wav</Source>
+      <Name>TheEnd</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\TheEnd.xnb</Output>
+      <Time>2017-06-01T20:52:33.5407426-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Za Warudo Sound Effect.wav</Source>
+      <Name>Za Warudo Sound Effect</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Za Warudo Sound Effect.xnb</Output>
+      <Time>2017-06-01T20:55:29.592-07:00</Time>
+    </Item>
+    <Item>
+      <Source>knifeCling.wav</Source>
+      <Name>knifeCling</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\knifeCling.xnb</Output>
+      <Time>2017-06-01T22:12:41.2330842-07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{34B2EB9A-DDAA-418D-AC3E-23852AFC26AA}</ContentProjectGUID>

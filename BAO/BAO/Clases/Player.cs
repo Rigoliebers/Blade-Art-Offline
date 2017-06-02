@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Win32.SafeHandles;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
@@ -12,14 +14,31 @@ namespace BAO.Clases
     public class Player : Entity
     {
 
-        private bool isLeft;
+        public bool isLeft;
 
-        
+
+
         public SpriteAnimation playerL;
         public SpriteAnimation playerR;
         public SpriteAnimation playerStandR;
         public SpriteAnimation playerStandL;
         public SpriteAnimation playerDuckR;
+
+        private SoundEffect BegoF;
+        private SoundEffect Tick;
+        private SoundEffect EndOf;
+
+
+        public bool TheWorld;
+        private double elapsedTime;
+        private double anotherTimer;
+
+        private ProyectilKnife shoot;
+        private ContentManager content;
+        public bool CD;
+        private bool otro = true;
+
+        public GameTime TheWorldTime;
 
         private Texture2D moveRight;
         private Texture2D moveLeft;
@@ -30,6 +49,11 @@ namespace BAO.Clases
 
         public override void LoadContent(ContentManager content, InputManager input, Vector2 pos)
         {
+            BegoF = content.Load<SoundEffect>("Za Warudo Sound Effect");
+            Tick = content.Load<SoundEffect>("Tick");
+            EndOf = content.Load<SoundEffect>("TheEnd");
+            this.content = content;
+            TheWorldTime = new GameTime();
             moveRight = content.Load<Texture2D>("pWalkR");
             moveLeft = content.Load<Texture2D>("pWalkL");
             standL = content.Load<Texture2D>("pStandL");
@@ -40,7 +64,8 @@ namespace BAO.Clases
             this.playerStandR = new SpriteAnimation();
             this.playerStandL = new SpriteAnimation();
             this.playerDuckR = new SpriteAnimation();
-            base.LoadContent(content, input, pos);
+            shoot = new ProyectilKnife();
+            shoot.LoadContent(content, 10, isLeft, position);
             this.position = pos;
             health = 100;
             damage = 10;
@@ -67,9 +92,54 @@ namespace BAO.Clases
         {
             sprite.Active = true;
 
+            elapsedTime += gameTime.ElapsedGameTime.Milliseconds;
+            anotherTimer += gameTime.ElapsedGameTime.Milliseconds;
+
+            if (elapsedTime >= 30000)
+            {
+                CD = false;
+                elapsedTime = 0;
+            }
 
 
-         
+            if (anotherTimer >= 1000 && TheWorld)
+            {
+                Tick.Play(1.0f, 0,0);
+                anotherTimer = 0;
+            }
+
+            if (elapsedTime >= 6500 && TheWorld)
+            {
+                if (otro)
+                {
+                    EndOf.Play(1.0f, 0, 0);
+                    otro = false;
+                }
+
+                if (elapsedTime >= 7000 && TheWorld)
+                {
+                    TheWorld = false;
+                    elapsedTime = 0;
+                    CD = true;
+                    otro = true;
+                }
+            }
+
+            if (inputManag.KeyDown(Keys.X) && !TheWorld && !CD)
+            {
+                BegoF.Play(1.0f, 0, 0);
+                elapsedTime = 0;
+                TheWorld = true;
+                TheWorldTime = new GameTime();
+            }
+
+            if (!TheWorld)
+            {
+                TheWorldTime = gameTime;
+            }
+
+
+
             if (inputManag.KeyDown(Keys.Right, Keys.D))
             {
                 sprite = playerL;
@@ -118,7 +188,7 @@ namespace BAO.Clases
                     else
                     {
 
-                        if (inputManag.KeyReleased(Keys.S))
+                        if (inputManag.KeyReleased(Keys.S, Keys.Down))
                         {
                             sprite.duck = true;
                         }
@@ -145,6 +215,7 @@ namespace BAO.Clases
                 
             }
 
+
             sprite.Update(gameTime);
             this.colissionBox = new Rectangle((int)sprite.Position.X, (int)sprite.Position.Y, 28, 50);
             inputManag.Update();
@@ -152,6 +223,7 @@ namespace BAO.Clases
         }
         public override void Draw(SpriteBatch spriteBatch, Vector2 pos)
         {
+
             sprite.Draw(spriteBatch);
         }
     }

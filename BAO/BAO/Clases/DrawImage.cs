@@ -18,6 +18,7 @@ namespace BAO.Clases
         private GraphicsDevice graphics;
 
 
+
         public virtual void Draw(ContentManager Content, SpriteBatch spriteBatch, string Image, Vector2 Position, Color color)
         {
             content = new ContentManager(Content.ServiceProvider, "Content");
