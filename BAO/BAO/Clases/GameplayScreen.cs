@@ -24,10 +24,28 @@ namespace BAO.Clases
         Texture2D texturaObs;
         BackgroundAnimation fondo;
         ///Suelo objSuelo = new Suelo();
+        int pito = 0;
+        private THEWORLDTimer timerTW;
+        private THEWORLDTimer timerCD;
+        private InputManager anotherInput;
+
+        private SoundEffect knifeCling;
+
+        private SoundEffect cling;
+        public List<ProyectilKnife> listaNKnives;
+        private ProyectilKnife shoot;
+
 
         private DialogScreen dialog;
         public override void LoadContent(ContentManager content)
         {
+            knifeCling = content.Load<SoundEffect>("knifeCling");
+            anotherInput = new InputManager();
+            listaNKnives = new List<ProyectilKnife>();
+            timerCD = new THEWORLDTimer();
+            timerCD.LoadContent(content, Vector2.Zero);
+            timerTW = new THEWORLDTimer();
+            timerTW.LoadContent(content, new Vector2(400,0));
             suelos = new List<Suelo>();
             fondo = new BackgroundAnimation("Background/background resized");
             // TODO: use this.Content to load your game content here
@@ -67,9 +85,21 @@ namespace BAO.Clases
 
         public override void Update(GameTime gameTime)
         {
+            inputManager.Update();
+            anotherInput.Update();
             fondo.Update(gameTime);
+
+            if (anotherInput.KeyPressed(Keys.Z) && !dialog.Active)
+            {
+                DispararCuchillo(15, player.isLeft, spritePos);
+
+            }
+
             if (!dialog.Active)
                 spritePos = player.Update(gameTime, inputManager, spritePos);
+
+
+
             foreach (Rectangle recto in listaObs)
             {
                 if (recto.Intersects(player.ColissionBox))
@@ -93,8 +123,26 @@ namespace BAO.Clases
                 }
 
             }
-            inputManager.Update();
+
+
+            UpdateCuchillos(player.TheWorldTime);
+            Timer(gameTime);
             dialog.Update(gameTime, inputManager);
+            DisposeCuchillos();
+
+
+
+
+
+        }
+
+        public void UpdateCuchillos(GameTime gameTime)
+        {
+            foreach (var VARIABLE in listaNKnives)
+            {
+                VARIABLE.Update(gameTime);
+                ColisionCuchillos();
+            }
         }
         public override void Draw(SpriteBatch spriteBatch)
         {
@@ -109,11 +157,70 @@ namespace BAO.Clases
             {
                 item.Draw(spriteBatch, item.rectangulo, item.texturaObs);
             }
+            foreach (var VARIABLE in listaNKnives)
+            {
+                VARIABLE.Draw(spriteBatch);
+            }
 
             player.Draw(spriteBatch, spritePos);
             dialog.Draw(spriteBatch);
+            timerCD.Draw(spriteBatch);
+            timerTW.Draw(spriteBatch);
 
             base.Draw(spriteBatch);
+        }
+
+        private void ColisionCuchillos()
+        {
+            foreach (var VARIABLE in listaNKnives)
+            {
+                foreach (var VARIABLE2 in listaNKnives)
+                {
+                    if (VARIABLE.colitionBox.Intersects(VARIABLE2.colitionBox) && !VARIABLE.Equals(VARIABLE2) )
+                    {
+                        knifeCling.Play(0.5f, 0, 0);
+                        VARIABLE.Muerte();
+                        VARIABLE2.Muerte();
+                    }
+                }
+            }
+        }
+
+        private void DisposeCuchillos()
+        {
+            listaNKnives.RemoveAll(ProyectilKnife => ProyectilKnife.Active == false || ProyectilKnife.position.X > 1024 || ProyectilKnife.position.X < 0);
+        }
+
+        private void Timer(GameTime gameTime)
+        {
+            if (player.TheWorld)
+            {
+                timerTW.Active = true;
+                timerTW.Update(gameTime);
+            }
+            else
+            {
+                timerTW.Active = false;
+                timerTW.Reset();
+            }
+            if (player.CD)
+            {
+                timerCD.Active = true;
+                timerCD.Update(gameTime);
+            }
+            else
+            {
+                timerCD.Active = false;
+                timerCD.Reset();
+
+            }
+        }
+
+        private void DispararCuchillo(int speed, bool left, Vector2 pos)
+        {
+            shoot = new ProyectilKnife();
+            shoot.LoadContent(this.content, speed, left, pos);
+            listaNKnives.Add(shoot);
         }
     }
 }

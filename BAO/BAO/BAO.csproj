@@ -86,12 +86,14 @@
     <Compile Include="Clases\IntroScreen.cs" />
     <Compile Include="Clases\OptionsScreen.cs" />
     <Compile Include="Clases\Player.cs" />
+    <Compile Include="Clases\ProyectilKnife.cs" />
     <Compile Include="Clases\PulsatingButton.cs" />
     <Compile Include="Clases\ScreenManager.cs" />
     <Compile Include="Clases\SplashScreen.cs" />
     <Compile Include="Clases\SpriteAnimation.cs" />
     <Compile Include="Clases\SpriteSheetAnimation.cs" />
     <Compile Include="Clases\Suelo.cs" />
+    <Compile Include="Clases\THEWORLDTimer.cs" />
     <Compile Include="Clases\TittleScreen.cs" />
     <Compile Include="Clases\XnaFunctionscs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

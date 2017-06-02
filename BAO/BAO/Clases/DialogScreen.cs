@@ -53,7 +53,7 @@ namespace BAO.Clases
 
                 image = content.Load<Texture2D>(texto[contador,0]);
 
-                if (inputManag.KeyPressed(Keys.Z, Keys.Enter))
+                if (inputManag.KeyPressed(Keys.Enter))
                 {
                     if (contador == texto.GetUpperBound(0))
                     {
