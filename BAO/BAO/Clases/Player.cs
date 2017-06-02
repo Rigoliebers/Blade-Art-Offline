@@ -69,16 +69,15 @@ namespace BAO.Clases
             this.position = pos;
             health = 100;
             damage = 10;
-            moveSpeed = 5;
+            moveSpeed.X = 5;
             isLeft = false;
             ColissionBox = new Rectangle(0,0,32,50);
-
             playerStandR.Initialize(standR, position, 32, 50, 2, 300, Color.White, 2.0f, true);
             playerStandL.Initialize(standL, position, 32, 50, 2, 150, Color.White, 2.0f, true);
             playerL.Initialize(moveRight, position, 32, 50, 8, 100, Color.White, 2.0f, true);
             playerR.Initialize(moveLeft, position, 32, 50, 8, 100, Color.White, 2.0f, true);
             playerDuckR.Initialize(duckR, position, 32, 50, 2, 100, Color.White, 2.0f, false);
-
+            hasJumped = false;
             sprite = playerStandR;
 
         }
@@ -145,7 +144,7 @@ namespace BAO.Clases
                 sprite = playerL;
                 isLeft = false;
                 sprite.Reverse = false;
-                position.X += moveSpeed;
+                position.X += moveSpeed.X;
                 sprite.Active = true;
                 sprite.Ended = false;
                 sprite.Looping = true;
@@ -158,7 +157,7 @@ namespace BAO.Clases
                     sprite = playerR;
                     isLeft = true;
                     sprite.Reverse = false;
-                    position.X -= moveSpeed;
+                    position.X -= moveSpeed.X;
                     sprite.Active = true;
                     sprite.Ended = false;
                     sprite.Looping = true;
@@ -215,10 +214,38 @@ namespace BAO.Clases
                 
             }
 
-
             sprite.Update(gameTime);
             this.colissionBox = new Rectangle((int)sprite.Position.X, (int)sprite.Position.Y, 28, 50);
             inputManag.Update();
+            float i = 1;
+            if (hasJumped==false)
+            {
+            moveSpeed.Y = 5.25f;
+            }
+
+            position.Y = position.Y + moveSpeed.Y;
+            if (Keyboard.GetState().IsKeyDown(Keys.Space) && hasJumped == false)
+            {
+                position.Y -= 1f;
+                moveSpeed.Y = -6.25f;
+                hasJumped = true;
+            }
+
+            if (hasJumped == true)
+            {
+                moveSpeed.Y += 0.25f * i;
+                position.Y = position.Y + moveSpeed.Y;
+            }
+
+            if (position.Y + 50 >= position.Y + 80)
+            {
+                hasJumped = false;
+            }
+
+            if (hasJumped == false)
+            {
+                moveSpeed.Y = 0f;
+            }
             return position;
         }
         public override void Draw(SpriteBatch spriteBatch, Vector2 pos)
