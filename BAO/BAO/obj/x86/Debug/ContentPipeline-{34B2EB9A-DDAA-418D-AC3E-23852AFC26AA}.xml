@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Menufont.xnb</Output>
-      <Time>2017-05-30T23:18:52.6330826-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Menufont.xnb</Output>
+      <Time>2017-05-29T16:44:38.1415498-07:00</Time>
     </Item>
     <Item>
       <Source>TittleDialog.spritefont</Source>
@@ -16,8 +16,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\TittleDialog.xnb</Output>
-      <Time>2017-05-31T21:41:42.5241075-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\TittleDialog.xnb</Output>
+      <Time>2017-05-31T18:27:05.9521867-07:00</Time>
     </Item>
     <Item>
       <Source>Agency24.spritefont</Source>
@@ -25,8 +25,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Agency24.xnb</Output>
-      <Time>2017-05-30T23:18:52.4640619-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Agency24.xnb</Output>
+      <Time>2017-05-29T18:01:15.4777214-07:00</Time>
     </Item>
     <Item>
       <Source>DialogFont.spritefont</Source>
@@ -34,8 +34,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\DialogFont.xnb</Output>
-      <Time>2017-05-31T21:41:42.3695687-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\DialogFont.xnb</Output>
+      <Time>2017-05-31T20:13:19.5575888-07:00</Time>
     </Item>
     <Item>
       <Source>Naming.spritefont</Source>
@@ -43,8 +43,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Naming.xnb</Output>
-      <Time>2017-05-31T21:41:42.5195876-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Naming.xnb</Output>
+      <Time>2017-05-31T20:23:34.2137341-07:00</Time>
     </Item>
     <Item>
       <Source>Font1.spritefont</Source>
@@ -52,8 +52,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Font1.xnb</Output>
-      <Time>2017-05-31T21:41:42.3720682-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Font1.xnb</Output>
+      <Time>2017-05-31T20:19:49.5262408-07:00</Time>
     </Item>
     <Item>
       <Source>pixel.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pixel.xnb</Output>
-      <Time>2017-05-30T23:18:52.6800888-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pixel.xnb</Output>
+      <Time>2017-05-27T21:03:45.1139878-07:00</Time>
     </Item>
     <Item>
       <Source>TittleScreen.jpg</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\TittleScreen.xnb</Output>
-      <Time>2017-05-30T23:18:52.69609-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\TittleScreen.xnb</Output>
+      <Time>2017-05-28T08:43:36.3294356-07:00</Time>
     </Item>
     <Item>
       <Source>Splash.jpg</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Splash.xnb</Output>
-      <Time>2017-05-30T23:18:52.6925896-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Splash.xnb</Output>
+      <Time>2017-05-28T10:25:31.2604981-07:00</Time>
     </Item>
     <Item>
       <Source>MC.png</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\MC.xnb</Output>
-      <Time>2017-05-30T23:18:52.6280826-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\MC.xnb</Output>
+      <Time>2017-05-30T17:33:35.8165127-07:00</Time>
     </Item>
     <Item>
       <Source>MC2.png</Source>
@@ -97,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\MC2.xnb</Output>
-      <Time>2017-05-30T23:18:52.6315822-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\MC2.xnb</Output>
+      <Time>2017-05-30T17:33:58.0669587-07:00</Time>
     </Item>
     <Item>
       <Source>MC0.jpg</Source>
@@ -106,8 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\MC0.xnb</Output>
-      <Time>2017-05-30T23:18:52.630082-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\MC0.xnb</Output>
+      <Time>2017-05-30T17:46:31.9365562-07:00</Time>
     </Item>
     <Item>
       <Source>pStandR.png</Source>
@@ -115,8 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pStandR.xnb</Output>
-      <Time>2017-05-30T23:18:52.6875893-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pStandR.xnb</Output>
+      <Time>2017-05-30T19:16:40.8670482-07:00</Time>
     </Item>
     <Item>
       <Source>pStandL.png</Source>
@@ -124,8 +124,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pStandL.xnb</Output>
-      <Time>2017-05-30T23:18:52.6860899-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pStandL.xnb</Output>
+      <Time>2017-05-30T19:29:53.7915885-07:00</Time>
     </Item>
     <Item>
       <Source>pWalkR.png</Source>
@@ -133,8 +133,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pWalkR.xnb</Output>
-      <Time>2017-05-30T23:18:52.6905902-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pWalkR.xnb</Output>
+      <Time>2017-05-30T20:21:32.425896-07:00</Time>
     </Item>
     <Item>
       <Source>pisitoo.png</Source>
@@ -142,8 +142,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pisitoo.xnb</Output>
-      <Time>2017-05-30T23:18:52.6790884-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pisitoo.xnb</Output>
+      <Time>2017-05-30T23:05:24.6903099-07:00</Time>
     </Item>
     <Item>
       <Source>pWalkL.png</Source>
@@ -151,8 +151,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pWalkL.xnb</Output>
-      <Time>2017-05-30T23:18:52.68909-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pWalkL.xnb</Output>
+      <Time>2017-06-01T09:51:48.9769223-07:00</Time>
     </Item>
     <Item>
       <Source>pDuckR.png</Source>
@@ -160,8 +160,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pDuckR.xnb</Output>
-      <Time>2017-05-30T23:18:52.677589-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pDuckR.xnb</Output>
+      <Time>2017-05-30T21:11:07.6701214-07:00</Time>
     </Item>
     <Item>
       <Source>Background\background resized.jpg</Source>
@@ -169,8 +169,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Background\background resized.xnb</Output>
-      <Time>2017-05-31T18:06:14.6355663-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Background\background resized.xnb</Output>
+      <Time>2017-05-31T18:57:29.4351937-07:00</Time>
     </Item>
     <Item>
       <Source>monito0.png</Source>
@@ -178,8 +178,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\monito0.xnb</Output>
-      <Time>2017-05-31T21:14:18.3138289-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\monito0.xnb</Output>
+      <Time>2017-05-31T17:53:30.2231468-07:00</Time>
     </Item>
     <Item>
       <Source>backdialog.png</Source>
@@ -187,8 +187,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\backdialog.xnb</Output>
-      <Time>2017-05-31T21:14:18.3063288-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\backdialog.xnb</Output>
+      <Time>2017-05-31T17:59:37.7914772-07:00</Time>
     </Item>
     <Item>
       <Source>Background\Background2.jpg</Source>
@@ -196,8 +196,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Background\Background2.xnb</Output>
-      <Time>2017-05-31T21:41:42.3650682-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Background\Background2.xnb</Output>
+      <Time>2017-05-31T20:28:15.3098204-07:00</Time>
     </Item>
     <Item>
       <Source>Ishtar.png</Source>
@@ -205,53 +205,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Ishtar.xnb</Output>
-      <Time>2017-05-31T21:41:42.5180874-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Libera Me From Hell.wav</Source>
-      <Name>Libera Me From Hell</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Libera Me From Hell.xnb</Output>
-      <Time>2017-05-30T23:18:52.623092-07:00</Time>
-    </Item>
-    <Item>
-      <Source>misc_menu_2.wav</Source>
-      <Name>misc_menu_2</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\misc_menu_2.xnb</Output>
-      <Time>2017-05-30T23:18:52.6376076-07:00</Time>
-    </Item>
-    <Item>
-      <Source>misc_menu_4.wav</Source>
-      <Name>misc_menu_4</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\misc_menu_4.xnb</Output>
-      <Time>2017-05-30T23:18:52.6421012-07:00</Time>
-    </Item>
-    <Item>
-      <Source>positive.wav</Source>
-      <Name>positive</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\positive.xnb</Output>
-      <Time>2017-05-30T23:18:52.6850896-07:00</Time>
-    </Item>
-    <Item>
-      <Source>introbgm.wav</Source>
-      <Name>introbgm</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\introbgm.xnb</Output>
-      <Time>2017-05-31T21:41:42.5135867-07:00</Time>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Ishtar.xnb</Output>
+      <Time>2017-05-31T21:06:17.198871-07:00</Time>
     </Item>
     <Item>
       <Source>knife.png</Source>
@@ -263,13 +218,58 @@
       <Time>2017-06-01T18:42:46.155299-07:00</Time>
     </Item>
     <Item>
+      <Source>Libera Me From Hell.wav</Source>
+      <Name>Libera Me From Hell</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Libera Me From Hell.xnb</Output>
+      <Time>2017-05-29T19:38:21.2921702-07:00</Time>
+    </Item>
+    <Item>
+      <Source>misc_menu_2.wav</Source>
+      <Name>misc_menu_2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\misc_menu_2.xnb</Output>
+      <Time>2017-05-29T19:45:52.1398016-07:00</Time>
+    </Item>
+    <Item>
+      <Source>misc_menu_4.wav</Source>
+      <Name>misc_menu_4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\misc_menu_4.xnb</Output>
+      <Time>2017-05-29T19:54:31.322257-07:00</Time>
+    </Item>
+    <Item>
+      <Source>positive.wav</Source>
+      <Name>positive</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\positive.xnb</Output>
+      <Time>2017-05-29T19:59:00.4267573-07:00</Time>
+    </Item>
+    <Item>
+      <Source>introbgm.wav</Source>
+      <Name>introbgm</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\introbgm.xnb</Output>
+      <Time>2017-05-31T20:54:20.0134769-07:00</Time>
+    </Item>
+    <Item>
       <Source>tick.wav</Source>
       <Name>tick</Name>
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\tick.xnb</Output>
-      <Time>2017-06-01T20:52:27.7026893-07:00</Time>
+      <Time>2017-06-02T09:58:34.301104-07:00</Time>
     </Item>
     <Item>
       <Source>TheEnd.wav</Source>
@@ -298,6 +298,15 @@
       <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\knifeCling.xnb</Output>
       <Time>2017-06-01T22:12:41.2330842-07:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\DisposeKnife.png</Source>
+      <Name>Sprites\DisposeKnife</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\DisposeKnife.xnb</Output>
+      <Time>2017-06-02T10:40:10.2510483-07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{34B2EB9A-DDAA-418D-AC3E-23852AFC26AA}</ContentProjectGUID>
@@ -305,10 +314,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAOContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAOContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -336,8 +345,8 @@
         <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2017-05-02T16:17:20.5123321-07:00</Value>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2017-05-31T10:09:42.1121486-07:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

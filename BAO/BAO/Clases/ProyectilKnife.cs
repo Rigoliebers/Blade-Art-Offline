@@ -11,7 +11,8 @@ namespace BAO.Clases
 {
     public class ProyectilKnife
     {
-
+        private ContentManager content;
+        public bool isPlayer;
         public bool Active;
         private int moveSpeed;
         public Rectangle colitionBox;
@@ -20,13 +21,15 @@ namespace BAO.Clases
         private bool isLeft;
         public Vector2 position;
         private float Time;
+        public bool colide = false;
 
         public void LoadContent(ContentManager content, int speed, bool derecha, Vector2 pos)
         {
+            this.content = content;
             isLeft = derecha;
             texture = content.Load<Texture2D>("knife");
             this.moveSpeed = speed;
-            this.colitionBox = new Rectangle((int)pos.X,(int)pos.Y,5,24);
+            this.colitionBox = new Rectangle((int)pos.X,(int)pos.Y,17,8);
             position = pos;
             sprite = new SpriteAnimation();
             sprite.Initialize(texture, pos, 5,17,0,2000, Color.White, 1.0f,true);
@@ -52,14 +55,15 @@ namespace BAO.Clases
                     }
                 }
 
-            if (this.Active)
+            if (this.Active && !colide)
             {
                 sprite.Position = new Vector2(position.X, position.Y);
-                colitionBox = new Rectangle((int)position.X, (int)position.Y, 5, 24);
+                colitionBox = new Rectangle((int)position.X, (int)position.Y, 24, 8);
             }
             else
             {
                 colitionBox = new Rectangle(0,0,0,0);
+                sprite.Update(gameTime);
             }
 
             
@@ -69,7 +73,7 @@ namespace BAO.Clases
 
         public void Draw(SpriteBatch sprite)
         {
-            if (this.sprite.Active)
+            if (this.sprite.Active && !colide)
             {
                 if (isLeft)
                 {
@@ -80,13 +84,29 @@ namespace BAO.Clases
                     sprite.Draw(texture, position, null, Color.White, 0, Vector2.Zero, 1.5f, SpriteEffects.None, 0);
                 }
             }
+            else
+            {
+                if (colide)
+                {
+                    this.sprite.Draw(sprite);
+                }
+            }
 
         }
 
         public void Muerte()
         {
-            this.sprite.Active = false;
+            this.sprite.Active = true;
             this.Active = false;
+            this.colide = true;
+            SetColide();
+            this.colitionBox = new Rectangle(0,0,0,0);
+        }
+
+        private void SetColide()
+        {
+            texture = content.Load<Texture2D>("Sprites/DisposeKnife");
+            this.sprite.Initialize(texture, sprite.Position, 50,50, 6,20, Color.White,1.5f, false );
         }
     }
 }
