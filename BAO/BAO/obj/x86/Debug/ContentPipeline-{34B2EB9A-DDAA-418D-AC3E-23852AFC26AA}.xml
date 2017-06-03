@@ -209,6 +209,15 @@
       <Time>2017-05-31T21:41:42.5180874-07:00</Time>
     </Item>
     <Item>
+      <Source>knife.png</Source>
+      <Name>knife</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\knife.xnb</Output>
+      <Time>2017-06-01T23:31:01.7809536-07:00</Time>
+    </Item>
+    <Item>
       <Source>Libera Me From Hell.wav</Source>
       <Name>Libera Me From Hell</Name>
       <Importer>WavImporter</Importer>
@@ -254,22 +263,13 @@
       <Time>2017-05-31T21:41:42.5135867-07:00</Time>
     </Item>
     <Item>
-      <Source>knife.png</Source>
-      <Name>knife</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\knife.xnb</Output>
-      <Time>2017-06-01T18:42:46.155299-07:00</Time>
-    </Item>
-    <Item>
       <Source>tick.wav</Source>
       <Name>tick</Name>
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\tick.xnb</Output>
-      <Time>2017-06-01T20:52:27.7026893-07:00</Time>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\tick.xnb</Output>
+      <Time>2017-06-01T23:31:01.7944553-07:00</Time>
     </Item>
     <Item>
       <Source>TheEnd.wav</Source>
@@ -277,8 +277,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\TheEnd.xnb</Output>
-      <Time>2017-06-01T20:52:33.5407426-07:00</Time>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\TheEnd.xnb</Output>
+      <Time>2017-06-01T23:31:01.7914548-07:00</Time>
     </Item>
     <Item>
       <Source>Za Warudo Sound Effect.wav</Source>
@@ -286,8 +286,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Za Warudo Sound Effect.xnb</Output>
-      <Time>2017-06-01T20:55:29.592-07:00</Time>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Za Warudo Sound Effect.xnb</Output>
+      <Time>2017-06-01T23:31:01.8014559-07:00</Time>
     </Item>
     <Item>
       <Source>knifeCling.wav</Source>
@@ -295,8 +295,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\knifeCling.xnb</Output>
-      <Time>2017-06-01T22:12:41.2330842-07:00</Time>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\knifeCling.xnb</Output>
+      <Time>2017-06-01T23:31:01.7839539-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
