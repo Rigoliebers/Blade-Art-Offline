@@ -31,3 +31,4 @@ Content\tick.xnb
 Content\TheEnd.xnb
 Content\Za Warudo Sound Effect.xnb
 Content\knifeCling.xnb
+Content\Sprites\DisposeKnife.xnb

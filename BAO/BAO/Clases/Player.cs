@@ -25,7 +25,7 @@ namespace BAO.Clases
         public SpriteAnimation playerDuckR;
 
         private SoundEffect BegoF;
-        private SoundEffect Tick;
+        public SoundEffect Tick;
         private SoundEffect EndOf;
 
 
@@ -94,20 +94,21 @@ namespace BAO.Clases
             elapsedTime += gameTime.ElapsedGameTime.Milliseconds;
             anotherTimer += gameTime.ElapsedGameTime.Milliseconds;
 
-            if (elapsedTime >= 30000)
+            if (elapsedTime >= 8000)
             {
                 CD = false;
                 elapsedTime = 0;
             }
 
 
-            if (anotherTimer >= 1000 && TheWorld)
-            {
-                Tick.Play(1.0f, 0,0);
-                anotherTimer = 0;
-            }
 
-            if (elapsedTime >= 6500 && TheWorld)
+            //if (anotherTimer >= 1000 && TheWorld)
+            //{
+            //    Tick.Play(1.0f, 0,0);
+            //    anotherTimer = 0;
+            //}
+
+            if (elapsedTime >= 6000 && TheWorld)
             {
                 if (otro)
                 {

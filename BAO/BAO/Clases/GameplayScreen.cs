@@ -178,9 +178,17 @@ namespace BAO.Clases
                 {
                     if (VARIABLE.colitionBox.Intersects(VARIABLE2.colitionBox) && !VARIABLE.Equals(VARIABLE2) )
                     {
+
                         knifeCling.Play(0.5f, 0, 0);
                         VARIABLE.Muerte();
                         VARIABLE2.Muerte();
+
+                        //if (!VARIABLE.isPlayer && !VARIABLE2.isPlayer)
+                        //{
+                        //    knifeCling.Play(0.5f, 0, 0);
+                        //    VARIABLE.Muerte();
+                        //    VARIABLE2.Muerte();
+                        //}
                     }
                 }
             }
@@ -188,7 +196,7 @@ namespace BAO.Clases
 
         private void DisposeCuchillos()
         {
-            listaNKnives.RemoveAll(ProyectilKnife => ProyectilKnife.Active == false || ProyectilKnife.position.X > 1024 || ProyectilKnife.position.X < 0);
+            listaNKnives.RemoveAll(ProyectilKnife => ProyectilKnife.position.X > 1024 || ProyectilKnife.position.X < 0);
         }
 
         private void Timer(GameTime gameTime)
@@ -197,6 +205,10 @@ namespace BAO.Clases
             {
                 timerTW.Active = true;
                 timerTW.Update(gameTime);
+                if (timerTW.miliseconds == 0)
+                {
+                    player.Tick.Play(1.0f, 0, 0);
+                }
             }
             else
             {
@@ -220,6 +232,7 @@ namespace BAO.Clases
         {
             shoot = new ProyectilKnife();
             shoot.LoadContent(this.content, speed, left, pos);
+            shoot.isPlayer = true;
             listaNKnives.Add(shoot);
         }
     }
