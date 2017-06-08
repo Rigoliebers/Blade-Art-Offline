@@ -16,6 +16,7 @@ namespace BAO.Clases
         protected int damage;
         protected SpriteAnimation sprite;
         protected Rectangle colissionBox;
+        protected Rectangle colissionBox2;
         protected ContentManager content;
         protected FileManager fileManager;
         protected List<List<string>> attributes, contents;
@@ -30,6 +31,12 @@ namespace BAO.Clases
             set { colissionBox = value; }
         }
 
+        public Rectangle ColissionBox2
+        {
+            get { return colissionBox2; }
+            set { colissionBox2 = value; }
+        }
+        
         public virtual void LoadContent(ContentManager content, InputManager input, Vector2 pos) {
             this.content = new ContentManager(content.ServiceProvider, "Content");
 
