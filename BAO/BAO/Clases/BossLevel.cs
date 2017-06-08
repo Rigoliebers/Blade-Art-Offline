@@ -20,9 +20,11 @@ namespace BAO.Clases
         Player player;
         Enemy enemy;
         List<Rectangle> listaObs;
+        List<Rectangle> listaObsIzq;
         List<Suelo> suelos;
         Texture2D texturaObs;
         BackgroundAnimation fondo;
+        public Gravedad gravedad = new Gravedad();
         int pito = 0;
         private THEWORLDTimer timerTW;
         private THEWORLDTimer timerCD;
@@ -31,7 +33,6 @@ namespace BAO.Clases
         private SoundEffect stab;
         private SoundEffect part1bgm;
         private SoundEffectInstance part1bgminstance;
-
         private SoundEffect knifeCling;
 
         private SoundEffect cling;
@@ -65,20 +66,35 @@ namespace BAO.Clases
             fondo.LoadContent(content);
             dialog = new DialogScreen();
             listaObs = new List<Rectangle>();
-            listaObs.Add(new Rectangle(900, 400, 400, 200));
-            Suelo pito = new Suelo("pisitoo", content);
-            Suelo pito2 = new Suelo("pisitoo", content);
-            Suelo pito3 = new Suelo("pisitoo", content);
-            pito2.rectangulo = new Rectangle(20, 550, 400, 20);
-            pito.rectangulo = new Rectangle(350, 650, 400, 20);
-            pito3.rectangulo = new Rectangle(80, 400, 400, 20);
+            listaObs.Add(new Rectangle(0, 0, 0, 1200));
+            listaObsIzq = new List<Rectangle>();
+            listaObsIzq.Add(new Rectangle(1024, 0 , 0 , 1200));
+            Suelo suelo = new Suelo("Stone3", content);
+            Suelo suelo2 = new Suelo("Stone3", content);
+            Suelo suelo3 = new Suelo("Stone3", content);
+            Suelo suelo4 = new Suelo("Stone3", content);
+            Suelo suelo5 = new Suelo("Stone3", content);
+            Suelo suelo6 = new Suelo("Stone3", content);
+            Suelo suelo7 = new Suelo("Stone3", content);
+            suelo.rectangulo = new Rectangle(50, 200, 150, 50);
+            suelo2.rectangulo = new Rectangle(150, 300, 150, 50);
+            suelo3.rectangulo = new Rectangle(250, 400, 150, 50);
+            suelo4.rectangulo = new Rectangle(700, 300, 150, 50);
+            suelo5.rectangulo = new Rectangle(600, 400, 150, 50);
+            suelo6.rectangulo = new Rectangle(0, 550, 1024, 800);
+            suelo7.rectangulo = new Rectangle(800, 200, 150, 50);
             spriteEnemypos = new Vector2(600,100);
-            suelos.Add(pito);
-            suelos.Add(pito2);
-            suelos.Add(pito3);
+            suelos.Add(suelo);
+            suelos.Add(suelo2);
+            suelos.Add(suelo3);
+            suelos.Add(suelo4);
+            suelos.Add(suelo5);
+            suelos.Add(suelo6);
+            suelos.Add(suelo7);
             texturaObs = content.Load<Texture2D>("pisitoo");
             player = new Player();
             player.LoadContent(content, inputManager, spritePos);
+            player.LoadContent(gravedad);
             player.playerR.Active = true;
             Boss.LoadContent(content, inputManager, new Vector2(750, 100));
             Boss.active = false;
@@ -159,12 +175,21 @@ namespace BAO.Clases
             {
                 if (recto.Intersects(player.ColissionBox))
                 {
-                    spritePos.X = spritePos.X - player.moveSpeed.X;
+                    spritePos.X = spritePos.X + player.moveSpeed.X;
                     break;
                 }
 
             }
 
+            foreach (Rectangle recto in listaObsIzq)                  
+            {
+                if (recto.Intersects(player.ColissionBox))
+                {
+                    spritePos.X = spritePos.X - player.moveSpeed.X;
+                    break;
+                }
+
+            }
 
 
             foreach (Suelo recto in suelos)
