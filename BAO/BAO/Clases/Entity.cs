@@ -46,7 +46,7 @@ namespace BAO.Clases
         }
 
         public virtual void UnloadContent() {
-            content.Unload();
+          
         }
 
         public virtual void Update(GameTime gameTime, InputManager inputManag) {

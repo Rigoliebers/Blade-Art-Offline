@@ -101,9 +101,7 @@ namespace BAO.Clases
             {
                     {"monito0", "El", "Mi pito amigo"},
                     {"monito0", "El", "2"},
-                    {"monito0", "El", "3"},
-              
-                
+                    {"monito0", "El", "3"},                             
             };
 
             dialog.LoadContent(content, dialogo);
@@ -119,6 +117,11 @@ namespace BAO.Clases
             inputManager.Update();
             anotherInput.Update();
             fondo.Update(gameTime);
+
+            if (spritePos.Y==450 && spritePos.X>=1024)
+            {
+                ScreenManager.Instance.AddScreen(new BossLevel());
+            }
 
             if (anotherInput.KeyPressed(Keys.Z) && !dialog.Active)
             {
