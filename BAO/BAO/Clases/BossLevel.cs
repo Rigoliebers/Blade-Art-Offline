@@ -40,9 +40,12 @@ namespace BAO.Clases
 
         private EnemyDestuno Boss;
 
+        private Gravedad gravedad;
+
         private DialogScreen dialog;
         public override void LoadContent(ContentManager content)
         {
+            gravedad=new Gravedad();
             stab = content.Load<SoundEffect>("Knife Stab Sound Effect");
             part1bgm = content.Load<SoundEffect>("Destined Cruz");
             part1bgminstance = part1bgm.CreateInstance();
@@ -68,7 +71,7 @@ namespace BAO.Clases
             Suelo pito3 = new Suelo("pisitoo", content);
             pito2.rectangulo = new Rectangle(20, 550, 400, 20);
             pito.rectangulo = new Rectangle(350, 650, 400, 20);
-            pito3.rectangulo = new Rectangle(80, 360, 400, 20);
+            pito3.rectangulo = new Rectangle(80, 400, 400, 20);
             spriteEnemypos = new Vector2(600,100);
             suelos.Add(pito);
             suelos.Add(pito2);
@@ -79,7 +82,9 @@ namespace BAO.Clases
             player.playerR.Active = true;
             Boss.LoadContent(content, inputManager, new Vector2(750, 100));
             Boss.active = false;
-            
+            Boss.setList(listaNKnives);
+            player.LoadContent(gravedad);
+
 
             string[,] dialogo = new string[,]
             {
@@ -126,7 +131,7 @@ namespace BAO.Clases
 
             if (!dialog.Active)
             {
-                part1bgminstance.Volume = 0.7f;
+                part1bgminstance.Volume = 0.5f;
                 part1bgminstance.Play();
                 Boss.active = true;
                 spritePos = player.Update(gameTime, inputManager, spritePos);
@@ -165,14 +170,20 @@ namespace BAO.Clases
             foreach (Suelo recto in suelos)
             {
                 Rectangle sueloInter = recto.rectangulo;
+                sueloInter.Y = sueloInter.Y - 40;
                 if (sueloInter.Intersects(player.ColissionBox))
                 {
-                    if (spritePos.Y >= sueloInter.Y - 40)
+                    if (spritePos.Y >= sueloInter.Y && gravedad.moveSpeed.Y >= 0.0f)
                     {
-                        spritePos.Y = sueloInter.Y - 40;
-                        player.hasJumped = false;
+                        spritePos.Y = sueloInter.Y;
+                        gravedad.hasJumped = false;
+                        gravedad.caida = false;
                     }
                     break;
+                }
+                else
+                {
+                    gravedad.caida = true;
                 }
 
             }
@@ -239,10 +250,12 @@ namespace BAO.Clases
                 {
                     if (VARIABLE.colitionBox.Intersects(VARIABLE2.colitionBox) && !VARIABLE.Equals(VARIABLE2))
                     {
-
-                        knifeCling.Play(0.5f, 0, 0);
-                        VARIABLE.Muerte();
-                        VARIABLE2.Muerte();
+                        if (VARIABLE.isPlayer && !VARIABLE2.isPlayer)
+                        {
+                            knifeCling.Play(0.5f, 0, 0);
+                            VARIABLE.Muerte();
+                            VARIABLE2.Muerte();
+                        }
                     }
                 }
             }
@@ -285,7 +298,7 @@ namespace BAO.Clases
         private void DispararCuchillo(int speed, bool left, Vector2 pos)
         {
             shoot = new ProyectilKnife();
-            shoot.LoadContent(this.content, speed, left, pos);
+            shoot.LoadContent(this.content, speed, left, pos, new Vector2(24, 8), "knife", 10, 1.5f, new Vector2(16, 8));
             shoot.isPlayer = true;
             listaNKnives.Add(shoot);
         }

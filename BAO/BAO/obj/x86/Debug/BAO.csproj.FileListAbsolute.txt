@@ -104,3 +104,4 @@ c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\C
 c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Bloody Tears.xnb
 c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Destined Cruz.xnb
 c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Knife Stab Sound Effect.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Proyectil\FireProyectil.xnb
