@@ -21,6 +21,7 @@ namespace BAO.Clases
         Vector2 spritePosEnemy;
         Player player;
         List<Rectangle> listaObs;
+        List<Rectangle> listaObsIzq;
         List<Suelo> suelos;
         Texture2D texturaObs;
         BackgroundAnimation fondo;
@@ -51,9 +52,11 @@ namespace BAO.Clases
             fondo.LoadContent(content);
              base.LoadContent(content);
             dialog = new DialogScreen();
-            //listaObs = new List<Rectangle>();
-            //listaObs.Add(new Rectangle(900, 400, 400, 100));
-            //listaObs.Add(new Rectangle(300, 400, 10, 100));
+            listaObs = new List<Rectangle>();
+            listaObs.Add(new Rectangle(0, 0, 0, 1200));
+            listaObsIzq = new List<Rectangle>();
+            listaObsIzq.Add(new Rectangle(1024, 0, 0, 350));
+            listaObsIzq.Add(new Rectangle(1024, 600, 0, 700));
             #region suelos
             Suelo suelo = new Suelo("Stone1", content);
             Suelo suelo2 = new Suelo("Stone1", content);
@@ -137,15 +140,27 @@ namespace BAO.Clases
 
 
 
-            /*foreach (Rectangle recto in listaObs)
+            foreach (Rectangle recto in listaObs)
             {
                 if (recto.Intersects(player.ColissionBox))
                 {
-                    spritePos.X = spritePos.X - player.moveSpeed.X;                  
+                    spritePos.X = spritePos.X + player.moveSpeed.X;
                     break;
                 }
-                
-            }*/
+
+            }
+
+            foreach (Rectangle recto in listaObsIzq)
+            {
+                if (recto.Intersects(player.ColissionBox))
+                {
+                    spritePos.X = spritePos.X - player.moveSpeed.X;
+                    break;
+                }
+
+            }
+
+
             foreach (Suelo recto in suelos)
             {
                 Rectangle sueloInter = recto.rectangulo;
