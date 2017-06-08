@@ -231,17 +231,12 @@ namespace BAO.Clases
                 {
                     if (VARIABLE.colitionBox.Intersects(VARIABLE2.colitionBox) && !VARIABLE.Equals(VARIABLE2) )
                     {
-
-                        knifeCling.Play(0.5f, 0, 0);
-                        VARIABLE.Muerte();
-                        VARIABLE2.Muerte();
-
-                        //if (!VARIABLE.isPlayer && !VARIABLE2.isPlayer)
-                        //{
-                        //    knifeCling.Play(0.5f, 0, 0);
-                        //    VARIABLE.Muerte();
-                        //    VARIABLE2.Muerte();
-                        //}
+                        if (!VARIABLE.isPlayer && !VARIABLE2.isPlayer)
+                        {
+                            knifeCling.Play(0.5f, 0, 0);
+                            VARIABLE.Muerte();
+                            VARIABLE2.Muerte();
+                        }
                     }
                 }
             }
@@ -284,7 +279,7 @@ namespace BAO.Clases
         private void DispararCuchillo(int speed, bool left, Vector2 pos)
         {
             shoot = new ProyectilKnife();
-            shoot.LoadContent(this.content, speed, left, pos);
+            shoot.LoadContent(this.content, speed, left, pos, new Vector2(24, 8),"knife", 10, 1.5f, new Vector2(16,8));
             shoot.isPlayer = true;
             listaNKnives.Add(shoot);
         }

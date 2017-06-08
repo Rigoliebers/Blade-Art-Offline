@@ -22,17 +22,23 @@ namespace BAO.Clases
         public Vector2 position;
         private float Time;
         public bool colide = false;
+        private Vector2 image;
+        private float scale;
+        private string sprait;
 
-        public void LoadContent(ContentManager content, int speed, bool derecha, Vector2 pos)
+        public void LoadContent(ContentManager content, int speed, bool derecha, Vector2 pos, Vector2 colition, string image, int damage, float scale, Vector2 spritevector)
         {
+            this.scale = scale;
+            this.image = colition;
+            sprait = image;
             this.content = content;
             isLeft = derecha;
-            texture = content.Load<Texture2D>("knife");
+            texture = content.Load<Texture2D>(image);
             this.moveSpeed = speed;
-            this.colitionBox = new Rectangle((int)pos.X,(int)pos.Y,17,8);
+            this.colitionBox = new Rectangle((int)pos.X,(int)pos.Y,(int)colition.X, (int)colition.Y);
             position = pos;
             sprite = new SpriteAnimation();
-            sprite.Initialize(texture, pos, 5,17,0,2000, Color.White, 1.0f,true);
+            sprite.Initialize(texture, pos,(int)spritevector.X ,(int)spritevector.Y,0,2000, Color.White, scale,true);
             Time = 0;
             sprite.Active = true;
             Active = true;
@@ -58,7 +64,7 @@ namespace BAO.Clases
             if (this.Active && !colide)
             {
                 sprite.Position = new Vector2(position.X, position.Y);
-                colitionBox = new Rectangle((int)position.X, (int)position.Y, 24, 8);
+                colitionBox = new Rectangle((int)position.X, (int)position.Y, (int)image.X, (int)image.Y);
             }
             else
             {
@@ -77,11 +83,11 @@ namespace BAO.Clases
             {
                 if (isLeft)
                 {
-                    sprite.Draw(texture, position, null, Color.White, 0, Vector2.Zero, 1.5f, SpriteEffects.FlipHorizontally, 0);
+                    sprite.Draw(texture, position, null, Color.White, 0, Vector2.Zero, scale, SpriteEffects.FlipHorizontally, 0);
                 }
                 else
                 {
-                    sprite.Draw(texture, position, null, Color.White, 0, Vector2.Zero, 1.5f, SpriteEffects.None, 0);
+                    sprite.Draw(texture, position, null, Color.White, 0, Vector2.Zero, scale, SpriteEffects.None, 0);
                 }
             }
             else
@@ -105,8 +111,16 @@ namespace BAO.Clases
 
         private void SetColide()
         {
-            texture = content.Load<Texture2D>("Sprites/DisposeKnife");
-            this.sprite.Initialize(texture, sprite.Position, 50,50, 6,20, Color.White,1.5f, false );
+            if (sprait.Equals("knife") )
+            {
+                texture = content.Load<Texture2D>("Sprites/DisposeKnife");
+                this.sprite.Initialize(texture, sprite.Position, 50, 50, 6, 20, Color.White, 1.5f, false);
+            }
+            else
+            {
+                
+            }
+            
         }
     }
 }

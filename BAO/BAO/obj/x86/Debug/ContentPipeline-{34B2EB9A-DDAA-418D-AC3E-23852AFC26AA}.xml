@@ -415,6 +415,15 @@
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Knife Stab Sound Effect.xnb</Output>
       <Time>2017-06-07T23:27:21.959781-07:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\Proyectil\FireProyectil.png</Source>
+      <Name>Sprites\Proyectil\FireProyectil</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Proyectil\FireProyectil.xnb</Output>
+      <Time>2017-06-07T23:37:21.7984014-07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{34B2EB9A-DDAA-418D-AC3E-23852AFC26AA}</ContentProjectGUID>

@@ -25,9 +25,15 @@ namespace BAO.Clases
         private Texture2D standLeft;
         private Texture2D standRight;
 
+        private ProyectilKnife fuego;
 
+        public List<ProyectilKnife> listaNKnives;
+
+        private ContentManager contentmanager;
         public override void LoadContent(ContentManager content, InputManager input, Vector2 pos)
         {
+            this.contentmanager = content;
+
             health = 1000;
             ColissionBox = new Rectangle(0,0,67,80);
             damage = 10;
@@ -49,6 +55,11 @@ namespace BAO.Clases
             sprite = StandL;
         }
 
+        public void setList(List<ProyectilKnife> lista)
+        {
+            this.listaNKnives = lista;
+        }
+
         public override void UnloadContent()
         {
             base.UnloadContent();
@@ -56,6 +67,9 @@ namespace BAO.Clases
 
         public override void Update(GameTime gameTime, Vector2 pos)
         {
+
+            elapsedtime += gameTime.ElapsedGameTime.Milliseconds;
+
             if (isLeft)
             {
                 sprite = StandL;
@@ -69,16 +83,13 @@ namespace BAO.Clases
             sprite.Active = true;
 
 
-            if (health >800)
-            {
-                state = 0;
-            }
+            
             if (active)
             {
                 switch (state)
                 {
                     case (0):
-                        state1(gameTime, pos);
+                        state0(gameTime, pos);
                         break;
                     case (1):
                         state1(gameTime, pos);
@@ -102,7 +113,7 @@ namespace BAO.Clases
             sprite.Draw(spriteBatch);
         }
 
-        public void state1(GameTime gameTime, Vector2 pos) //Idle
+        public void state0(GameTime gameTime, Vector2 pos) //Idle
         {
             if (position.X > 600)
             {
@@ -113,15 +124,54 @@ namespace BAO.Clases
                 position.Y += 0.3f;
             }
 
-            if (position.X > 600 && position.Y < 200)
+
+            if (position.X > 599 && position.X < 601 && position.Y >= 199 && position.Y <= 201)
             {
                 state = 1;
             }
         }
 
+        public void state1(GameTime gameTime, Vector2 pos)
+        {
+            Random x = new Random();
+            int y = x.Next(0, 3);
+
+
+            if (elapsedtime > 200)
+            {
+                switch (y)
+                {
+                    case 0:
+                        Fire(new Vector2(position.X, position.Y + 50));
+                        elapsedtime = 0;
+                        break;
+
+                    case 1:
+                        Fire(new Vector2(position.X, position.Y));
+                        elapsedtime = 0;
+                        break;
+
+                    case 2:
+                        Fire(new Vector2(position.X, position.Y -50));
+                        elapsedtime = 0;
+                        break;
+                }
+            }
+
+            
+        }
+
         public void IsHitted(int hit)
         {
             health += hit;
+        }
+
+        public void Fire(Vector2 position)
+        {
+            fuego = new ProyectilKnife();
+            fuego.LoadContent(contentmanager, 3, isLeft, position, new Vector2(30, 30), "Sprites/Proyectil/FireProyectil", 10, 1.0f, new Vector2(30, 30));
+            fuego.isPlayer = false;
+            listaNKnives.Add(fuego);
         }
 
     }

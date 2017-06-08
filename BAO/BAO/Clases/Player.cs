@@ -75,7 +75,7 @@ namespace BAO.Clases
             playerShootR = new SpriteAnimation();
             playerShootL = new SpriteAnimation();
             shoot = new ProyectilKnife();
-            shoot.LoadContent(content, 10, isLeft, position);
+            shoot.LoadContent(this.content, 10, isLeft, pos, new Vector2(24, 8), "knife", 10, 1.5f, new Vector2(16, 8));
             this.position = pos;
             health = 100;
             damage = 10;
