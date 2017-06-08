@@ -307,6 +307,51 @@
       <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\tick.xnb</Output>
       <Time>2017-06-02T20:07:46.9269571-07:00</Time>
     </Item>
+    <Item>
+      <Source>eWalkL.png</Source>
+      <Name>eWalkL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\eWalkL.xnb</Output>
+      <Time>2017-06-07T19:30:06.2861935-07:00</Time>
+    </Item>
+    <Item>
+      <Source>eRunkl.png</Source>
+      <Name>eRunkl</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\eRunkl.xnb</Output>
+      <Time>2017-06-07T19:30:06.2841915-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Stone1.png</Source>
+      <Name>Stone1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Stone1.xnb</Output>
+      <Time>2017-06-07T20:50:10.5688021-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Stone3.png</Source>
+      <Name>Stone3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Stone3.xnb</Output>
+      <Time>2017-06-07T20:51:32.2870083-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Background\background oreimo.jpg</Source>
+      <Name>Background\background oreimo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Background\background oreimo.xnb</Output>
+      <Time>2017-06-07T22:51:25.3096544-07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{34B2EB9A-DDAA-418D-AC3E-23852AFC26AA}</ContentProjectGUID>

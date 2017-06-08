@@ -18,6 +18,7 @@ namespace BAO.Clases
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Vector2 spritePos;
+        Vector2 spritePosEnemy;
         Player player;
         List<Rectangle> listaObs;
         List<Suelo> suelos;
@@ -30,12 +31,9 @@ namespace BAO.Clases
         private InputManager anotherInput;
         public Gravedad gravedad = new Gravedad();
         private SoundEffect knifeCling;
-
         private SoundEffect cling;
         public List<ProyectilKnife> listaNKnives;
         private ProyectilKnife shoot;
-
-
         private DialogScreen dialog;
         public override void LoadContent(ContentManager content)
         {
@@ -47,26 +45,55 @@ namespace BAO.Clases
             timerTW = new THEWORLDTimer();
             timerTW.LoadContent(content, new Vector2(400,0));
             suelos = new List<Suelo>();
-            fondo = new BackgroundAnimation("Background/background resized");
+            fondo = new BackgroundAnimation("Background/background oreimo");
             // TODO: use this.Content to load your game content here
-            spritePos = new Vector2(500, 500);
+            spritePos = new Vector2(10, 780);
             fondo.LoadContent(content);
              base.LoadContent(content);
             dialog = new DialogScreen();
-            listaObs = new List<Rectangle>();
-            listaObs.Add(new Rectangle(900, 400, 400, 200));
-            Suelo pito = new Suelo("pisitoo", content);
-            Suelo pito2 = new Suelo("pisitoo", content);
-            pito2.rectangulo = new Rectangle(20, 550, 400, 20);
-            pito.rectangulo = new Rectangle(350, 650, 400, 20);
-            suelos.Add(pito);
-            suelos.Add(pito2);
-            texturaObs = content.Load<Texture2D>("pisitoo");
+            //listaObs = new List<Rectangle>();
+            //listaObs.Add(new Rectangle(900, 400, 400, 100));
+            //listaObs.Add(new Rectangle(300, 400, 10, 100));
+            #region suelos
+            Suelo suelo = new Suelo("Stone1", content);
+            Suelo suelo2 = new Suelo("Stone1", content);
+            Suelo suelo3 = new Suelo("Stone1", content);
+            Suelo suelo4 = new Suelo("Stone1", content);
+            Suelo suelo5 = new Suelo("Stone1", content);
+            Suelo suelo6 = new Suelo("Stone1", content);
+            Suelo suelo7 = new Suelo("Stone1", content);
+            Suelo suelo8 = new Suelo("Stone1", content);
+            Suelo suelo9 = new Suelo("Stone1", content);
+            Suelo suelo10 = new Suelo("Stone1", content);
+            Suelo suelo11= new Suelo("Stone1", content);
+            Suelo suelo12= new Suelo("Stone1", content);
+            Suelo suelo13= new Suelo("Stone1", content);
+            suelo10.rectangulo = new Rectangle(880, 300, 200, 50);
+            suelo9.rectangulo = new Rectangle(940, 490, 250, 50);
+            suelo8.rectangulo = new Rectangle(550, 220, 40, 50);
+            suelo7.rectangulo = new Rectangle(320, 50, 100, 50);
+            suelo6.rectangulo = new Rectangle(0, 100, 100, 50);
+            suelo5.rectangulo = new Rectangle(0, 250, 100, 50);
+            suelo4.rectangulo = new Rectangle(0, 400, 100 , 50);
+            suelo3.rectangulo = new Rectangle(320, 620, 100, 50);
+            suelo2.rectangulo = new Rectangle(0, 550, 250, 50);
+            suelo.rectangulo = new Rectangle(0, 780, 200, 50);
+            suelos.Add(suelo8);
+            suelos.Add(suelo2);
+            suelos.Add(suelo3);
+            suelos.Add(suelo4);
+            suelos.Add(suelo5);
+            suelos.Add(suelo6);
+            suelos.Add(suelo7);
+            suelos.Add(suelo);
+            suelos.Add(suelo9);
+            suelos.Add(suelo10);
+            #endregion
+            texturaObs = content.Load<Texture2D>("Stone3");
             player = new Player();
             player.LoadContent(content, inputManager, spritePos);
             player.LoadContent(gravedad);
             player.playerR.Active = true;
-
             string[,] dialogo = new string[,]
             {
                     {"monito0", "El", "Mi pito amigo"},
@@ -96,12 +123,13 @@ namespace BAO.Clases
 
             }
 
+
             if (!dialog.Active)
                 spritePos = player.Update(gameTime, inputManager, spritePos);
 
 
 
-            foreach (Rectangle recto in listaObs)
+            /*foreach (Rectangle recto in listaObs)
             {
                 if (recto.Intersects(player.ColissionBox))
                 {
@@ -109,18 +137,24 @@ namespace BAO.Clases
                     break;
                 }
                 
-            }
+            }*/
             foreach (Suelo recto in suelos)
             {
                 Rectangle sueloInter = recto.rectangulo;
+                sueloInter.Y = sueloInter.Y - 40;
                 if (sueloInter.Intersects(player.ColissionBox))
                 {
-                    if (spritePos.Y >= sueloInter.Y-30 && gravedad.moveSpeed.Y >= 0.0f)
+                    if (spritePos.Y >= sueloInter.Y  && gravedad.moveSpeed.Y >= 0.0f)
                     {
-                         spritePos.Y = sueloInter.Y-30;
+                        spritePos.Y = sueloInter.Y;
                          gravedad.hasJumped = false;
+                        gravedad.caida = false;
                     }
                     break;
+                }
+                else
+                {
+                    gravedad.caida = true;
                 }
 
             }
@@ -141,11 +175,11 @@ namespace BAO.Clases
         public override void Draw(SpriteBatch spriteBatch)
         {
             fondo.Draw(spriteBatch);
-            foreach (Rectangle item in listaObs)
+           /* foreach (Rectangle item in listaObs)
             {
                 spriteBatch.Draw(texturaObs, item, Color.White);
                 
-            }
+            }*/
 
             foreach (Suelo item in suelos)
             {
@@ -160,7 +194,6 @@ namespace BAO.Clases
             dialog.Draw(spriteBatch);
             timerCD.Draw(spriteBatch);
             timerTW.Draw(spriteBatch);
-
             base.Draw(spriteBatch);
         }
 

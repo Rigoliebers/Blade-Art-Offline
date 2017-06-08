@@ -13,31 +13,22 @@ namespace BAO.Clases
 {
     public class Player : Entity
     {
-
         public bool isLeft;
-
-
-
         public SpriteAnimation playerL;
         public SpriteAnimation playerR;
         public SpriteAnimation playerStandR;
         public SpriteAnimation playerStandL;
         public SpriteAnimation playerDuckR;
-
         private SoundEffect BegoF;
         public SoundEffect Tick;
         private SoundEffect EndOf;
-
-
         public bool TheWorld;
         private double elapsedTime;
         private double anotherTimer;
-
         private ProyectilKnife shoot;
         private ContentManager content;
         public bool CD;
         private bool otro = true;
-
         public GameTime TheWorldTime;
         Gravedad gravedad = new Gravedad();
         private Texture2D moveRight;
@@ -46,6 +37,7 @@ namespace BAO.Clases
         private Texture2D standR;
         private Texture2D duckR;
         private int state;
+
 
         public override void LoadContent(ContentManager content, InputManager input, Vector2 pos)
         {
@@ -102,9 +94,6 @@ namespace BAO.Clases
                 CD = false;
                 elapsedTime = 0;
             }
-
-
-
             //if (anotherTimer >= 1000 && TheWorld)
             //{
             //    Tick.Play(1.0f, 0,0);
@@ -140,8 +129,6 @@ namespace BAO.Clases
             {
                 TheWorldTime = gameTime;
             }
-
-
 
             if (inputManag.KeyDown(Keys.Right, Keys.D))
             {
@@ -206,7 +193,6 @@ namespace BAO.Clases
                             sprite = playerStandR;
 
                         }
-
                         sprite.Ended = false;
                         sprite.Reverse = true;
                         sprite.Active = true;
@@ -220,40 +206,8 @@ namespace BAO.Clases
 
             sprite.Update(gameTime);
             this.colissionBox = new Rectangle((int)sprite.Position.X, (int)sprite.Position.Y, 28, 50);
-  
-            float i = 1;
             inputManag.Update();
             position=gravedad.Update(gameTime,inputManag, position);
-
-            /*if (hasJumped==false)
-            {
-            moveSpeed.Y = 5.25f;
-            }
-
-            position.Y = position.Y + moveSpeed.Y;
-            if (Keyboard.GetState().IsKeyDown(Keys.Space) && hasJumped == false)
-            {
-                position.Y -= 1f;
-                moveSpeed.Y = -6.25f;
-                hasJumped = true;
-            }
-
-            if (hasJumped == true)
-            {
-                moveSpeed.Y += 0.25f * i;
-                position.Y = position.Y + moveSpeed.Y;
-            }
-
-            if (position.Y + 50 >= position.Y + 80)
-            {
-                hasJumped=false;
-            }
-            if (hasJumped == false)
-            {
-                moveSpeed.Y = 0f;
-            }
-            */
-
             return position;
         }
         public override void Draw(SpriteBatch spriteBatch, Vector2 pos)

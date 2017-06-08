@@ -29,7 +29,7 @@ namespace BAO.Clases
             }
 
             position.Y = position.Y + moveSpeed.Y;
-            if (Keyboard.GetState().IsKeyDown(Keys.Space) && hasJumped == false && keyreleased==true)
+            if (Keyboard.GetState().IsKeyDown(Keys.Space) && hasJumped == false && keyreleased==true && caida==false)
             {
                 position.Y -= 1f;
                 moveSpeed.Y = -6.25f;
