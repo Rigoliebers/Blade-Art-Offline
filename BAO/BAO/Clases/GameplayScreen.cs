@@ -71,6 +71,7 @@ namespace BAO.Clases
             spriteEpos = new Vector2(600, 620);
             enemy = new Enemy();
             enemy.LoadContent(content, inputManager, spriteEpos);
+            enemy.EnemyL.Active = true;
             
 
             string[,] dialogo = new string[,]
@@ -98,7 +99,15 @@ namespace BAO.Clases
 
             if (anotherInput.KeyPressed(Keys.Z) && !dialog.Active)
             {
-                DispararCuchillo(15, player.isLeft, spritePos);
+                if (player.isAgachado)
+                {
+                    DispararCuchillo(15, player.isLeft, new Vector2(spritePos.X, spritePos.Y +10));
+                }
+                else
+                {
+                    DispararCuchillo(15, player.isLeft, new Vector2(spritePos.X, spritePos.Y - 25));
+                }
+
 
             }
 
@@ -140,7 +149,8 @@ namespace BAO.Clases
             //Enemy
             int possx = (int)spriteEpos.X;
             int possy = (int)spriteEpos.Y;
-            enemy.EnemyL.Update(gameTime);
+          
+            enemy.Update(gameTime, inputManager);
             inputManager.Update();
             foreach (Rectangle rector in listaObs)
             {
@@ -187,10 +197,8 @@ namespace BAO.Clases
             dialog.Draw(spriteBatch);
             timerCD.Draw(spriteBatch);
             timerTW.Draw(spriteBatch);
-
-            base.Draw(spriteBatch);
-
             enemy.Draw(spriteBatch, spriteEpos);
+            base.Draw(spriteBatch);
         }
 
         private void ColisionCuchillos()

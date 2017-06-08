@@ -77,7 +77,7 @@ namespace BAO.Clases
             if (Active)
             {
                 spriteBatch.Draw(back, position, Color.White);
-                spriteBatch.Draw(image, position, Color.White);
+                spriteBatch.Draw(image, position, new Rectangle(0,0,150,150), Color.White);
                 spriteBatch.DrawString(fontTittle, WrapText(fontTittle, texto[contador,1], 650), nameposition, Color.White);
                 spriteBatch.DrawString(font, WrapText(font, texto[contador,2], 650), txtposition, Color.White);
             }

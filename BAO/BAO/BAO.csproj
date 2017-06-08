@@ -74,9 +74,11 @@
   <ItemGroup>
     <Compile Include="Clases\Animation.cs" />
     <Compile Include="Clases\BackgroundAnimation.cs" />
+    <Compile Include="Clases\BossLevel.cs" />
     <Compile Include="Clases\DialogScreen.cs" />
     <Compile Include="Clases\DrawImage.cs" />
     <Compile Include="Clases\Enemy.cs" />
+    <Compile Include="Clases\EnemyDestuno.cs" />
     <Compile Include="Clases\Entity.cs" />
     <Compile Include="Clases\FadeAnimation.cs" />
     <Compile Include="Clases\FileManager.cs" />

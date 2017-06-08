@@ -11,17 +11,17 @@ namespace BAO.Clases
 {
     public class Entity
     {
-        protected int health;
+        public int health;
         public Vector2 moveSpeed;
-        protected int damage;
-        protected SpriteAnimation sprite;
+        public int damage;
+        public SpriteAnimation sprite;
         protected Rectangle colissionBox;
         protected Rectangle colissionBox2;
         protected ContentManager content;
         protected FileManager fileManager;
         protected List<List<string>> attributes, contents;
         protected Texture2D image;
-        protected Vector2 position;
+        public Vector2 position;
         public  Rectangle collictionBox;
         public bool hasJumped;
 

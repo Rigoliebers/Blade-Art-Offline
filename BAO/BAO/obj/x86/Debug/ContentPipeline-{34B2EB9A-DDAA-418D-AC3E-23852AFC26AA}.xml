@@ -307,6 +307,114 @@
       <Output>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\DisposeKnife.xnb</Output>
       <Time>2017-06-02T10:40:10.2510483-07:00</Time>
     </Item>
+    <Item>
+      <Source>eWalkL.png</Source>
+      <Name>eWalkL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\eWalkL.xnb</Output>
+      <Time>2017-06-07T17:44:06.521688-07:00</Time>
+    </Item>
+    <Item>
+      <Source>eRunkl.png</Source>
+      <Name>eRunkl</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\eRunkl.xnb</Output>
+      <Time>2017-06-07T17:44:06.519693-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\playerShootR.png</Source>
+      <Name>Sprites\Player\playerShootR</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Player\playerShootR.xnb</Output>
+      <Time>2017-06-07T19:20:39.4764606-07:00</Time>
+    </Item>
+    <Item>
+      <Source>pDuckL.png</Source>
+      <Name>pDuckL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pDuckL.xnb</Output>
+      <Time>2017-06-07T19:51:26.4095679-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\playerShootL.png</Source>
+      <Name>Sprites\Player\playerShootL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Player\playerShootL.xnb</Output>
+      <Time>2017-06-07T20:07:53.9243108-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\DestinyStandL.png</Source>
+      <Name>Sprites\Enemies\DestinyStandL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Enemies\DestinyStandL.xnb</Output>
+      <Time>2017-06-07T20:21:18.2212582-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Enemies\DestinyStandR.png</Source>
+      <Name>Sprites\Enemies\DestinyStandR</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Enemies\DestinyStandR.xnb</Output>
+      <Time>2017-06-07T20:31:12.5525629-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Frames\DeathFace.png</Source>
+      <Name>Sprites\Frames\DeathFace</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Frames\DeathFace.xnb</Output>
+      <Time>2017-06-07T22:19:56.9711004-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Frames\RichterFace.png</Source>
+      <Name>Sprites\Frames\RichterFace</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Frames\RichterFace.xnb</Output>
+      <Time>2017-06-07T22:19:56.9761018-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Bloody Tears.wav</Source>
+      <Name>Bloody Tears</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Bloody Tears.xnb</Output>
+      <Time>2017-06-07T22:58:20.0460515-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Destined Cruz.wav</Source>
+      <Name>Destined Cruz</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Destined Cruz.xnb</Output>
+      <Time>2017-06-07T22:58:20.6529268-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Knife Stab Sound Effect.wav</Source>
+      <Name>Knife Stab Sound Effect</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Knife Stab Sound Effect.xnb</Output>
+      <Time>2017-06-07T22:58:20.6564298-07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{34B2EB9A-DDAA-418D-AC3E-23852AFC26AA}</ContentProjectGUID>
@@ -314,10 +422,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAOContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAOContent\</RootDirectory>
+      <LoggerRootDirectory>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\</LoggerRootDirectory>
+      <IntermediateDirectory>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

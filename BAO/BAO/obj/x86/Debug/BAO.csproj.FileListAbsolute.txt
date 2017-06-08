@@ -92,3 +92,15 @@ C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\C
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Za Warudo Sound Effect.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\knifeCling.xnb
 C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\DisposeKnife.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\eWalkL.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\eRunkl.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Player\playerShootR.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pDuckL.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Player\playerShootL.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Enemies\DestinyStandL.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Enemies\DestinyStandR.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Frames\DeathFace.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Frames\RichterFace.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Bloody Tears.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Destined Cruz.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Knife Stab Sound Effect.xnb

@@ -23,7 +23,6 @@ namespace BAO.Clases
             EnRunLeft = content.Load<Texture2D>("eRunkl");
             this.EnemyRL = new SpriteAnimation();
             this.EnemyL = new SpriteAnimation();
-            base.LoadContent(content, input, pos);
             this.position = pos;
             health = 15;
             damage = 10;
@@ -49,7 +48,6 @@ namespace BAO.Clases
             this.colissionBox2 = new Rectangle((int)sprite.Position.X, (int)sprite.Position.Y, 64, 32);
             sprite.Position = new Vector2(position.X, position.Y);
             sprite.Looping = true;
-            sprite.Update(gameTime); 
 
             if (elapsedtime>=1000)
             {
@@ -66,9 +64,11 @@ namespace BAO.Clases
                     sprite.Update(gameTime);
                 }
             }
-           
 
-            
+            sprite.Update(gameTime);
+
+
+
         }
         public override void Draw(SpriteBatch spriteBatch, Vector2 pos)
         {
