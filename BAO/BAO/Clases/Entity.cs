@@ -24,6 +24,7 @@ namespace BAO.Clases
         public Vector2 position;
         public  Rectangle collictionBox;
         public bool hasJumped;
+        public bool caida=false;
 
         public Rectangle ColissionBox
         {
