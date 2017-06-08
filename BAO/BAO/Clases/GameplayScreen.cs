@@ -28,7 +28,7 @@ namespace BAO.Clases
         private THEWORLDTimer timerTW;
         private THEWORLDTimer timerCD;
         private InputManager anotherInput;
-
+        public Gravedad gravedad = new Gravedad();
         private SoundEffect knifeCling;
 
         private SoundEffect cling;
@@ -64,6 +64,7 @@ namespace BAO.Clases
             texturaObs = content.Load<Texture2D>("pisitoo");
             player = new Player();
             player.LoadContent(content, inputManager, spritePos);
+            player.LoadContent(gravedad);
             player.playerR.Active = true;
 
             string[,] dialogo = new string[,]
@@ -114,26 +115,19 @@ namespace BAO.Clases
                 Rectangle sueloInter = recto.rectangulo;
                 if (sueloInter.Intersects(player.ColissionBox))
                 {
-                    if (spritePos.Y >= sueloInter.Y-40)
+                    if (spritePos.Y >= sueloInter.Y-30 && gravedad.moveSpeed.Y >= 0.0f)
                     {
-                        spritePos.Y = sueloInter.Y-40;
-                        player.hasJumped = false;
+                         spritePos.Y = sueloInter.Y-30;
+                         gravedad.hasJumped = false;
                     }
                     break;
                 }
 
             }
-
-
             UpdateCuchillos(player.TheWorldTime);
             Timer(gameTime);
             dialog.Update(gameTime, inputManager);
             DisposeCuchillos();
-
-
-
-
-
         }
 
         public void UpdateCuchillos(GameTime gameTime)

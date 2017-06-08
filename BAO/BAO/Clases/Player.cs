@@ -39,7 +39,7 @@ namespace BAO.Clases
         private bool otro = true;
 
         public GameTime TheWorldTime;
-
+        Gravedad gravedad = new Gravedad();
         private Texture2D moveRight;
         private Texture2D moveLeft;
         private Texture2D standL;
@@ -79,7 +79,10 @@ namespace BAO.Clases
             playerDuckR.Initialize(duckR, position, 32, 50, 2, 100, Color.White, 2.0f, false);
             hasJumped = false;
             sprite = playerStandR;
+        }
 
+        public virtual void LoadContent(Gravedad gravity) {
+            gravedad = gravity;
         }
 
         public override void UnloadContent()
@@ -217,9 +220,12 @@ namespace BAO.Clases
 
             sprite.Update(gameTime);
             this.colissionBox = new Rectangle((int)sprite.Position.X, (int)sprite.Position.Y, 28, 50);
-            inputManag.Update();
+  
             float i = 1;
-            if (hasJumped==false)
+            inputManag.Update();
+            position=gravedad.Update(gameTime,inputManag, position);
+
+            /*if (hasJumped==false)
             {
             moveSpeed.Y = 5.25f;
             }
@@ -240,13 +246,14 @@ namespace BAO.Clases
 
             if (position.Y + 50 >= position.Y + 80)
             {
-                hasJumped = false;
+                hasJumped=false;
             }
-
             if (hasJumped == false)
             {
                 moveSpeed.Y = 0f;
             }
+            */
+
             return position;
         }
         public override void Draw(SpriteBatch spriteBatch, Vector2 pos)

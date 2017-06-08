@@ -82,6 +82,7 @@
     <Compile Include="Clases\FileManager.cs" />
     <Compile Include="Clases\GameplayScreen.cs" />
     <Compile Include="Clases\GameScreen.cs" />
+    <Compile Include="Clases\Gravedad.cs" />
     <Compile Include="Clases\InputManager.cs" />
     <Compile Include="Clases\IntroScreen.cs" />
     <Compile Include="Clases\OptionsScreen.cs" />

@@ -22,13 +22,13 @@ Content\backdialog.xnb
 Content\Background\Background2.xnb
 Content\Ishtar.xnb
 Content\knife.xnb
+Content\Sprites\DisposeKnife.xnb
 Content\Libera Me From Hell.xnb
 Content\misc_menu_2.xnb
 Content\misc_menu_4.xnb
 Content\positive.xnb
 Content\introbgm.xnb
-Content\tick.xnb
 Content\TheEnd.xnb
 Content\Za Warudo Sound Effect.xnb
 Content\knifeCling.xnb
-Content\Sprites\DisposeKnife.xnb
+Content\tick.xnb
