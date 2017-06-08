@@ -18,7 +18,9 @@ namespace BAO.Clases
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Vector2 spritePos;
+        Vector2 spriteEpos;
         Player player;
+        Enemy enemy;
         List<Rectangle> listaObs;
         List<Suelo> suelos;
         Texture2D texturaObs;
@@ -65,6 +67,11 @@ namespace BAO.Clases
             player = new Player();
             player.LoadContent(content, inputManager, spritePos);
             player.playerR.Active = true;
+            //Enemy
+            spriteEpos = new Vector2(600, 620);
+            enemy = new Enemy();
+            enemy.LoadContent(content, inputManager, spriteEpos);
+            
 
             string[,] dialogo = new string[,]
             {
@@ -130,7 +137,21 @@ namespace BAO.Clases
             dialog.Update(gameTime, inputManager);
             DisposeCuchillos();
 
+            //Enemy
+            int possx = (int)spriteEpos.X;
+            int possy = (int)spriteEpos.Y;
+            enemy.EnemyL.Update(gameTime);
+            inputManager.Update();
+            foreach (Rectangle rector in listaObs)
+            {
+                if (rector.Intersects(enemy.collictionBox))
+                {
+                    spriteEpos.X = possx - 5;
+                    break;
+                }
+            }
 
+            spriteEpos = enemy.Update(gameTime, inputManager, spriteEpos);
 
 
 
@@ -168,6 +189,8 @@ namespace BAO.Clases
             timerTW.Draw(spriteBatch);
 
             base.Draw(spriteBatch);
+
+            enemy.Draw(spriteBatch, spriteEpos);
         }
 
         private void ColisionCuchillos()
