@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -16,7 +17,9 @@ namespace BAO.Clases
         public string imagen;
         public bool Active;
 
+        public bool isSound = true;
         private ContentManager content;
+        private SoundEffect sound;
         private Vector2 position;
         private Vector2 txtposition;
         private Vector2 nameposition;
@@ -34,7 +37,6 @@ namespace BAO.Clases
         {
             this.content = Content;
             this.texto = Dialog;
-            //image = Content.Load<Texture2D>(pjImg);
             back = Content.Load<Texture2D>("backdialog");
             font = Content.Load<SpriteFont>("DialogFont");
             fontTittle = Content.Load<SpriteFont>("TittleDialog");
@@ -52,16 +54,26 @@ namespace BAO.Clases
             {
 
                 image = content.Load<Texture2D>(texto[contador,0]);
+                sound = content.Load<SoundEffect>(texto[contador, 3]);
+
+                if (isSound)
+                {
+                    sound.Play(1.0f, 0, 0);
+                    isSound = false;
+                }
 
                 if (inputManag.KeyPressed(Keys.Enter))
                 {
                     if (contador == texto.GetUpperBound(0))
                     {
+                        sound.Dispose();
                         contador = 0;
                         Active = false;
                     }
                     else
                     {
+                        sound.Dispose();
+                        isSound = true;
                         contador++;
                     }
                 }

@@ -15,6 +15,7 @@ namespace BAO.Clases
         public bool isPlayer;
         public bool Active;
         private int moveSpeed;
+        public Vector2 speddo;
         public Rectangle colitionBox;
         private SpriteAnimation sprite;
         private Texture2D texture;
@@ -25,6 +26,9 @@ namespace BAO.Clases
         private Vector2 image;
         private float scale;
         private string sprait;
+        public bool isHomming;
+        public Vector2 finalpos;
+        public Vector2 trayectoria;
 
         public void LoadContent(ContentManager content, int speed, bool derecha, Vector2 pos, Vector2 colition, string image, int damage, float scale, Vector2 spritevector)
         {
@@ -42,13 +46,69 @@ namespace BAO.Clases
             Time = 0;
             sprite.Active = true;
             Active = true;
+            isHomming = false;
         }
+
+        
 
         public void Update(GameTime gameTime)
         {
                 Time = gameTime.ElapsedGameTime.Seconds;
 
 
+
+            if (isHomming)
+            {
+                if (isLeft)
+                {
+                    position.X -= speddo.X;
+                    position.Y += speddo.Y;
+
+                    //if (position.X > finalpos.X)
+                    //{
+                    //    position.X -= speddo.X;
+                    //}
+
+
+                    //if (position.Y < finalpos.Y-5)
+                    //{
+                    //    position.Y += speddo.Y;
+                    //}
+                    //else
+                    //{
+                    //    if (position.Y > finalpos.Y+5)
+                    //    {
+                    //        position.Y -= speddo.Y;
+                    //    }
+                    //}
+                }
+                else
+                {
+                    position.X += speddo.X;
+                    position.Y += speddo.Y;
+
+
+                    //if (position.X < finalpos.X)
+                    //{
+                    //    position.X += speddo.X;
+                    //}
+
+                    //if (position.Y < finalpos.Y-5)
+                    //{
+                    //    position.Y += speddo.Y;
+                    //}
+                    //else
+                    //{
+                    //    if (position.Y > finalpos.Y+5)
+                    //    {
+                    //        position.Y -= speddo.Y;
+                    //    }
+                    //}
+                }
+
+            }
+            else
+            {
                 if (gameTime.ElapsedGameTime.Milliseconds != 0)
                 {
                     if (isLeft)
@@ -60,6 +120,9 @@ namespace BAO.Clases
                         position.X += moveSpeed;
                     }
                 }
+            }
+
+
 
             if (this.Active && !colide)
             {

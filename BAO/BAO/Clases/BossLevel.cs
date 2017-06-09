@@ -24,7 +24,6 @@ namespace BAO.Clases
         List<Suelo> suelos;
         Texture2D texturaObs;
         BackgroundAnimation fondo;
-        public Gravedad gravedad = new Gravedad();
         int pito = 0;
         private THEWORLDTimer timerTW;
         private THEWORLDTimer timerCD;
@@ -40,6 +39,8 @@ namespace BAO.Clases
         private ProyectilKnife shoot;
 
         private EnemyDestuno Boss;
+
+
 
         private Gravedad gravedad;
 
@@ -104,16 +105,16 @@ namespace BAO.Clases
 
             string[,] dialogo = new string[,]
             {
-                    {"Sprites/Frames/RichterFace", "Pepe", "Ugggghhhhhhhh"},
-                    {"Sprites/Frames/DeathFace", "??????", "Al fin nos encontramos... Centauro del Norte."},
-                    {"Sprites/Frames/RichterFace", "Pepe (Centauro del Norte)", "Tu... ¡¿Quien eres?!..."},
-                    {"Sprites/Frames/DeathFace", "??????", "Al unico al que has evadido durante todos estos años... Pepe..."},
-                    {"Sprites/Frames/RichterFace", "Pepe (Centauro del Norte)", "Tch"},
-                    {"Sprites/Frames/DeathFace", "??????", "¡Así es! ¡PEPE! ¡Soy el Destino!"},
-                    {"Sprites/Frames/RichterFace", "Pepe (Centauro del Norte)", "Y que es lo que quieres..."},
-                    {"Sprites/Frames/DeathFace", "Destino", "Nada importante... Centauro... Tu alma"},
-                    {"Sprites/Frames/RichterFace", "Pepe (Centauro del Norte)", "¡Ja! No lo creo 'Destino'. Si me disculpas. Tengo cosas que hacer, lugares a donde ir... Gente que asesinar."},
-                    {"Sprites/Frames/DeathFace", "Destino", "No lo has entendido Pepe... ¡Tu viaje termino ahora y para siempre!"},
+                    {"Sprites/Frames/RichterFace", "Pepe", "Ugggghhhhhhhh", "Sounds/Voices/dialogoPepe1"},
+                    {"Sprites/Frames/DeathFace", "??????", "Al fin nos encontramos... Centauro del Norte.", "Sounds/Voices/dialogoDestino1"},
+                    {"Sprites/Frames/RichterFace", "Pepe (Centauro del Norte)", "Tu... ¡¿Quien eres?!...", "Sounds/Voices/dialogoPepe2"},
+                    {"Sprites/Frames/DeathFace", "??????", "Al unico al que has evadido durante todos estos años... Pepe...", "Sounds/Voices/dialogoDestino2"},
+                    {"Sprites/Frames/RichterFace", "Pepe (Centauro del Norte)", "Tch", "Sounds/Voices/dialogoPepe3"},
+                    {"Sprites/Frames/DeathFace", "??????", "¡Así es! ¡PEPE! ¡Soy el Destino!", "Sounds/Voices/dialogoDestino3"},
+                    {"Sprites/Frames/RichterFace", "Pepe (Centauro del Norte)", "Y que es lo que quieres...", "Sounds/Voices/dialogoPepe4"},
+                    {"Sprites/Frames/DeathFace", "Destino", "Nada importante... Centauro... Tu alma", "Sounds/Voices/dialogoDestino4_5"},
+                    {"Sprites/Frames/RichterFace", "Pepe (Centauro del Norte)", "¡Ja! No lo creo 'Destino'. Si me disculpas. Tengo cosas que hacer, lugares a donde ir... Gente que asesinar.",  "Sounds/Voices/dialogoPepe5"},
+                    {"Sprites/Frames/DeathFace", "Destino", "No lo has entendido Pepe... ¡Tu viaje terminó ahora y para siempre!",  "Sounds/Voices/dialogoDestino6"},
 
             };
 
@@ -169,7 +170,7 @@ namespace BAO.Clases
                 player.Update(gameTime, inputManager, spritePos);
             }
 
-            Boss.Update(gameTime, spriteEnemypos);
+            Boss.Update(gameTime, spriteEnemypos, spritePos);
 
             foreach (Rectangle recto in listaObs)
             {

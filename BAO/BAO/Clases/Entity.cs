@@ -15,7 +15,7 @@ namespace BAO.Clases
         public Vector2 moveSpeed;
         public int damage;
         public SpriteAnimation sprite;
-        protected Rectangle colissionBox;
+        public Rectangle colissionBox;
         protected Rectangle colissionBox2;
         protected ContentManager content;
         protected FileManager fileManager;
@@ -45,6 +45,12 @@ namespace BAO.Clases
 
         }
 
+        public virtual void LoadContent(ContentManager content, InputManager input, Vector2 pos, Vector2 playerpos)
+        {
+            this.content = new ContentManager(content.ServiceProvider, "Content");
+        } 
+    
+
         public virtual void UnloadContent() {
           
         }
@@ -57,6 +63,11 @@ namespace BAO.Clases
         {
             Vector2 currentPos = new Vector2();
             return currentPos;
+        }
+
+        public virtual void Update(GameTime gameTime, Vector2 playerpos, Vector2 pos)
+        {
+
         }
 
         public virtual void Update(GameTime gameTime, Vector2 pos)
