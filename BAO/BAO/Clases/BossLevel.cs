@@ -41,7 +41,7 @@ namespace BAO.Clases
 
         private EnemyDestuno Boss;
 
-        private Gravedad gravedad;
+        
 
         private DialogScreen dialog;
         public override void LoadContent(ContentManager content)

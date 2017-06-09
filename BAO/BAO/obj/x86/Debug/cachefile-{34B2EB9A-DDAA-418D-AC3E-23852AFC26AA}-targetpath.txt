@@ -32,6 +32,7 @@ Content\Sprites\Enemies\DestinyStandL.xnb
 Content\Sprites\Enemies\DestinyStandR.xnb
 Content\Sprites\Frames\DeathFace.xnb
 Content\Sprites\Frames\RichterFace.xnb
+Content\Sprites\Proyectil\FireProyectil.xnb
 Content\Libera Me From Hell.xnb
 Content\misc_menu_2.xnb
 Content\misc_menu_4.xnb
@@ -44,4 +45,3 @@ Content\tick.xnb
 Content\Bloody Tears.xnb
 Content\Destined Cruz.xnb
 Content\Knife Stab Sound Effect.xnb
-Content\Sprites\Proyectil\FireProyectil.xnb
