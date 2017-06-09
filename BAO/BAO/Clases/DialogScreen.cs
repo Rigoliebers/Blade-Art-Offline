@@ -30,7 +30,6 @@ namespace BAO.Clases
         private SpriteFont font;
         private SpriteFont fontTittle;
         private int contador;
-
         private string name;
 
         public void LoadContent(ContentManager Content, string[,] Dialog)
@@ -42,7 +41,6 @@ namespace BAO.Clases
             fontTittle = Content.Load<SpriteFont>("TittleDialog");
             image = content.Load<Texture2D>(texto[0, 0]);
             nameposition = new Vector2(200, 625);
-
             position = new Vector2(0, 650);
             txtposition = new Vector2(200, 675);
             Active = true;
@@ -77,11 +75,31 @@ namespace BAO.Clases
                         contador++;
                     }
                 }
-
                 inputManag.Update();
             }
         }
+        public void Update2(GameTime gameTime, InputManager inputManag)
+        {
+            if (Active)
+            {
 
+                image = content.Load<Texture2D>(texto[contador, 0]);
+
+                if (inputManag.KeyPressed(Keys.Enter))
+                {
+                    if (contador == texto.GetUpperBound(0))
+                    {
+                        contador = 0;
+                        Active = false;
+                    }
+                    else
+                    {
+                        contador++;
+                    }
+                }
+                inputManag.Update();
+            }
+        }
 
         public void Draw(SpriteBatch spriteBatch)
         {

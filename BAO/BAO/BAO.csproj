@@ -94,6 +94,7 @@
     <Compile Include="Clases\ProyectilKnife.cs" />
     <Compile Include="Clases\PulsatingButton.cs" />
     <Compile Include="Clases\ScreenManager.cs" />
+    <Compile Include="Clases\SegundoNivel.cs" />
     <Compile Include="Clases\SplashScreen.cs" />
     <Compile Include="Clases\SpriteAnimation.cs" />
     <Compile Include="Clases\SpriteSheetAnimation.cs" />

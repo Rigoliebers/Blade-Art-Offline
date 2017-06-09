@@ -1,125 +1,105 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-
+using Microsoft.Xna.Framework.Media;
 namespace BAO.Clases
 {
-    class BossLevel : GameScreen
+    public class SegundoNivel : GameScreen
     {
         XnaFunctionscs fun = new XnaFunctionscs();
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Vector2 spritePos;
-        Vector2 spriteEnemypos;
+        Vector2 spritePosEnemy;
         Player player;
-        Enemy enemy;
         List<Rectangle> listaObs;
         List<Rectangle> listaObsIzq;
         List<Suelo> suelos;
         Texture2D texturaObs;
         BackgroundAnimation fondo;
+        ///Suelo objSuelo = new Suelo();
         int pito = 0;
         private THEWORLDTimer timerTW;
         private THEWORLDTimer timerCD;
         private InputManager anotherInput;
-        private bool oneshote = true;
-        private SoundEffect stab;
-        private SoundEffect part1bgm;
-        private SoundEffectInstance part1bgminstance;
-        private SoundEffect part2bgm;
-        private SoundEffectInstance part2bgminstance;
+        public Gravedad gravedad = new Gravedad();
         private SoundEffect knifeCling;
-
         private SoundEffect cling;
         public List<ProyectilKnife> listaNKnives;
         private ProyectilKnife shoot;
-
-        private EnemyDestuno Boss;
-
-
-
-        private Gravedad gravedad;
-
         private DialogScreen dialog;
         public override void LoadContent(ContentManager content)
         {
-            gravedad=new Gravedad();
-            stab = content.Load<SoundEffect>("Knife Stab Sound Effect");
-            part1bgm = content.Load<SoundEffect>("Destined Cruz");
-            part2bgm = content.Load<SoundEffect>("Bloody Tears");
-            part1bgminstance = part1bgm.CreateInstance();
-            part2bgminstance = part2bgm.CreateInstance();
-            base.LoadContent(content);
-            inputManager = new InputManager();
-            Boss = new EnemyDestuno();
+            knifeCling = content.Load<SoundEffect>("knifeCling");
+            anotherInput = new InputManager();
+            listaNKnives = new List<ProyectilKnife>();
             timerCD = new THEWORLDTimer();
             timerCD.LoadContent(content, Vector2.Zero);
             timerTW = new THEWORLDTimer();
             timerTW.LoadContent(content, new Vector2(400, 0));
-            knifeCling = content.Load<SoundEffect>("knifeCling");
-            anotherInput = new InputManager();
-            listaNKnives = new List<ProyectilKnife>();
             suelos = new List<Suelo>();
-            fondo = new BackgroundAnimation("Background/background resized");
-            spritePos = new Vector2(500, 500);
+            fondo = new BackgroundAnimation("Background/Background2");
+            // TODO: use this.Content to load your game content here
+            spritePos = new Vector2(10, 780);
             fondo.LoadContent(content);
+            base.LoadContent(content);
             dialog = new DialogScreen();
             listaObs = new List<Rectangle>();
             listaObs.Add(new Rectangle(0, 0, 0, 1200));
             listaObsIzq = new List<Rectangle>();
-            listaObsIzq.Add(new Rectangle(1024, 0 , 0 , 1200));
-            Suelo suelo = new Suelo("Stone3", content);
-            Suelo suelo2 = new Suelo("Stone3", content);
-            Suelo suelo3 = new Suelo("Stone3", content);
-            Suelo suelo4 = new Suelo("Stone3", content);
-            Suelo suelo5 = new Suelo("Stone3", content);
-            Suelo suelo6 = new Suelo("Stone3", content);
-            Suelo suelo7 = new Suelo("Stone3", content);
-            suelo.rectangulo = new Rectangle(50, 200, 150, 50);
-            suelo2.rectangulo = new Rectangle(150, 300, 150, 50);
-            suelo3.rectangulo = new Rectangle(250, 400, 150, 50);
-            suelo4.rectangulo = new Rectangle(700, 300, 150, 50);
-            suelo5.rectangulo = new Rectangle(600, 400, 150, 50);
-            suelo6.rectangulo = new Rectangle(0, 550, 1024, 800);
-            suelo7.rectangulo = new Rectangle(800, 200, 150, 50);
-            spriteEnemypos = new Vector2(600,100);
-            suelos.Add(suelo);
+            listaObsIzq.Add(new Rectangle(1024, 300, 0, 900));
+            #region suelos
+            Suelo suelo = new Suelo("Stone1", content);
+            Suelo suelo2 = new Suelo("Stone1", content);
+            Suelo suelo3 = new Suelo("Stone1", content);
+            Suelo suelo4 = new Suelo("Stone1", content);
+            Suelo suelo5 = new Suelo("Stone1", content);
+            Suelo suelo6 = new Suelo("Stone1", content);
+            Suelo suelo7 = new Suelo("Stone1", content);
+            Suelo suelo8 = new Suelo("Stone1", content);
+            Suelo suelo9 = new Suelo("Stone1", content);
+            Suelo suelo10 = new Suelo("Stone1", content);
+            Suelo suelo11 = new Suelo("Stone1", content);
+            Suelo suelo12 = new Suelo("Stone1", content);
+            Suelo suelo13 = new Suelo("Stone1", content);
+            suelo9.rectangulo = new Rectangle(900, 100, 250, 50);
+            suelo8.rectangulo = new Rectangle(550, 150, 120, 50);
+            suelo7.rectangulo = new Rectangle(320, 50, 100, 50);
+            suelo6.rectangulo = new Rectangle(0, 100, 100, 50);
+            suelo5.rectangulo = new Rectangle(0, 250, 200, 80);
+            suelo4.rectangulo = new Rectangle(320, 350, 100, 50);
+            suelo3.rectangulo = new Rectangle(320, 650, 100, 50);
+            suelo2.rectangulo = new Rectangle(320, 500, 100, 50);
+            suelo.rectangulo = new Rectangle(0, 780, 200, 50);
+            suelos.Add(suelo8);
             suelos.Add(suelo2);
             suelos.Add(suelo3);
             suelos.Add(suelo4);
             suelos.Add(suelo5);
             suelos.Add(suelo6);
             suelos.Add(suelo7);
-            texturaObs = content.Load<Texture2D>("pisitoo");
+            suelos.Add(suelo);
+            suelos.Add(suelo9);
+            #endregion
+            texturaObs = content.Load<Texture2D>("Stone3");
             player = new Player();
             player.LoadContent(content, inputManager, spritePos);
             player.LoadContent(gravedad);
             player.playerR.Active = true;
-            Boss.LoadContent(content, inputManager, new Vector2(750, 100));
-            Boss.active = false;
-            Boss.setList(listaNKnives);
-            player.LoadContent(gravedad);
-
-
             string[,] dialogo = new string[,]
             {
-                    {"Sprites/Frames/RichterFace", "Pepe", "Ugggghhhhhhhh", "Sounds/Voices/dialogoPepe1"},
-                    {"Sprites/Frames/DeathFace", "??????", "Al fin nos encontramos... Centauro del Norte.", "Sounds/Voices/dialogoDestino1"},
-                    {"Sprites/Frames/RichterFace", "Pepe (Centauro del Norte)", "Tú... ¡¿Quién eres?!...", "Sounds/Voices/dialogoPepe2"},
-                    {"Sprites/Frames/DeathFace", "??????", "Al único al que has evadido durante todos estos años... Pepe...", "Sounds/Voices/dialogoDestino2"},
-                    {"Sprites/Frames/RichterFace", "Pepe (Centauro del Norte)", "Tch", "Sounds/Voices/dialogoPepe3"},
-                    {"Sprites/Frames/DeathFace", "??????", "¡Así es! ¡PEPE! ¡Soy el Destino!", "Sounds/Voices/dialogoDestino3"},
-                    {"Sprites/Frames/RichterFace", "Pepe (Centauro del Norte)", "Y qué es lo que quieres...", "Sounds/Voices/dialogoPepe4"},
-                    {"Sprites/Frames/DeathFace", "Destino", "Nada importante... Centauro... Tu alma", "Sounds/Voices/dialogoDestino4_5"},
-                    {"Sprites/Frames/RichterFace", "Pepe (Centauro del Norte)", "¡Ja! No lo creo 'Destino'. Si me disculpas. Tengo cosas que hacer, lugares a donde ir... Gente que asesinar.",  "Sounds/Voices/dialogoPepe5"},
-                    {"Sprites/Frames/DeathFace", "Destino", "No lo has entendido Pepe... ¡Tu viaje terminó ahora y para siempre!",  "Sounds/Voices/dialogoDestino6"},
-
+                    {"monito0", "Él", "Atento Pepe esto se esta saliendo de control.", "Sounds/Voices/nada"},
+                    {"monito0", "Él", "Estoy teniendo flashbacks de Vietnam y recordé algo.", "Sounds/Voices/nada"},
+                    {"monito0", "Él", "Siento un peligro adelante, te están cazando Pepe.", "Sounds/Voices/nada"},
+                    {"monito0", "Él", "Ten cuidado Pepe, es peligroso.", "Sounds/Voices/nada"},
             };
 
             dialog.LoadContent(content, dialogo);
@@ -136,6 +116,11 @@ namespace BAO.Clases
             anotherInput.Update();
             fondo.Update(gameTime);
 
+            if (spritePos.Y == 60 && spritePos.X >= 1024)
+            {
+                ScreenManager.Instance.AddScreen(new BossLevel());
+            }
+
             if (anotherInput.KeyPressed(Keys.Z) && !dialog.Active)
             {
                 if (player.isAgachado)
@@ -150,38 +135,11 @@ namespace BAO.Clases
 
             }
 
+
             if (!dialog.Active)
-            {
-                part1bgminstance.Volume = 0.5f;
-                part1bgminstance.Play();
-                Boss.active = true;
                 spritePos = player.Update(gameTime, inputManager, spritePos);
-                spriteEnemypos = Boss.Update(gameTime, inputManager, spriteEnemypos);
-                if (spritePos.X - Boss.position.X <0)
-                {
-                    Boss.isLeft = true;
-                }
-                else
-                {
-                    Boss.isLeft = false;
-                }
-                
-            }
 
-            if (oneshote)
-            {
-                oneshote = false;
-                player.Update(gameTime, inputManager, spritePos);
-            }
 
-            
-
-            Boss.Update(player.TheWorldTime, spriteEnemypos, spritePos);
-
-            if (Boss.state == 6 )
-            {
-                part2bgminstance.Dispose();
-            }
 
             foreach (Rectangle recto in listaObs)
             {
@@ -193,7 +151,7 @@ namespace BAO.Clases
 
             }
 
-            foreach (Rectangle recto in listaObsIzq)                  
+            foreach (Rectangle recto in listaObsIzq)
             {
                 if (recto.Intersects(player.ColissionBox))
                 {
@@ -203,6 +161,11 @@ namespace BAO.Clases
 
             }
 
+            if (spritePos.Y > 900)
+            {
+                this.UnloadContent();
+                ScreenManager.Instance.AddScreen(new SegundoNivel(), 0.6f);
+            }
 
             foreach (Suelo recto in suelos)
             {
@@ -224,37 +187,10 @@ namespace BAO.Clases
                 }
 
             }
-
-            foreach (var VARIABLE in listaNKnives)
-            {
-                if (VARIABLE.isPlayer && VARIABLE.colitionBox.Intersects(Boss.ColissionBox))
-                {
-                    Boss.IsHitted(player.damage);
-                    stab.Play(1, 1, 0);
-                    VARIABLE.Muerte();
-                }
-            }
-
             UpdateCuchillos(player.TheWorldTime);
             Timer(gameTime);
-            dialog.Update(gameTime, inputManager);
+            dialog.Update2(gameTime, inputManager);
             DisposeCuchillos();
-
-            if (Boss.zawarudo)
-            {
-                player.ZaWarudoActive = true;
-            }
-
-            if (Boss.state == 3)
-            {
-                part1bgminstance.Dispose();
-            }
-
-            if (Boss.state == 4)
-            {
-                part2bgminstance.Play();
-            }
-
         }
 
         public void UpdateCuchillos(GameTime gameTime)
@@ -268,11 +204,6 @@ namespace BAO.Clases
         public override void Draw(SpriteBatch spriteBatch)
         {
             fondo.Draw(spriteBatch);
-            foreach (Rectangle item in listaObs)
-            {
-                spriteBatch.Draw(texturaObs, item, Color.White);
-
-            }
 
             foreach (Suelo item in suelos)
             {
@@ -283,8 +214,6 @@ namespace BAO.Clases
                 VARIABLE.Draw(spriteBatch);
             }
 
-            
-            Boss.Draw(spriteBatch, spriteEnemypos);
             player.Draw(spriteBatch, spritePos);
             dialog.Draw(spriteBatch);
             timerCD.Draw(spriteBatch);
@@ -300,7 +229,7 @@ namespace BAO.Clases
                 {
                     if (VARIABLE.colitionBox.Intersects(VARIABLE2.colitionBox) && !VARIABLE.Equals(VARIABLE2))
                     {
-                        if (VARIABLE.isPlayer && !VARIABLE2.isPlayer)
+                        if (!VARIABLE.isPlayer && !VARIABLE2.isPlayer)
                         {
                             knifeCling.Play(0.5f, 0, 0);
                             VARIABLE.Muerte();

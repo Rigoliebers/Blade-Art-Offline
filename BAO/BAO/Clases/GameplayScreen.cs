@@ -46,7 +46,7 @@ namespace BAO.Clases
             timerTW = new THEWORLDTimer();
             timerTW.LoadContent(content, new Vector2(400,0));
             suelos = new List<Suelo>();
-            fondo = new BackgroundAnimation("Background/background oreimo");
+            fondo = new BackgroundAnimation("Background/Background2");
             // TODO: use this.Content to load your game content here
             spritePos = new Vector2(10, 780);
             fondo.LoadContent(content);
@@ -99,9 +99,9 @@ namespace BAO.Clases
             player.playerR.Active = true;
             string[,] dialogo = new string[,]
             {
-                    {"monito0", "El", "Mi pito amigo"},
-                    {"monito0", "El", "2"},
-                    {"monito0", "El", "3"},                             
+                    {"monito0", "El", "Pepe esto es?", "Sounds/Voices/nada"},
+                    {"monito0", "El", "He estado en este lugar antes", "Sounds/Voices/nada"},
+                    {"monito0", "El", "Será deja vu?", "Sounds/Voices/nada"},                             
             };
 
             dialog.LoadContent(content, dialogo);
@@ -120,7 +120,7 @@ namespace BAO.Clases
 
             if (spritePos.Y==450 && spritePos.X>=1024)
             {
-                ScreenManager.Instance.AddScreen(new BossLevel());
+                ScreenManager.Instance.AddScreen(new SegundoNivel());
             }
 
             if (anotherInput.KeyPressed(Keys.Z) && !dialog.Active)
@@ -163,6 +163,11 @@ namespace BAO.Clases
 
             }
 
+            if (spritePos.Y>900)
+            {
+                this.UnloadContent();
+                ScreenManager.Instance.AddScreen(new GameplayScreen(), 0.6f);
+            }
 
             foreach (Suelo recto in suelos)
             {
@@ -186,7 +191,7 @@ namespace BAO.Clases
             }
             UpdateCuchillos(player.TheWorldTime);
             Timer(gameTime);
-            dialog.Update(gameTime, inputManager);
+            dialog.Update2(gameTime, inputManager);
             DisposeCuchillos();
         }
 
@@ -201,11 +206,6 @@ namespace BAO.Clases
         public override void Draw(SpriteBatch spriteBatch)
         {
             fondo.Draw(spriteBatch);
-           /* foreach (Rectangle item in listaObs)
-            {
-                spriteBatch.Draw(texturaObs, item, Color.White);
-                
-            }*/
 
             foreach (Suelo item in suelos)
             {

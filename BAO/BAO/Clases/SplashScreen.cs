@@ -33,9 +33,9 @@ namespace BAO.Clases
 
             //keyState = Keyboard.GetState();
             inputManager.Update();
-            if (inputManager.KeyPressed(Keys.Z))
+            if (inputManager.KeyPressed(Keys.Enter))
             {
-                ScreenManager.Instance.AddScreen(new BossLevel());
+                ScreenManager.Instance.AddScreen(new TittleScreen());
             }
         }
 
