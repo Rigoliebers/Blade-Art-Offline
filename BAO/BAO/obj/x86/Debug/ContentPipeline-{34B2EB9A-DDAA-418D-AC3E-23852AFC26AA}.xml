@@ -523,6 +523,24 @@
       <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sounds\Voices\dialogoDestino4_5.xnb</Output>
       <Time>2017-06-08T12:29:49.7504422-07:00</Time>
     </Item>
+    <Item>
+      <Source>Zawarudoitem.png</Source>
+      <Name>Zawarudoitem</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Zawarudoitem.xnb</Output>
+      <Time>2017-06-08T20:48:05.6196982-07:00</Time>
+    </Item>
+    <Item>
+      <Source>patreon_logo.png</Source>
+      <Name>patreon_logo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\patreon_logo.xnb</Output>
+      <Time>2017-06-08T21:51:54.7102184-07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{34B2EB9A-DDAA-418D-AC3E-23852AFC26AA}</ContentProjectGUID>

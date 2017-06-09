@@ -115,3 +115,6 @@ c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\M
 c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\BAO.exe
 c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\BAO.pdb
 c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sounds\Voices\dialogoDestino4_5.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\BAO.csprojResolveAssemblyReference.cache
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Zawarudoitem.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\patreon_logo.xnb

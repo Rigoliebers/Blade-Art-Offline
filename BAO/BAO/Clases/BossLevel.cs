@@ -32,6 +32,8 @@ namespace BAO.Clases
         private SoundEffect stab;
         private SoundEffect part1bgm;
         private SoundEffectInstance part1bgminstance;
+        private SoundEffect part2bgm;
+        private SoundEffectInstance part2bgminstance;
         private SoundEffect knifeCling;
 
         private SoundEffect cling;
@@ -50,7 +52,9 @@ namespace BAO.Clases
             gravedad=new Gravedad();
             stab = content.Load<SoundEffect>("Knife Stab Sound Effect");
             part1bgm = content.Load<SoundEffect>("Destined Cruz");
+            part2bgm = content.Load<SoundEffect>("Bloody Tears");
             part1bgminstance = part1bgm.CreateInstance();
+            part2bgminstance = part2bgm.CreateInstance();
             base.LoadContent(content);
             inputManager = new InputManager();
             Boss = new EnemyDestuno();
@@ -170,7 +174,14 @@ namespace BAO.Clases
                 player.Update(gameTime, inputManager, spritePos);
             }
 
-            Boss.Update(gameTime, spriteEnemypos, spritePos);
+            
+
+            Boss.Update(player.TheWorldTime, spriteEnemypos, spritePos);
+
+            if (Boss.state == 6 )
+            {
+                part2bgminstance.Dispose();
+            }
 
             foreach (Rectangle recto in listaObs)
             {
@@ -229,7 +240,20 @@ namespace BAO.Clases
             dialog.Update(gameTime, inputManager);
             DisposeCuchillos();
 
+            if (Boss.zawarudo)
+            {
+                player.ZaWarudoActive = true;
+            }
 
+            if (Boss.state == 3)
+            {
+                part1bgminstance.Dispose();
+            }
+
+            if (Boss.state == 4)
+            {
+                part2bgminstance.Play();
+            }
 
         }
 
