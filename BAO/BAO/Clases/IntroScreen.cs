@@ -49,15 +49,15 @@ namespace BAO.Clases
             dialog = new DialogScreen();
             string[,] dialogo = new string[,]
             {
-                    {"monito0", "El Vigilante", "¿Conoces la historia de 'Pepe y los globos'?"},
-                    {"Ishtar", "Ishtar", "No. ¿Quíen es el? Vigilante"},
-                    {"monito0", "El Vigilante", "Casi nadie lo conoce ya... Este hombre, Pepe, realizo una de las mas grandes hazañas que he presenciado en todo el espacio tiempo."},
-                    {"monito0", "El Vigilante", "¿Te gustaria oirla?"},
-                    {"Ishtar", "Ishtar", "Por supuesto. Vigilante."},
-                    {"monito0", "El Vigilante", "Bien, bien. Perfecto entonces..."},
-                    {"monito0", "El Vigilante", "Te contare la historia de un hombre que desafio al propio destino y en una batalla cruenta, y lo derroto. Un hombre que lo dio todo a cambio de nada. El mas grande heroe que ha nacido."},
-                    {"monito0", "El Vigilante", "Pepe Juan Panfiloponcio de la Santa Cruz Rodrigues Ademán de la Trinidad de la Ascencion de la divina iglesia de la santa paz del niño Jésus"},
-                    {"Ishtar", "Ishtar", "Estoy ansiosa..."},
+                    {"monito0", "El Vigilante", "¿Conoces la historia de 'Pepe y los globos'?", "Sounds/Voices/nada"},
+                    {"Ishtar", "Ishtar", "No. ¿Quíen es él? Vigilante", "Sounds/Voices/nada2"},
+                    {"monito0", "El Vigilante", "Casi nadie lo conoce ya... Este hombre, Pepe, realizó una de las más grandes hazañas que he presenciado en todo el espacio tiempo." , "Sounds/Voices/nada"},
+                    {"monito0", "El Vigilante", "¿Te gustaría oirla?", "Sounds/Voices/nada2"},
+                    {"Ishtar", "Ishtar", "Por supuesto. Vigilante.", "Sounds/Voices/nada"},
+                    {"monito0", "El Vigilante", "Bien, bien. Perfecto entonces...", "Sounds/Voices/nada2"},
+                    {"monito0", "El Vigilante", "Te contare la historia de un hombre que desafio al propio destino y en una batalla cruenta, y lo derrotó. Un hombre que lo dio todo a cambio de nada. Él más grande héroe que ha nacido.", "Sounds/Voices/nada"},
+                    {"monito0", "El Vigilante", "Pepe Juan Panfiloponcio de la Santa Cruz Rodrigues Ademán de la Trinidad de la Ascencion de la divina iglesia de la santa paz del niño Jésus de Asís", "Sounds/Voices/nada2"},
+                    {"Ishtar", "Ishtar", "Estoy ansiosa...", "Sounds/Voices/nada"},
             };
 
 
@@ -94,7 +94,7 @@ namespace BAO.Clases
             }
 
             inputManager.Update();
-            dialog.Update(gameTime, inputManager);
+            dialog.Update2(gameTime, inputManager);
 
 
 

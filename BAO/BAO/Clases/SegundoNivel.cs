@@ -12,7 +12,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 namespace BAO.Clases
 {
-    public class GameplayScreen : GameScreen
+    public class SegundoNivel : GameScreen
     {
         XnaFunctionscs fun = new XnaFunctionscs();
         GraphicsDeviceManager graphics;
@@ -44,19 +44,18 @@ namespace BAO.Clases
             timerCD = new THEWORLDTimer();
             timerCD.LoadContent(content, Vector2.Zero);
             timerTW = new THEWORLDTimer();
-            timerTW.LoadContent(content, new Vector2(400,0));
+            timerTW.LoadContent(content, new Vector2(400, 0));
             suelos = new List<Suelo>();
             fondo = new BackgroundAnimation("Background/Background2");
             // TODO: use this.Content to load your game content here
             spritePos = new Vector2(10, 780);
             fondo.LoadContent(content);
-             base.LoadContent(content);
+            base.LoadContent(content);
             dialog = new DialogScreen();
             listaObs = new List<Rectangle>();
             listaObs.Add(new Rectangle(0, 0, 0, 1200));
             listaObsIzq = new List<Rectangle>();
-            listaObsIzq.Add(new Rectangle(1024, 0, 0, 350));
-            listaObsIzq.Add(new Rectangle(1024, 600, 0, 700));
+            listaObsIzq.Add(new Rectangle(1024, 300, 0, 900));
             #region suelos
             Suelo suelo = new Suelo("Stone1", content);
             Suelo suelo2 = new Suelo("Stone1", content);
@@ -68,18 +67,17 @@ namespace BAO.Clases
             Suelo suelo8 = new Suelo("Stone1", content);
             Suelo suelo9 = new Suelo("Stone1", content);
             Suelo suelo10 = new Suelo("Stone1", content);
-            Suelo suelo11= new Suelo("Stone1", content);
-            Suelo suelo12= new Suelo("Stone1", content);
-            Suelo suelo13= new Suelo("Stone1", content);
-            suelo10.rectangulo = new Rectangle(880, 300, 200, 50);
-            suelo9.rectangulo = new Rectangle(940, 490, 250, 50);
-            suelo8.rectangulo = new Rectangle(550, 220, 40, 50);
+            Suelo suelo11 = new Suelo("Stone1", content);
+            Suelo suelo12 = new Suelo("Stone1", content);
+            Suelo suelo13 = new Suelo("Stone1", content);
+            suelo9.rectangulo = new Rectangle(900, 100, 250, 50);
+            suelo8.rectangulo = new Rectangle(550, 150, 120, 50);
             suelo7.rectangulo = new Rectangle(320, 50, 100, 50);
             suelo6.rectangulo = new Rectangle(0, 100, 100, 50);
-            suelo5.rectangulo = new Rectangle(0, 250, 100, 50);
-            suelo4.rectangulo = new Rectangle(0, 400, 100 , 50);
-            suelo3.rectangulo = new Rectangle(320, 620, 100, 50);
-            suelo2.rectangulo = new Rectangle(0, 550, 250, 50);
+            suelo5.rectangulo = new Rectangle(0, 250, 200, 80);
+            suelo4.rectangulo = new Rectangle(320, 350, 100, 50);
+            suelo3.rectangulo = new Rectangle(320, 650, 100, 50);
+            suelo2.rectangulo = new Rectangle(320, 500, 100, 50);
             suelo.rectangulo = new Rectangle(0, 780, 200, 50);
             suelos.Add(suelo8);
             suelos.Add(suelo2);
@@ -90,7 +88,6 @@ namespace BAO.Clases
             suelos.Add(suelo7);
             suelos.Add(suelo);
             suelos.Add(suelo9);
-            suelos.Add(suelo10);
             #endregion
             texturaObs = content.Load<Texture2D>("Stone3");
             player = new Player();
@@ -99,9 +96,10 @@ namespace BAO.Clases
             player.playerR.Active = true;
             string[,] dialogo = new string[,]
             {
-                    {"monito0", "El", "Pepe esto es?", "Sounds/Voices/nada"},
-                    {"monito0", "El", "He estado en este lugar antes", "Sounds/Voices/nada"},
-                    {"monito0", "El", "Será deja vu?", "Sounds/Voices/nada"},                             
+                    {"monito0", "Él", "Atento Pepe esto se esta saliendo de control.", "Sounds/Voices/nada"},
+                    {"monito0", "Él", "Estoy teniendo flashbacks de Vietnam y recordé algo.", "Sounds/Voices/nada"},
+                    {"monito0", "Él", "Siento un peligro adelante, te están cazando Pepe.", "Sounds/Voices/nada"},
+                    {"monito0", "Él", "Ten cuidado Pepe, es peligroso.", "Sounds/Voices/nada"},
             };
 
             dialog.LoadContent(content, dialogo);
@@ -118,16 +116,16 @@ namespace BAO.Clases
             anotherInput.Update();
             fondo.Update(gameTime);
 
-            if (spritePos.Y==450 && spritePos.X>=1024)
+            if (spritePos.Y == 60 && spritePos.X >= 1024)
             {
-                ScreenManager.Instance.AddScreen(new SegundoNivel());
+                ScreenManager.Instance.AddScreen(new BossLevel());
             }
 
             if (anotherInput.KeyPressed(Keys.Z) && !dialog.Active)
             {
                 if (player.isAgachado)
                 {
-                    DispararCuchillo(15, player.isLeft, new Vector2(spritePos.X, spritePos.Y +10));
+                    DispararCuchillo(15, player.isLeft, new Vector2(spritePos.X, spritePos.Y + 10));
                 }
                 else
                 {
@@ -163,10 +161,10 @@ namespace BAO.Clases
 
             }
 
-            if (spritePos.Y>900)
+            if (spritePos.Y > 900)
             {
                 this.UnloadContent();
-                ScreenManager.Instance.AddScreen(new GameplayScreen(), 0.6f);
+                ScreenManager.Instance.AddScreen(new SegundoNivel(), 0.6f);
             }
 
             foreach (Suelo recto in suelos)
@@ -175,10 +173,10 @@ namespace BAO.Clases
                 sueloInter.Y = sueloInter.Y - 40;
                 if (sueloInter.Intersects(player.ColissionBox))
                 {
-                    if (spritePos.Y >= sueloInter.Y  && gravedad.moveSpeed.Y >= 0.0f)
+                    if (spritePos.Y >= sueloInter.Y && gravedad.moveSpeed.Y >= 0.0f)
                     {
                         spritePos.Y = sueloInter.Y;
-                         gravedad.hasJumped = false;
+                        gravedad.hasJumped = false;
                         gravedad.caida = false;
                     }
                     break;
@@ -229,7 +227,7 @@ namespace BAO.Clases
             {
                 foreach (var VARIABLE2 in listaNKnives)
                 {
-                    if (VARIABLE.colitionBox.Intersects(VARIABLE2.colitionBox) && !VARIABLE.Equals(VARIABLE2) )
+                    if (VARIABLE.colitionBox.Intersects(VARIABLE2.colitionBox) && !VARIABLE.Equals(VARIABLE2))
                     {
                         if (!VARIABLE.isPlayer && !VARIABLE2.isPlayer)
                         {
@@ -279,7 +277,7 @@ namespace BAO.Clases
         private void DispararCuchillo(int speed, bool left, Vector2 pos)
         {
             shoot = new ProyectilKnife();
-            shoot.LoadContent(this.content, speed, left, pos, new Vector2(24, 8),"knife", 10, 1.5f, new Vector2(16,8));
+            shoot.LoadContent(this.content, speed, left, pos, new Vector2(24, 8), "knife", 10, 1.5f, new Vector2(16, 8));
             shoot.isPlayer = true;
             listaNKnives.Add(shoot);
         }
