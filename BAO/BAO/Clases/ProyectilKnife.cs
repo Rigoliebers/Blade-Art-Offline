@@ -57,7 +57,7 @@ namespace BAO.Clases
 
 
 
-            if (isHomming)
+            if (isHomming && gameTime.ElapsedGameTime.Milliseconds != 0)
             {
                 if (isLeft)
                 {
