@@ -45,3 +45,14 @@ Content\tick.xnb
 Content\Bloody Tears.xnb
 Content\Destined Cruz.xnb
 Content\Knife Stab Sound Effect.xnb
+Content\Sounds\Voices\dialogoPepe1.xnb
+Content\Sounds\Voices\dialogoDestino1.xnb
+Content\Sounds\Voices\dialogoPepe2.xnb
+Content\Sounds\Voices\dialogoDestino2.xnb
+Content\Sounds\Voices\dialogoDestino6.xnb
+Content\Sounds\Voices\dialogoPepe3.xnb
+Content\Sounds\Voices\dialogoPepe4.xnb
+Content\Sounds\Voices\dialogoPepe5.xnb
+Content\Sounds\Voices\dialogoDestino3.xnb
+Content\Sounds\Voices\dialogoDestino4.xnb
+Content\Sounds\Voices\dialogoDestino4_5.xnb

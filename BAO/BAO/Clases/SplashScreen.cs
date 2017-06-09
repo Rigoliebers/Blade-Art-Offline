@@ -35,7 +35,7 @@ namespace BAO.Clases
             inputManager.Update();
             if (inputManager.KeyPressed(Keys.Z))
             {
-                ScreenManager.Instance.AddScreen(new GameplayScreen());
+                ScreenManager.Instance.AddScreen(new BossLevel());
             }
         }
 

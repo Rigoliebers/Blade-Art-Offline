@@ -1,27 +1,3 @@
-c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\BAO.exe
-c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\BAO.pdb
-c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.dll
-c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
-c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.dll
-c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
-c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.dll
-c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.xml
-c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Game.xml
-c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
-c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
-c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
-c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\BAO.exe
-c:\users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\BAO.pdb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pixel.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\TittleScreen.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Splash.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Menufont.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Agency24.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Libera Me From Hell.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\misc_menu_2.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\misc_menu_4.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\positive.xnb
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Menufont.xnb
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Font1.xnb
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Agency24.xnb
@@ -44,36 +20,17 @@ C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Microsoft.Xn
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\obj\x86\Debug\BAO.csprojResolveAssemblyReference.cache
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\obj\x86\Debug\BAO.exe
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\obj\x86\Debug\BAO.pdb
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\MC.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\MC.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\MC2.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\MC0.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pStandR.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pStandL.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pWalkR.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pWalkL.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pDuckR.xnb
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\MC2.xnb
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\MC0.xnb
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pStandR.xnb
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pStandL.xnb
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pWalkR.xnb
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pisitoo.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pisitoo.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\monito0.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\backdialog.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Background\background resized.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\TittleDialog.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\DialogFont.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Naming.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Font1.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Background\Background2.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\introbgm.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Ishtar.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\BAO.csprojResolveAssemblyReference.cache
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\TittleDialog.xnb
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\DialogFont.xnb
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Naming.xnb
@@ -85,12 +42,31 @@ C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\back
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Background\Background2.xnb
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Ishtar.xnb
 C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\introbgm.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\knife.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\tick.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\TheEnd.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Za Warudo Sound Effect.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\knifeCling.xnb
-C:\Users\angel\Documents\Visual Studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\DisposeKnife.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Menufont.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\TittleDialog.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Agency24.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\DialogFont.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Naming.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Font1.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pixel.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\TittleScreen.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Splash.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\MC.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\MC2.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\MC0.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pStandR.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pStandL.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pWalkR.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pisitoo.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pWalkL.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\pDuckR.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Background\background resized.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\monito0.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\backdialog.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Background\Background2.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Ishtar.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\knife.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\DisposeKnife.xnb
 c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\eWalkL.xnb
 c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\eRunkl.xnb
 c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Player\playerShootR.xnb
@@ -100,26 +76,42 @@ c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\C
 c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Enemies\DestinyStandR.xnb
 c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Frames\DeathFace.xnb
 c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Frames\RichterFace.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Proyectil\FireProyectil.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Libera Me From Hell.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\misc_menu_2.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\misc_menu_4.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\positive.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\introbgm.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\TheEnd.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Za Warudo Sound Effect.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\knifeCling.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\tick.xnb
 c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Bloody Tears.xnb
 c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Destined Cruz.xnb
 c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Knife Stab Sound Effect.xnb
-c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sprites\Proyectil\FireProyectil.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\knife.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Sprites\DisposeKnife.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\eWalkL.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\eRunkl.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Sprites\Player\playerShootR.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\pDuckL.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Sprites\Player\playerShootL.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Sprites\Enemies\DestinyStandL.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Sprites\Enemies\DestinyStandR.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Sprites\Frames\DeathFace.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Sprites\Frames\RichterFace.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Sprites\Proyectil\FireProyectil.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\TheEnd.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Za Warudo Sound Effect.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\knifeCling.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\tick.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Bloody Tears.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Destined Cruz.xnb
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Knife Stab Sound Effect.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sounds\Voices\dialogoPepe1.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sounds\Voices\dialogoDestino1.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sounds\Voices\dialogoPepe2.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sounds\Voices\dialogoDestino2.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sounds\Voices\dialogoDestino6.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sounds\Voices\dialogoPepe3.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sounds\Voices\dialogoPepe4.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sounds\Voices\dialogoPepe5.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sounds\Voices\dialogoDestino3.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sounds\Voices\dialogoDestino4.xnb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\BAO.exe
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\BAO.pdb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.dll
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.dll
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.dll
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.xml
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Game.xml
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\BAO.exe
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\obj\x86\Debug\BAO.pdb
+c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Sounds\Voices\dialogoDestino4_5.xnb

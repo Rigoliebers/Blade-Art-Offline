@@ -11,7 +11,10 @@ namespace BAO.Clases
     public class EnemyDestuno : Entity
     {
         private InputManager inputo;
+        private bool movingx = false;
+        private bool movingy = false;
 
+        private int anothertime;
         private int elapsedtime;
         public int state;
 
@@ -27,13 +30,17 @@ namespace BAO.Clases
 
         private ProyectilKnife fuego;
 
+        private bool fire;
+
         public List<ProyectilKnife> listaNKnives;
+
+        
 
         private ContentManager contentmanager;
         public override void LoadContent(ContentManager content, InputManager input, Vector2 pos)
         {
             this.contentmanager = content;
-
+            ColissionBox = new Rectangle((int)pos.X, (int)pos.Y, 138,160);
             health = 1000;
             ColissionBox = new Rectangle(0,0,67,80);
             damage = 10;
@@ -65,10 +72,13 @@ namespace BAO.Clases
             base.UnloadContent();
         }
 
-        public override void Update(GameTime gameTime, Vector2 pos)
+        public override void Update(GameTime gameTime, Vector2 pos, Vector2 playerpos)
         {
 
+
+
             elapsedtime += gameTime.ElapsedGameTime.Milliseconds;
+            anothertime += gameTime.ElapsedGameTime.Milliseconds;
 
             if (isLeft)
             {
@@ -94,11 +104,18 @@ namespace BAO.Clases
                     case (1):
                         state1(gameTime, pos);
                         break;
+                    case (2):
+                        state2(gameTime, pos, playerpos);
+                        break;
+
                 }
             }
 
-            
-            ColissionBox = new Rectangle((int)position.X, (int)position.Y-80, 134, 160);
+
+            colissionBox.X = (int) position.X - 50;
+            colissionBox.Y = (int) position.Y - 80;
+            colissionBox.Width = 80;
+            colissionBox.Height = 160;
 
             sprite.Ended = false;
             sprite.Reverse = false;
@@ -115,9 +132,9 @@ namespace BAO.Clases
 
         public void state0(GameTime gameTime, Vector2 pos) //Idle
         {
-            if (position.X > 600)
+            if (position.X > 512)
             {
-                position.X -= 0.4f;
+                position.X -= 0.5f;
             }
             if (position.Y < 200)
             {
@@ -125,7 +142,7 @@ namespace BAO.Clases
             }
 
 
-            if (position.X > 599 && position.X < 601 && position.Y >= 199 && position.Y <= 201)
+            if (position.X > 511 && position.X < 513 && position.Y >= 199 && position.Y <= 201)
             {
                 state = 1;
             }
@@ -134,8 +151,7 @@ namespace BAO.Clases
         public void state1(GameTime gameTime, Vector2 pos)
         {
             Random x = new Random();
-            int y = x.Next(0, 3);
-
+            int y = x.Next(0, 5);
 
             if (elapsedtime > 200)
             {
@@ -152,18 +168,89 @@ namespace BAO.Clases
                         break;
 
                     case 2:
-                        Fire(new Vector2(position.X, position.Y -50));
+                        Fire(new Vector2(position.X, position.Y +65));
+                        elapsedtime = 0;
+                        break;
+
+                    case 3:
+                        Fire(new Vector2(position.X, position.Y - 50));
+                        elapsedtime = 0;
+                        break;
+
+                    case 4:
+                        Fire(new Vector2(position.X, position.Y - 65));
                         elapsedtime = 0;
                         break;
                 }
             }
 
+            if (health < 800)
+            {
+                state = 2;
+            }
+
             
+        }
+
+        public void state2(GameTime gameTime, Vector2 pos, Vector2 playerpos)
+        {
+            Random x = new Random();
+            int y = x.Next(0, 5);
+
+
+            if (position.X > 300 && !movingx)
+            {
+                position.X += 1.0f;
+                if (position.X > 795 && position.X <= 805)
+                    movingx = true;
+            }
+
+            if (position.X < 800 && movingx)
+            {
+                position.X -= 1.0f;
+                if (position.X > 295 && position.X <= 305)
+                    movingx = false;
+            }
+
+            if (position.Y > 100 && !movingy)
+            {
+                position.Y += 2.0f;
+               
+                    if (position.Y > 395 && position.Y <= 405)
+                        movingy = true;
+            }
+
+            if (position.Y < 600 && movingy)
+            {
+                position.Y -= 2.0f;
+                if (position.Y > 95 && position.Y <= 105)
+                    movingy = false;
+            }
+
+
+            if (elapsedtime > 80 && fire)
+            {
+                FireAtWill(new Vector2(position.X, position.Y), playerpos);
+                elapsedtime = 0;
+            }
+
+            if (anothertime > 4000)
+            {
+                if (fire)
+                {
+                    fire = false;
+                }
+                else
+                {
+                    fire = true;
+                }
+                anothertime = 0;
+            }
         }
 
         public void IsHitted(int hit)
         {
-            health += hit;
+            health -= hit;
         }
 
         public void Fire(Vector2 position)
@@ -174,5 +261,37 @@ namespace BAO.Clases
             listaNKnives.Add(fuego);
         }
 
+        public void FireAtWill(Vector2 position, Vector2 playerpos)
+        {
+            float difx = playerpos.X - position.X;
+            float dify = playerpos.Y - position.Y;
+            float M;
+
+            if (Math.Abs(difx) > Math.Abs(dify))
+            {
+                M = difx;
+                M = M/5;
+            }
+            else
+            {
+                M = dify;
+                M = M/5;
+            }
+
+            fuego = new ProyectilKnife();
+            fuego.speddo.X = Math.Abs(difx/M);
+            fuego.speddo.Y = Math.Abs(dify/M);
+
+            if (playerpos.Y < position.Y)
+            {
+                fuego.speddo.Y = fuego.speddo.Y*-1;
+            }
+
+            fuego.LoadContent(contentmanager, 3, isLeft, position, new Vector2(30, 30), "Sprites/Proyectil/FireProyectil", 10, 1.0f, new Vector2(30, 30));
+            fuego.isHomming = true;
+            fuego.finalpos = playerpos;
+            fuego.isPlayer = false;
+            listaNKnives.Add(fuego);
+        }
     }
 }
