@@ -25,8 +25,6 @@ namespace BAO.Clases
         List<Suelo> suelos;
         Texture2D texturaObs;
         BackgroundAnimation fondo;
-        ///Suelo objSuelo = new Suelo();
-        int pito = 0;
         private THEWORLDTimer timerTW;
         private THEWORLDTimer timerCD;
         private InputManager anotherInput;
@@ -134,7 +132,6 @@ namespace BAO.Clases
 
 
             }
-
 
             if (!dialog.Active)
                 spritePos = player.Update(gameTime, inputManager, spritePos);

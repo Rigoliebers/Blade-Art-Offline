@@ -93,6 +93,7 @@ namespace BAO.Clases
             suelos.Add(suelo10);
             #endregion
             texturaObs = content.Load<Texture2D>("Stone3");
+
             player = new Player();
             player.LoadContent(content, inputManager, spritePos);
             player.LoadContent(gravedad);

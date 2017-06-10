@@ -33,6 +33,8 @@ Content\Sprites\Enemies\DestinyStandR.xnb
 Content\Sprites\Frames\DeathFace.xnb
 Content\Sprites\Frames\RichterFace.xnb
 Content\Sprites\Proyectil\FireProyectil.xnb
+Content\Zawarudoitem.xnb
+Content\patreon_logo.xnb
 Content\Libera Me From Hell.xnb
 Content\misc_menu_2.xnb
 Content\misc_menu_4.xnb
@@ -56,5 +58,4 @@ Content\Sounds\Voices\dialogoPepe5.xnb
 Content\Sounds\Voices\dialogoDestino3.xnb
 Content\Sounds\Voices\dialogoDestino4.xnb
 Content\Sounds\Voices\dialogoDestino4_5.xnb
-Content\Zawarudoitem.xnb
-Content\patreon_logo.xnb
+Content\segundonivel2.xnb

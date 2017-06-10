@@ -317,6 +317,24 @@
       <Time>2017-06-08T00:49:05.8348957-07:00</Time>
     </Item>
     <Item>
+      <Source>Zawarudoitem.png</Source>
+      <Name>Zawarudoitem</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Zawarudoitem.xnb</Output>
+      <Time>2017-06-08T22:10:02.3746478-07:00</Time>
+    </Item>
+    <Item>
+      <Source>patreon_logo.png</Source>
+      <Name>patreon_logo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\patreon_logo.xnb</Output>
+      <Time>2017-06-08T22:10:02.3726486-07:00</Time>
+    </Item>
+    <Item>
       <Source>Libera Me From Hell.wav</Source>
       <Name>Libera Me From Hell</Name>
       <Importer>WavImporter</Importer>
@@ -524,40 +542,13 @@
       <Time>2017-06-08T18:08:02.5601091-07:00</Time>
     </Item>
     <Item>
-      <Source>Sounds\Voices\nada.wav</Source>
-      <Name>Sounds\Voices\nada</Name>
+      <Source>segundonivel2.wav</Source>
+      <Name>segundonivel2</Name>
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Sounds\Voices\nada.xnb</Output>
-      <Time>2017-06-08T20:44:28.8682109-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Sounds\Voices\nada2.wav</Source>
-      <Name>Sounds\Voices\nada2</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\Sounds\Voices\nada2.xnb</Output>
-      <Time>2017-06-08T20:56:02.7361432-07:00</Time>
-    </Item>
-    <Item>
-      <Source>Zawarudoitem.png</Source>
-      <Name>Zawarudoitem</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\Zawarudoitem.xnb</Output>
-      <Time>2017-06-08T20:48:05.6196982-07:00</Time>
-    </Item>
-    <Item>
-      <Source>patreon_logo.png</Source>
-      <Name>patreon_logo</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAO\bin\x86\Debug\Content\patreon_logo.xnb</Output>
-      <Time>2017-06-08T21:51:54.7102184-07:00</Time>
+      <Output>C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAO\bin\x86\Debug\Content\segundonivel2.xnb</Output>
+      <Time>2017-06-08T23:00:28.2627754-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
