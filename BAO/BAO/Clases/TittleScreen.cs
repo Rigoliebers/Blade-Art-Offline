@@ -31,12 +31,11 @@ namespace BAO.Clases
         float currentTime = 0f;
         private bool keydownU;
         private bool keydownD;
-        SoundEffect soundEngine;
-        SoundEffectInstance soundEngineInstance;
         private SoundEffect soundsMenuUp;
         private SoundEffect soundsMenuDown;
         private SoundEffect soundStart;
-
+        SoundEffect soundEngine;
+        SoundEffectInstance soundEngineInstance;
         public override void LoadContent(ContentManager Content)
         {
             base.LoadContent(Content); //Fuente

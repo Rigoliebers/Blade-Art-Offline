@@ -152,8 +152,12 @@ namespace BAO.Clases
 
             if (!dialog.Active)
             {
+                if (Boss.state<3)
+                {
                 part1bgminstance.Volume = 0.5f;
                 part1bgminstance.Play();
+                }
+                
                 Boss.active = true;
                 spritePos = player.Update(gameTime, inputManager, spritePos);
                 spriteEnemypos = Boss.Update(gameTime, inputManager, spriteEnemypos);

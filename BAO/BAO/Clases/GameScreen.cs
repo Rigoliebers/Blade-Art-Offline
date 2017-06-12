@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Audio;
 
 namespace BAO.Clases
 {
@@ -12,6 +13,8 @@ namespace BAO.Clases
     {
         public InputManager inputManager;
         protected ContentManager content;
+        public SoundEffect soundEngine;
+        public SoundEffectInstance soundEngineInstance;
 
         public virtual void Initialize()
         {

@@ -1,2 +1,2 @@
-C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAOContent\obj\x86\Debug\BAOContent.contentprojResolveAssemblyReference.cache
 c:\Users\angel\documents\visual studio 2015\Projects\BAO\BAO\BAOContent\obj\x86\Debug\BAOContent.contentprojResolveAssemblyReference.cache
+C:\Users\saulg\Source\Repos\Blade-Art-Offline\BAO\BAOContent\obj\x86\Debug\BAOContent.contentprojResolveAssemblyReference.cache
