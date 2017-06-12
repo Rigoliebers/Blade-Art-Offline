@@ -106,6 +106,11 @@ namespace BAO.Clases
             };
 
             dialog.LoadContent(content, dialogo);
+            soundEngine = content.Load<SoundEffect>("segundonivel2");
+            soundEngineInstance = soundEngine.CreateInstance();
+            soundEngineInstance.Volume = 0.15f;
+            soundEngineInstance.IsLooped = true;
+            soundEngineInstance.Play();
         }
 
         public override void UnloadContent()
@@ -121,7 +126,8 @@ namespace BAO.Clases
 
             if (spritePos.Y==450 && spritePos.X>=1024)
             {
-                ScreenManager.Instance.AddScreen(new SegundoNivel());
+                ScreenManager.Instance.AddScreen(new SegundoNivel(soundEngineInstance));
+
             }
 
             if (anotherInput.KeyPressed(Keys.Z) && !dialog.Active)
@@ -166,6 +172,8 @@ namespace BAO.Clases
 
             if (spritePos.Y>900)
             {
+                soundEngineInstance.Stop();
+                soundEngineInstance.Dispose();
                 this.UnloadContent();
                 ScreenManager.Instance.AddScreen(new GameplayScreen(), 0.6f);
             }

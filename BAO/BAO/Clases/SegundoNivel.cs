@@ -34,6 +34,16 @@ namespace BAO.Clases
         public List<ProyectilKnife> listaNKnives;
         private ProyectilKnife shoot;
         private DialogScreen dialog;
+        SoundEffectInstance soundEngineInstance2;
+        public SegundoNivel(SoundEffectInstance BGM) {
+            soundEngineInstance2 = BGM;
+        }
+        public SegundoNivel(SoundEffectInstance BGM, int a)
+        {
+            soundEngineInstance2 = BGM;
+            soundEngineInstance2.Resume();
+        }
+
         public override void LoadContent(ContentManager content)
         {
             knifeCling = content.Load<SoundEffect>("knifeCling");
@@ -116,6 +126,8 @@ namespace BAO.Clases
 
             if (spritePos.Y == 60 && spritePos.X >= 1024)
             {
+                soundEngineInstance2.Stop();
+                soundEngineInstance2.Dispose();
                 ScreenManager.Instance.AddScreen(new BossLevel());
             }
 
@@ -160,8 +172,9 @@ namespace BAO.Clases
 
             if (spritePos.Y > 900)
             {
+                soundEngineInstance2.Stop();
                 this.UnloadContent();
-                ScreenManager.Instance.AddScreen(new SegundoNivel(), 0.6f);
+                ScreenManager.Instance.AddScreen(new SegundoNivel(soundEngineInstance2, 1), 0.6f);              
             }
 
             foreach (Suelo recto in suelos)

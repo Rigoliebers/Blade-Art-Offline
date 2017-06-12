@@ -13,7 +13,8 @@ namespace BAO.Clases
     {
         public InputManager inputManager;
         protected ContentManager content;
-
+        public SoundEffect soundEngine;
+        public SoundEffectInstance soundEngineInstance;
 
         public virtual void Initialize()
         {
